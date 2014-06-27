@@ -1,5 +1,8 @@
 ![Windup Logo](images/windup-logo-wiki-header.jpg)
 
+As one of the possible decompilers, Windup can use the Jad Decompiler + JadRetro combo.
+However, since both are non-java applications and their license permits redistribution, they need some prior installation.
+
 JadRetro is a command-line utility that helps to successfully decompile Java classes created by the Java compilers of Java 1.4, Java 1.5 or later.
 
 JadRetro operates by transforming the specified Java class files (if needed) into ones which could be processed correctly by an old Java decompiler (designed to work with classes of Java 1.3 or earlier).
