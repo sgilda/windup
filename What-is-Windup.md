@@ -3,7 +3,11 @@
 
 JBoss Windup is a tool to simplify application migrations.  Running from the command line, the tool reads EAR, WAR, and JAR files and produces an HTML report detailing the inner workings of the Java application to simplify migration efforts.  It seeks to make migrating from other containers to JBoss a piece of cake.
 
-## 1.1 How does Windup simplify migrations?
+### Windup 2.0 vs. Windup 0.7.x
+Windup 2.0 aims to deliver the same functionality as legacy Windup.
+The internal architecture, however, [is very different](Architecture), and so are [the rules](Rules Authoring).
+
+## How does Windup simplify migrations?
 Windup is comprised of resource interrogators.  These interrogators look for common resources and highlight technologies and known “trouble spots” in migrating applications.  The goal of Windup is to provide a high level view into relevant technologies in use within the application, and provide a consumable report for organizations to estimate, document, and migrate JEE applications to JBoss.
 
 Below is a list of the interrogators included with JBoss Windup:
@@ -18,7 +22,7 @@ Below is a list of the interrogators included with JBoss Windup:
 <tr><td>XML Interrogator</td><td>Reads XML files; reads the XML into a DOM object and continues to profile the resource.</td></tr>
 </table>
 
-## 1.2 Follow Windup!
+## Follow Windup on Twitter!
 Follow Windup on [Twitter](https://twitter.com/jbosswindup) [@JBossWindup](https://twitter.com/jbosswindup) for updates and more!
 
 [Next Page: How to Build](Build-Windup)
