@@ -1,4 +1,7 @@
-Windup 2.0
+# Welcome to Windup 2.0
+
+*Windup 2.0 is a sequel to the original Windup 0.7.x.
+Legacy Windup 0.7.x has moved to the [windup-legacy GitHub repository](https://github.com/windup/windup-legacy).*
 
 * [What is Windup](https://github.com/windup/windup/wiki/What-is-Windup)?
 * [How to Build](https://github.com/windup/windup/wiki/Build-Windup)
