@@ -13,6 +13,6 @@ The `windup-cli/target/windup-cli-x.y.z-bin/` (where x.y.z is the version) direc
 
 The directory structure is important, since it sets up Windup's ClassPath.
 
-[Previous Page: 1.0 What is Windup](1.0-What-is-Windup)
+[Previous Page: What is Windup](What-is-Windup)
 
-[Next Page: 3.0 Execute Windup](3.0-Execute-Windup)
+[Next Page: Execute Windup](Execute-Windup)
