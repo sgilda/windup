@@ -1,26 +1,39 @@
-# Iteration
+## Iteration
 
 ```java
-                // For all java files...
-                Iteration.over("javaFiles").var("javaFile").perform(
-                    // A nested rule.
-                    GraphSubset.evaluate(
-                        ConfigurationBuilder.begin().addRule()
-                        .when(...)
-                        .perform(
-                            Iteration.over("regexes").var(RegexModel.class, "regex").perform(
-                                new AbstractIterationOperator<RegexModel>( RegexModel.class, "regex" ) {
-                                    public void perform( GraphRewrite event, EvaluationContext context, RegexModel regex ) {
+ConfigurationBuilder.begin().addRule()
+    .when(
+        GraphSearchConditionBuilderGremlin.create("javaFiles", new ArrayList())
+        .V().framedType( JavaFileModel.class ).has("analyze")
+    )
+    .perform(
+        // For all java files...
+        Iteration.over("javaFiles").var("javaFile").perform(
+```
 
-                                        VarStack sf = VarStack.instance(event);
-                                        JavaFileModel javaFile = sf.getCurrentPayload( JavaFileModel.class, "javaFile");
+## Nested Iteration
 
-                                        getRegexMatches( javaFile.getFilePath(), regex.getRegex() );
-                                    }
-                                }
-                            )
-                            .endIteration()
-                        )// perform()
-                    )
-                )
+```java
+// For all java files...
+Iteration.over("javaFiles").var("javaFile").perform(
+    // A nested rule.
+    GraphSubset.evaluate(
+        ConfigurationBuilder.begin().addRule()
+        .when(...)
+        .perform(
+            Iteration.over("regexes").var(RegexModel.class, "regex").perform(
+                new AbstractIterationOperator<RegexModel>( RegexModel.class, "regex" ) {
+                    public void perform( GraphRewrite event, EvaluationContext context, RegexModel regex ) {
+
+                        VarStack sf = VarStack.instance(event);
+                        JavaFileModel javaFile = sf.getCurrentPayload( JavaFileModel.class, "javaFile");
+
+                        getRegexMatches( javaFile.getFilePath(), regex.getRegex() );
+                    }
+                }
+            )
+            .endIteration()
+        )// perform()
+    )
+)
 ```
