@@ -25,6 +25,6 @@ Adding inline hints for Java and XML are as simple as adding Regular Expressions
 * [XML Hints](https://github.com/jboss-windup/windup/wiki/6.4-XML-Source-Hints)
 
 
-[Previous Page: 5.0 Reviewing Windup Report](5.0-Reviewing-the-Report)
+[Previous Page: Reviewing Windup Report](Reviewing-the-Report)
 
-[Next Page: 6.1 Java Classification](6.1-Java-Classification)
+[Next Page: Java Classification](Java-Classification)
