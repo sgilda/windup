@@ -1,7 +1,7 @@
 ![Windup Main](images/5-main-menu.png)
 ***
 
-## 5.1 Ten Thousand Foot View
+## Ten Thousand Foot View
 Windup will produce an HTML Report.  The `index.html` is the "10,000" foot view of the application.  This report is the central point which links to all resource reports.  This main report looks to provide overviews of all resources "of interest".  The top of the report displays a graph, collecting all "potential changes" that would need to be modified in the application to provide a quick, high level view of the effort involved in migrating the application.
 
 ### Story Points
@@ -19,8 +19,8 @@ The archive views show each archive in the 10,000 foot view, and describe and li
 
 As you can see, this view gives a very "scannable" view of areas of interest.  The classifications are helpful to recognize the resources, and each resource's Story Point effort is displayed next to the resource.
 
-## 5.2 Resource Views
+## Resource Views
 
-[Previous Page: 4.0 Extend Windup Rules](4.0-Extend-Windup-Rules)
+[Previous Page: Extend Windup Rules](Extend-Windup-Rules)
 
-[Next Page: 6.0 Coding Windup Rules](6.0-Coding-Windup-Rules)
+[Next Page: Coding Windup Rules](Coding-Windup-Rules)
