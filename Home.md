@@ -9,6 +9,7 @@ Windup 2.0
 * [Rulesets](https://github.com/windup/windup/wiki/Rulesets)
    * [Basic Java](https://github.com/windup/windup/wiki/Ruleset-Java-Basic)
    * [Java EE](https://github.com/windup/windup/wiki/Ruleset-Java-EE)
+   * [Java Decompilation](https://github.com/windup/windup/wiki/Ruleset-Java-Decompilation)
 
 
 
