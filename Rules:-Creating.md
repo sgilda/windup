@@ -1,3 +1,13 @@
+## Accessing the graph variable
+
+## Adding a type to a Vertex (specializing the vertex)
+
+```java
+ JavaClassModel classModel = GraphUtil.addTypeToModel(event.getGraphContext(), frame, JavaClassModel.class);
+```
+
+## Adding a frame
+
 ## Iteration
 
 ```java
