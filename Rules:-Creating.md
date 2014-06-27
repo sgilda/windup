@@ -1,4 +1,4 @@
-## Accessing the graph variable
+## Accessing the Graph reference
 
 ## Adding a type to a Vertex (specializing the vertex)
 
