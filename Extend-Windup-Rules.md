@@ -24,6 +24,6 @@ Want some examples of the things you can do with Windup?  See the Source!  All e
 
 **Ready to write some rules?  Check out [Writing Windup Rules](https://github.com/jboss-windup/windup/wiki/6.0-Coding-Windup-Rules)!**
 
-[Previous Page: 3.0 Execute Windup](3.0-Execute-Windup)
+[Previous Page: Execute Windup](Execute-Windup)
 
-[Next Page: 5.0 Reviewing Windup Report](5.0-Reviewing-the-Report)
+[Next Page: Reviewing Windup Report](Reviewing-the-Report)
