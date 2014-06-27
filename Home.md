@@ -7,9 +7,9 @@ Windup 2.0
 * [Reviewing the Report](https://github.com/windup/windup/wiki/5.0-Reviewing-the-Report)
 * [How to Create New Rules](https://github.com/windup/windup/wiki/6.0-Coding-Windup-Rules)
 * [Rulesets](https://github.com/windup/windup/wiki/Rulesets)
-   * [Basic Java](https://github.com/windup/windup/wiki/Ruleset-Java-Basic)
-   * [Java EE](https://github.com/windup/windup/wiki/Ruleset-Java-EE)
-   * [Java Decompilation](https://github.com/windup/windup/wiki/Ruleset-Java-Decompilation)
+   * [Basic Java](https://github.com/windup/windup/wiki/Ruleset:-Java-Basic)
+   * [Java EE](https://github.com/windup/windup/wiki/Ruleset:-Java-EE)
+   * [Java Decompilation](https://github.com/windup/windup/wiki/Ruleset:-Java-Decompilation)
 
 
 
