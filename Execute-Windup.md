@@ -1,21 +1,10 @@
 ## Running Windup
 First, let's talk about what Windup can run against...
 
-Windup can run against both Source projects, and also Compiled projects.  In order to execute against Compiled projects, you are required to have a decompiler installed, and Windup must be able to communicate with the Decompiler.  Since there aren't any open source decompilers that support Java 1.5, Windup does not package a decompiler.  
-
-Want to see Windup with Out of the Box support for EAR, JAR, or WAR files?  Contribute to [Candle Open Source Java Decompiler](https://github.com/bradsdavis/candle-decompiler)!
+Windup can run against both Source projects, and also Compiled projects.
 
 ### Source Projects
 There are no prerequisites to run against Source Projects.  Just make sure to include the command line argument `-source true` and point the `-input` parameter at the directory containing your source!  Make sure to include an `output` directory for the Windup Report! 
-
-### Compiled Projects
-Running Windup against compiled EAR, WAR, and JAR files required a decompiler.  Windup does not include a decompiler with the distribution, since there are no open source decompilers.  However, if you are interested in running against a large number of EAR, WAR, or JAR files, you will need to install one.  Several great command-line capable decompilers include: 
-
-* JAD
-* Fernflower
-
-Out of the box, if you include JAD on the system path, Windup will execute JAD for decompilation.
-
 
 
 ## Command Line Arguments
