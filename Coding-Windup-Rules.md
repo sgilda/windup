@@ -11,8 +11,8 @@ Classifications are displayed both at the 10,000 foot view, main report and also
 
 Out of the box, it is **very** simple to add classifications for Java and XML files.  The Windup team has found that this covers a large majority of JEE application resources.  View the documents below for more information on adding rules for:
 
-* [Java Classifications](https://github.com/jboss-windup/windup/wiki/6.1-Java-Classification)
-* [XML Classifications](https://github.com/jboss-windup/windup/wiki/6.3-XML-Classification)
+* [Java Classifications](...)
+* [XML Classifications](...)
 
 ### Inline Hints
 Windup takes the approach of profiling resources and providing syntactically highlighted resource reports.  The resource report will show the resource with potentially highlighted lines that may contain inline hints to help the developers migrate a piece of code.  
