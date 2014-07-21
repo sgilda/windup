@@ -1,5 +1,9 @@
 ## Accessing the Graph reference
 
+```java
+@Inject GraphContext graph;
+```
+
 ## Adding a type to a Vertex (specializing the vertex)
 
 ```java
