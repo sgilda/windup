@@ -1,8 +1,16 @@
 ## Accessing the Graph reference
 
+Depending on where you "are", either 
+
 ```java
 @Inject GraphContext graph;
 ```
+or call 
+
+```java
+GraphRewrite.getGraphContext()
+```
+
 
 ## Adding a type to a Vertex (specializing the vertex)
 
