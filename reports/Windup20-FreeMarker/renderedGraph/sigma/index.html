@@ -1,0 +1,141 @@
+<html>
+
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script src="../../resources/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="../../resources/js/sigma.min.js" type="text/javascript"></script>
+<script src="../../resources/js/sigma.gexf.js" type="text/javascript"></script>
+
+
+<style>
+div#sigma-display {
+	height: 400px;
+	border: 1px solid #CCC;
+}
+</style>
+
+</head>
+
+<body>
+
+	
+<div id="sigma-display"></div>
+	
+<script type="text/javascript">
+	
+	$(function () {
+	        var doc = $("#sigma-display")[0];
+				  // Instanciate sigma.js and customize rendering :
+			var sigInst = sigma.init(doc).drawingProperties({
+			  defaultLabelColor: '#fff',
+			  defaultLabelSize: 14,
+			  defaultLabelBGColor: '#fff',
+			  defaultLabelHoverColor: '#000',
+			  labelThreshold: 6,
+			  defaultEdgeType: 'curve'
+			}).graphProperties({
+			  minNodeSize: 0.5,
+			  maxNodeSize: 5,
+			  minEdgeSize: 1,
+			  maxEdgeSize: 1,
+			  sideMargin: 50
+			}).mouseProperties({
+			  maxRatio: 32
+			});
+
+			
+			// Parse a GEXF encoded file to fill the graph
+			// (requires "sigma.parseGexf.js" to be included)
+			var xml = $("#gexf-source").text();
+			var xmlDom = $.parseXML(xml);
+				  
+			sigInst.parseGexf(xmlDom);
+				 
+			// Draw the graph :
+			sigInst.draw();
+		});
+
+	
+		</script>
+
+
+	<script id="gexf-source" type="text/xml">
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2">
+<graph defaultedgetype="directed" mode="static">
+<nodes>
+<node id="68" label="v[68]"></node>
+<node id="72" label="v[72]"></node>
+<node id="76" label="v[76]"></node>
+<node id="80" label="v[80]"></node>
+<node id="84" label="v[84]"></node>
+<node id="88" label="v[88]"></node>
+<node id="4" label="v[4]"></node>
+<node id="8" label="v[8]"></node>
+<node id="12" label="v[12]"></node>
+<node id="16" label="v[16]"></node>
+<node id="20" label="v[20]"></node>
+<node id="24" label="v[24]"></node>
+<node id="28" label="v[28]"></node>
+<node id="32" label="v[32]"></node>
+<node id="36" label="v[36]"></node>
+<node id="40" label="v[40]"></node>
+<node id="44" label="v[44]"></node>
+<node id="48" label="v[48]"></node>
+<node id="52" label="v[52]"></node>
+<node id="56" label="v[56]"></node>
+<node id="60" label="v[60]"></node>
+<node id="64" label="v[64]"></node>
+</nodes>
+<edges>
+<edge id="1057337" source="68" target="44"></edge>
+<edge id="1108543" source="72" target="44"></edge>
+<edge id="1111705" source="76" target="44"></edge>
+<edge id="1331575" source="80" target="56"></edge>
+<edge id="1433997" source="88" target="80"></edge>
+<edge id="527263" source="4" target="8"></edge>
+<edge id="551387" source="4" target="12"></edge>
+<edge id="892133" source="8" target="56"></edge>
+<edge id="608545" source="16" target="8"></edge>
+<edge id="898131" source="16" target="56"></edge>
+<edge id="611529" source="20" target="16"></edge>
+<edge id="901107" source="20" target="56"></edge>
+<edge id="614513" source="24" target="20"></edge>
+<edge id="904083" source="24" target="56"></edge>
+<edge id="617497" source="28" target="24"></edge>
+<edge id="907059" source="28" target="56"></edge>
+<edge id="620481" source="32" target="28"></edge>
+<edge id="910035" source="32" target="56"></edge>
+<edge id="623465" source="36" target="32"></edge>
+<edge id="913011" source="36" target="56"></edge>
+<edge id="626449" source="40" target="36"></edge>
+<edge id="915987" source="40" target="56"></edge>
+<edge id="629433" source="44" target="40"></edge>
+<edge id="918963" source="44" target="56"></edge>
+<edge id="1063619" source="44" target="68"></edge>
+<edge id="632417" source="48" target="8"></edge>
+<edge id="656543" source="48" target="52"></edge>
+<edge id="921939" source="48" target="56"></edge>
+<edge id="758963" source="56" target="48"></edge>
+<edge id="903683" source="56" target="64"></edge>
+<edge id="951973" source="56" target="48"></edge>
+<edge id="951969" source="56" target="44"></edge>
+<edge id="951965" source="56" target="40"></edge>
+<edge id="951961" source="56" target="36"></edge>
+<edge id="951957" source="56" target="32"></edge>
+<edge id="951953" source="56" target="28"></edge>
+<edge id="951949" source="56" target="24"></edge>
+<edge id="951945" source="56" target="20"></edge>
+<edge id="951941" source="56" target="16"></edge>
+<edge id="951911" source="56" target="8"></edge>
+<edge id="976025" source="56" target="8"></edge>
+<edge id="885513" source="64" target="60"></edge>
+</edges>
+</graph>
+</gexf>
+</script>
+
+</body>
+
+
+</html>

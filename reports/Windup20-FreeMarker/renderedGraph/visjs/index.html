@@ -1,0 +1,108 @@
+<html>
+
+
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script src="../../resources/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="../../resources/js/viz.js" type="text/javascript"></script>
+
+<style>
+div#vizjs-display {
+	overflow: auto;
+	text-align: center;
+}
+</style>
+
+
+</head>
+
+<body>
+
+	
+<p>This is text before.</p>
+	
+<div id="vizjs-display"></div>
+	
+<p>This is text after.</p>
+	
+<script type="text/javascript">
+
+		$(function () {
+			var dotSource = $("#dot-source").text();
+			var svgGraph = Viz(dotSource, "svg");
+			$("#vizjs-display").append(svgGraph);
+		});
+		
+	</script>
+
+	<script id="dot-source" type="text/vnd.graphviz">digraph G{
+ 	68[label = "v[68]", fontsize = "8pt"];
+ 	72[label = "v[72]", fontsize = "8pt"];
+ 	76[label = "v[76]", fontsize = "8pt"];
+ 	80[label = "v[80]", fontsize = "8pt"];
+ 	84[label = "v[84]", fontsize = "8pt"];
+ 	88[label = "v[88]", fontsize = "8pt"];
+ 	4[label = "v[4]", fontsize = "8pt"];
+ 	8[label = "v[8]", fontsize = "8pt"];
+ 	12[label = "v[12]", fontsize = "8pt"];
+ 	16[label = "v[16]", fontsize = "8pt"];
+ 	20[label = "v[20]", fontsize = "8pt"];
+ 	24[label = "v[24]", fontsize = "8pt"];
+ 	28[label = "v[28]", fontsize = "8pt"];
+ 	32[label = "v[32]", fontsize = "8pt"];
+ 	36[label = "v[36]", fontsize = "8pt"];
+ 	40[label = "v[40]", fontsize = "8pt"];
+ 	44[label = "v[44]", fontsize = "8pt"];
+ 	48[label = "v[48]", fontsize = "8pt"];
+ 	52[label = "v[52]", fontsize = "8pt"];
+ 	56[label = "v[56]", fontsize = "8pt"];
+ 	60[label = "v[60]", fontsize = "8pt"];
+ 	64[label = "v[64]", fontsize = "8pt"];
+68->44[label="id", fontsize="8pt"];
+72->44[label="id", fontsize="8pt"];
+76->44[label="id", fontsize="8pt"];
+80->56[label="id", fontsize="8pt"];
+88->80[label="id", fontsize="8pt"];
+4->8[label="id", fontsize="8pt"];
+4->12[label="id", fontsize="8pt"];
+8->56[label="id", fontsize="8pt"];
+16->8[label="id", fontsize="8pt"];
+16->56[label="id", fontsize="8pt"];
+20->16[label="id", fontsize="8pt"];
+20->56[label="id", fontsize="8pt"];
+24->20[label="id", fontsize="8pt"];
+24->56[label="id", fontsize="8pt"];
+28->24[label="id", fontsize="8pt"];
+28->56[label="id", fontsize="8pt"];
+32->28[label="id", fontsize="8pt"];
+32->56[label="id", fontsize="8pt"];
+36->32[label="id", fontsize="8pt"];
+36->56[label="id", fontsize="8pt"];
+40->36[label="id", fontsize="8pt"];
+40->56[label="id", fontsize="8pt"];
+44->40[label="id", fontsize="8pt"];
+44->56[label="id", fontsize="8pt"];
+44->68[label="id", fontsize="8pt"];
+48->8[label="id", fontsize="8pt"];
+48->52[label="id", fontsize="8pt"];
+48->56[label="id", fontsize="8pt"];
+56->48[label="id", fontsize="8pt"];
+56->64[label="id", fontsize="8pt"];
+56->48[label="id", fontsize="8pt"];
+56->44[label="id", fontsize="8pt"];
+56->40[label="id", fontsize="8pt"];
+56->36[label="id", fontsize="8pt"];
+56->32[label="id", fontsize="8pt"];
+56->28[label="id", fontsize="8pt"];
+56->24[label="id", fontsize="8pt"];
+56->20[label="id", fontsize="8pt"];
+56->16[label="id", fontsize="8pt"];
+56->8[label="id", fontsize="8pt"];
+56->8[label="id", fontsize="8pt"];
+64->60[label="id", fontsize="8pt"];
+}</script>
+
+</body>
+
+</html>
