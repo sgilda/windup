@@ -1,4 +1,4 @@
-The {{Variables}} class keeps the variables which are available in rules, EL expressions and FreeMarker and XSLT templates.
+The `Variables` class keeps the variables which are available in rules, EL expressions and FreeMarker and XSLT templates.
 
 # Accessing variables
 
