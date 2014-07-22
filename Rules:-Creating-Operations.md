@@ -13,3 +13,7 @@ public class FooOperation extends GraphOperation
     }
 }
 ````
+
+Existing operations:
+
+![Existing operations](img/GraphOperationSubtypes.png)
