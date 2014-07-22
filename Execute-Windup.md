@@ -9,33 +9,7 @@ There are no prerequisites to run against Source Projects.  Just make sure to in
 
 ## Command Line Arguments
 
-* From the command line:  `java -jar windup-cli.jar`
 
-### Required Arguments
-<table>
-<tr><th>Command Line Argument</th><th>Description</th></tr>
-
-</table>
-
-### Optional Arguments
-<table>
-<tr><th>Command Line Argument</th><th>Description</th></tr>
-
-</table>
-
-## Examples:
-
-### Running Windup On Compiled Projects
-
-```
-TODO
-```
-
-**Single Run:** The following will run Windup against the specific Zip following the "-input", and the report will be output in the "-output" directory.
-
-```
-TODO
-```
 
 ## Testing New Rules:
 ======================
