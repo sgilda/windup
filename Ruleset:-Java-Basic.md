@@ -1,12 +1,12 @@
 This is an example page. Content serves for design decision.
 
-# Rules
+## Rules
 
-## Maven Project analysis
+### Maven Project analysis
 
 Tags: maven, project
 
-## Seam 2.0 to CDI
+### Seam 2.0 to CDI
 
 Tags: seam, cdi, app
 
