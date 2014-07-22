@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" id="WebApp_ID">
+  <display-name>RecordCreationFacadeServiceWebApp</display-name>
+  <servlet>
+    <servlet-name>ServiceRegistryServlet</servlet-name>
+    <servlet-class>com.bea.medrec.facade.broker.jaxrpc.ServiceRegistryServlet</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>RecordCreationFacadeServiceServlethttp</servlet-name>
+    <servlet-class>com.bea.medrec.facade.broker.jaxrpc.JaxRpcRecordCreationFacadeBroker</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecordCreationFacadeServiceServlethttp</servlet-name>
+    <url-pattern>/JaxRpcRecordCreationFacadeBroker</url-pattern>
+  </servlet-mapping>
+</web-app>

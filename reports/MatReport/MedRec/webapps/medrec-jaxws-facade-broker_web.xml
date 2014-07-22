@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+  <display-name>PatientFacadeServiceWebApp</display-name>
+  <servlet>
+    <servlet-name>PatientFacadeServiceServlethttp</servlet-name>
+    <servlet-class>com.bea.medrec.facade.broker.jaxws.JaxWsPatientFacadeBroker</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>PhysicianFacadeServiceServlethttp</servlet-name>
+    <servlet-class>com.bea.medrec.facade.broker.jaxws.JaxWsPhysicianFacadeBroker</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>RecordFacadeServiceServlethttp</servlet-name>
+    <servlet-class>com.bea.medrec.facade.broker.jaxws.JaxWsRecordFacadeBroker</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientFacadeServiceServlethttp</servlet-name>
+    <url-pattern>/PatientFacadeService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PhysicianFacadeServiceServlethttp</servlet-name>
+    <url-pattern>/PhysicianFacadeService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RecordFacadeServiceServlethttp</servlet-name>
+    <url-pattern>/RecordFacadeService</url-pattern>
+  </servlet-mapping>
+</web-app>
