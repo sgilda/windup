@@ -11,4 +11,4 @@ To store a list of strings in a single vertex'es properties.
 The keys will be 0, 1, 2, 3, ...
 
 ## List<WindupVertexFrame> 
-`WindupVertexListModel`
+`WindupVertexListModel` offers a generic model for lists of other models, which are stored as adjacent vertices.
