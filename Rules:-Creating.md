@@ -19,9 +19,9 @@ graph.getFramed();
 ### Other frequent injectables
 
 ```java
-    @Injectprivate GraphTypeManager graphTypeManager;    
+    @Inject private GraphTypeManager graphTypeManager;    
     @Inject private GraphContext graph;
-    @Inject Furnace furnace;
+    @Inject private Furnace furnace;
 ```
 
 ### Adding a type to a Vertex (specializing the vertex)
