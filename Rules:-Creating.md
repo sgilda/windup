@@ -10,6 +10,11 @@ or call
 ```java
 GraphRewrite.getGraphContext()
 ```
+To get Frames:
+
+```java
+graph.getFramed();
+```
 
 
 ## Adding a type to a Vertex (specializing the vertex)
@@ -18,7 +23,10 @@ GraphRewrite.getGraphContext()
  JavaClassModel classModel = GraphUtil.addTypeToModel(event.getGraphContext(), frame, JavaClassModel.class);
 ```
 
-## Adding a frame
+## Adding a Frame
+```java
+graph.getFramed().addVertex(null, FooModel.class);
+```
 
 ## Iteration
 
