@@ -1,4 +1,4 @@
-## Accessing the Graph reference
+### Accessing the Graph reference
 
 Depending on where you "are", either 
 
@@ -16,14 +16,21 @@ To get Frames:
 graph.getFramed();
 ```
 
+### Other frequent injectables
 
-## Adding a type to a Vertex (specializing the vertex)
+```java
+    @Injectprivate GraphTypeManager graphTypeManager;    
+    @Inject private GraphContext graph;
+    @Inject Furnace furnace;
+```
+
+### Adding a type to a Vertex (specializing the vertex)
 
 ```java
  JavaClassModel classModel = GraphUtil.addTypeToModel(event.getGraphContext(), frame, JavaClassModel.class);
 ```
 
-## Adding a Frame
+### Adding a Frame
 ```java
 graph.getFramed().addVertex(null, FooModel.class);
 ```
@@ -33,7 +40,7 @@ graph.getFramed().addVertex(null, FooModel.class);
 Query.find(ApplicationReportModel.class).as(VAR_APPLICATION_REPORTS)
 ```
 
-## Iteration
+### Iteration
 
 ```java
 ConfigurationBuilder.begin().addRule()
@@ -46,7 +53,7 @@ ConfigurationBuilder.begin().addRule()
         Iteration.over("javaFiles").var("javaFile").perform(
 ```
 
-## Nested Iteration
+### Nested Iteration
 
 ```java
 // For all java files...
