@@ -17,6 +17,7 @@ public interface MapMainModel extends WindupVertexFrame
     @AdjacentMap(label = "map") Map<String, MapValueModel> getMap();
 }
 ```
+See the `FrameMapHandlerTest`.
 
 ## List<String> handler. TBD.
 To store a list of strings in a single vertex'es properties.
