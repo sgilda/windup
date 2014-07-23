@@ -28,6 +28,11 @@ graph.getFramed();
 graph.getFramed().addVertex(null, FooModel.class);
 ```
 
+## Querying the graph
+```java
+Query.find(ApplicationReportModel.class).as(VAR_APPLICATION_REPORTS)
+```
+
 ## Iteration
 
 ```java
