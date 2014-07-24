@@ -36,9 +36,18 @@ graph.getFramed().addVertex(null, FooModel.class);
 ```
 
 ## Querying the graph
+
+There are several ways - including Query API, Gremlin support, or GraphService methods.
 ```java
 Query.find(ApplicationReportModel.class).as(VAR_APPLICATION_REPORTS)
 ```
+```java
+FooModel foo = new GraphService<>(graphContext, FooModel.class).getUnique();
+```
+```java
+FooModel foo = new GraphService<>(graphContext, FooModel.class).getUniqueByProperty("size", 1);
+```
+
 
 ### Iteration
 
