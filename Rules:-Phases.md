@@ -2,7 +2,7 @@ Each rule specifies when it should be executed, by overriding `WindupRuleProvide
 
 ## Phases
 
-For graphical explanation of what happens when, see ![this](https://lh3.google.com/iBiXUSdawIDviNT7rVtgfNh9EgQKXQy9TyHCj2eEulLc5kTe6zvnSVGrE7klWnb3YOMIqRyBU3awvoqrOKCKE2YAq9lABpQ7=w1413-h963)
+For graphical explanation of what happens when, see [this diagram](https://docs.google.com/drawings/d/1IMnds3Qu8Wwcf7_mr7NJ9a3YgtcGJ7dejl09EhWl7Vc/edit).
 
 ![dwq](https://lh3.google.com/iBiXUSdawIDviNT7rVtgfNh9EgQKXQy9TyHCj2eEulLc5kTe6zvnSVGrE7klWnb3YOMIqRyBU3awvoqrOKCKE2YAq9lABpQ7=w1413-h963)
 
