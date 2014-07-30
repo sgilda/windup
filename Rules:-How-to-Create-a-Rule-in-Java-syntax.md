@@ -16,7 +16,7 @@ Like there's ORM (like JPA) for JDBC, TinkerPop's BluePrints has [Frames](https:
 
 We use this concept heavily. Each ruleset will likely have it's own models. (But you can opt to use Blueprints API if you like).
 
-For the list of existing models, see [Existing Models](Existing-Models).
+See also the list of [existing models](Existing-Models).
 
 ## Rule code structure
 
