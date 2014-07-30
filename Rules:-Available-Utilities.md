@@ -9,6 +9,7 @@ or call
 
 ```java
 GraphRewrite.getGraphContext()
+GraphService.getConfigurationModel( event.getGraphContext() );
 ```
 To get Frames:
 
