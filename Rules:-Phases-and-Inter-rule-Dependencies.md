@@ -1,8 +1,19 @@
-Each rule specifies when it should be executed, by overriding `WindupRuleProvider.getPhase()`.
+# Lifecycle
+
+Windup executes rules in "single thread" - i.e. one by one, ordered by 1) Phases 2) Dependencies.
+
+## Dependencies
+Each rule may declare that it depends on other rules. That means, given rule will execute after all dependent rules will be executed.
+
+TODO: Example of how to declare the dependencies.
 
 ## Phases
 
-For graphical explanation of what happens when, see [this diagram](https://docs.google.com/drawings/d/1IMnds3Qu8Wwcf7_mr7NJ9a3YgtcGJ7dejl09EhWl7Vc/edit).
+Many rules will depend on some obvious dependencies, like, extracting of archives, scanning java files, scanning XML files, etc.
+
+To relieve rule authors from declaring these, they can declare in which phase of the lifecycle the rule should be executed, by overriding `WindupRuleProvider.getPhase()`.
+
+For graphical explanation of what happens when, see [this diagram](https://docs.google.com/drawings/d/1IMnds3Qu8Wwcf7_mr7NJ9a3YgtcGJ7dejl09EhWl7Vc/edit). (This may be a bit desynchronized with actual behavior, but roughly captures the idea.)
 
 
 <dl>
