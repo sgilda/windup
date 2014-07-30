@@ -57,33 +57,16 @@ Again, there are several convenient implementations for constructs like iteratio
     .when(...)
     .perform(
         new AbstractIterationOperation<XmlMetaFacetModel>(XmlMetaFacetModel.class, "xml"){
-            public void perform(GraphRewrite event, EvaluationContext context,
-                            XmlMetaFacetModel xmlFacetModel)
-                {
-                    typeSearchResults.add(xmlFacetModel);
-                    if (xmlRootNames.contains(xmlFacetModel.getRootTagName()))
-                    {
-                        Assert.fail("Tag found multiple times");
-                    }
-                    xmlRootNames.add(xmlFacetModel.getRootTagName());
-                }
-            })
-            .otherwise(new AbstractIterationOperation<XmlMetaFacetModel>(XmlMetaFacetModel.class,
-                        "xml")
+            public void perform(GraphRewrite event, EvaluationContext context, XmlMetaFacetModel xmlFacetModel)
             {
-                @Override
-                public void perform(GraphRewrite event, EvaluationContext context,
-                            XmlMetaFacetModel payload)
-                {
-                    typeSearchResults.add(payload);
-                    if (excludedXmlRootNames.contains(payload.getRootTagName()))
-                    {
-                        Assert.fail("Tag found multiple times");
-                    }
-                    excludedXmlRootNames.add(payload.getRootTagName());
-                }
-            })
-            .endIteration()
+            }
+        })
+    .otherwise(
+        new AbstractIterationOperation<XmlMetaFacetModel>(XmlMetaFacetModel.class, "xml"){
+            public void perform(GraphRewrite event, EvaluationContext context, XmlMetaFacetModel payload)
+                { ... }
+        })
+    .endIteration()
 ```
 
 
