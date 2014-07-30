@@ -2,7 +2,6 @@ Windup rules are, at the base, built on top of a Java API (which is based on the
 They resemble natural english sentences.
 
 ## Concepts & philosophy
-TBD; In short:
 
 Windup is Rule-based. Users are able to write own rules according to their needs, constructs in their applications, custom APIs used, etc.
 
