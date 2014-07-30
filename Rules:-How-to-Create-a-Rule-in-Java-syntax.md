@@ -8,7 +8,7 @@ Windup is Rule-based. Users are able to write own rules according to their needs
 
 The individual rules should be decoupled, only expressing dependencies on each other, and "communicate" through the graph. Each rule will query the graph database, use the results for locating the candidates of it's interests, process them, and then write the results to the graph database.
 
-## Graph database and Models (Frames)
+### Graph database and Models (Frames)
 
 As a graph db implementation, we use [TinkerPop](http://tinkerpop.com/) backed by [Titan](http://thinkaurelius.github.io/titan/) backed by BerkeleyDB.
 For explanation of graph database concepts, see [Titan](https://github.com/thinkaurelius/titan/wiki/Beginner%27s-Guide).
@@ -49,20 +49,22 @@ Each rule must specify by `getPhase()` in which Windup lifecycle phase it should
 
 Rules consist of the _when_ part, the _perform_, the _otherwise_ part, and some others, all of which are optional.
 
-## .when()
+### .when()
 In the `.when()` part, the rule typically queries the graph, using the `Query` API.
 Results of the query are put on variables stack (`Variables`), many times indirectly through the querying API.
 
 Other way to fill a when part is subclassing the `GraphCondition`. Actually, `Query` also implements it, and is only a convenient way to create a condition.
 
-## .perform()
+Last noticable but important feature is the ability to use [Gremlin](https://github.com/tinkerpop/gremlin/wiki) queries. See [Gremlin docs](http://gremlindocs.com/) for reference manual.
+
+### .perform()
 In the `.perform()` part, the rule typically scans the items of interest (Java files, XML files, querying services, ...), processes them, and writes the findings into the graph.
 
 For that, various operations are available. These are subclasses of `GraphOperation`.
 You can also implement your own. See [Rules: Operations](Rules:-Operations) for more info.
 Again, there are several convenient implementations for constructs like iteration (`Iteration`).
 
-### Iteration
+#### Iteration
 ```java
 .perform(
     Iteration.over(XmlMetaFacetModel.class, "xmlModels").as("xml")
@@ -82,6 +84,6 @@ Again, there are several convenient implementations for constructs like iteratio
 ```
 
 
-## `.otherwise()` et al.
+### `.otherwise()` et al.
 Windup rules inherit the rule constructs from OCP Rewrite.
 For example, `.otherwise()` Gives you a chance to perform something in case the conditions in `.when()` return false (e.g. they do not match anything). For more information, see [OCP Rewrite web](http://ocpsoft.org/rewrite/).
