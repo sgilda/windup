@@ -88,3 +88,6 @@ Again, there are several convenient implementations for constructs like iteratio
 ### `.otherwise()` et al.
 Windup rules inherit the rule constructs from OCP Rewrite.
 For example, `.otherwise()` Gives you a chance to perform something in case the conditions in `.when()` return false (e.g. they do not match anything). For more information, see [OCP Rewrite web](http://ocpsoft.org/rewrite/).
+
+## Available utilities
+For a list of what key services and constructs can be used in the rule, see [Rules: Available Utilities](Rules:-Available-Utilities).
