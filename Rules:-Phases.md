@@ -2,6 +2,8 @@ Each rule specifies when it should be executed, by overriding `WindupRuleProvide
 
 ## Phases
 
+For graphical explanation of what happens when, see ![this](https://lh3.google.com/iBiXUSdawIDviNT7rVtgfNh9EgQKXQy9TyHCj2eEulLc5kTe6zvnSVGrE7klWnb3YOMIqRyBU3awvoqrOKCKE2YAq9lABpQ7=w1413-h963)
+
 <dl>
 <dt>DISCOVERY
 <dd>Called during resource discovery
