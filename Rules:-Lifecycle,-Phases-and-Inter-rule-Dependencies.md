@@ -48,3 +48,5 @@ For graphical explanation of what happens when, see [this diagram](https://docs.
 <dd>     Clean up resources and close streams.
 
 </dl>
+
+Additionally, there are PRE_ and POST_ phases around each phases above.
