@@ -2,7 +2,7 @@ Windup rules are, at the base, built on top of a Java API (which is based on the
 They resemble natural english sentences.
 
 ## Concepts & philosophy
-
+TBD
 
 
 ## Rule code structure
