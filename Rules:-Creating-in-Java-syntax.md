@@ -20,6 +20,9 @@ See also the list of [existing models](Existing-Models).
 
 ## Rule code structure
 
+Rules are based on OCP Rewrite. That is a framework for events processing, like HTTP requests redirects.
+Although, Windup has only one event, which spans across the whole lifecycle.
+
 ```java
 public class ExampleRuleProvider extends WindupRuleProvider
 {
