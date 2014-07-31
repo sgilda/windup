@@ -32,6 +32,11 @@ graph.getFramed();
 ```
 
 ### Adding a Frame
+To add a frame, a more preferred way is to use the GraphService.
+```java
+new GraphService<FooModel>(graph,FooModel.class).create();
+```
+However, if for some reason the GraphService is not convenient, you can create a vertex directly using graph context.
 ```java
 graph.getFramed().addVertex(null, FooModel.class);
 ```
