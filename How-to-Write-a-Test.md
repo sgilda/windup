@@ -1,7 +1,7 @@
-1) Create an Arquillian test with a `@Deployment` method
+1. Create an Arquillian test with a `@Deployment` method
    1.1) Add the test classes to the archive
-2) `@Inject GraphContext`
-3) Add all windup addons you'll need
+2. `@Inject GraphContext`
+3. Add all windup addons you'll need
 
 For rules testing, we will have a special harness in the future.
 
