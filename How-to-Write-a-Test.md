@@ -1,5 +1,5 @@
 1. Create an Arquillian test with a `@Deployment` method
-    1.1. Add the test classes to the archive
+    1. Add the test classes to the archive
 2. `@Inject GraphContext`
 3. Add all windup addons you'll need
 
