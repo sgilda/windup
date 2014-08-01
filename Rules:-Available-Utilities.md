@@ -46,7 +46,7 @@ graph.getFramed().addVertex(null, FooModel.class);
 There are several ways - including Query API, Gremlin support, or GraphService methods.
 
 ### Querying inside the when() method of the rule
-Building a rule consists of the method when(),
+Building a rule contains the method when(),
 which is used to create a **condition**. Vertices that fulfill the condition, are passed to the perform() method.
 
 For the queries in the when() method, class Query is used. 
