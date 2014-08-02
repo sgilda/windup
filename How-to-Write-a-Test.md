@@ -34,3 +34,77 @@ public class MapInPropertiesTest
         ....
     }
 }
+```
+
+A test which builds it's own runtime environment:
+```java
+@RunWith(Arquillian.class)
+public class FreeMarkerIterationOperationTest extends AbstractTestCase
+{
+
+    @Deployment
+    @Dependencies({
+                @AddonDependency(name = "org.jboss.windup.config:windup-config"),
+                @AddonDependency(name = "org.jboss.windup.graph:windup-graph"),
+                @AddonDependency(name = "org.jboss.windup.reporting:windup-reporting"),
+                @AddonDependency(name = "org.jboss.forge.furnace.container:cdi")
+    })
+    public static ForgeArchive getDeployment()
+    {
+        ForgeArchive archive = ShrinkWrap.create(ForgeArchive.class)
+                    .addBeansXML()
+                    .addClass(AbstractTestCase.class)
+                    .addClass(FreeMarkerOperationRuleProvider.class)
+                    .addAsResource(new File("src/test/resources/reports"))
+                    .addAsAddonDependencies(
+                                AddonDependencyEntry.create("org.jboss.windup.config:windup-config"),
+                                AddonDependencyEntry.create("org.jboss.windup.graph:windup-graph"),
+                                AddonDependencyEntry.create("org.jboss.windup.reporting:windup-reporting"),
+                                AddonDependencyEntry.create("org.jboss.forge.furnace.container:cdi")
+                    );
+        return archive;
+    }
+
+    @Inject
+    private GraphContext context;
+    @Inject
+    private FreeMarkerOperationRuleProvider provider;
+
+    private Path tempFolder;
+
+    @Test
+    public void testApplicationReportFreemarker() throws Exception
+    {
+        GraphRewrite event = new GraphRewrite(context);
+        DefaultEvaluationContext evaluationContext = createEvalContext(event);
+        fillData(context);
+
+        Configuration configuration = provider.getConfiguration(context);
+
+        RuleSubset.evaluate(configuration).perform(event, evaluationContext);
+
+        Path outputFile = tempFolder.resolve(provider.getOutputFilename());
+        String results = FileUtils.readFileToString(outputFile.toFile());
+        Assert.assertEquals("Test freemarker report", results);
+    }
+
+    private void fillData(final GraphContext context) throws Exception
+    {
+        WindupConfigurationModel cfgModel = context.getFramed().addVertex(null, WindupConfigurationModel.class);
+        ...
+
+        ApplicationReportModel appReportModel = context.getFramed().addVertex(null, ApplicationReportModel.class);
+        ...
+    }
+
+    private DefaultEvaluationContext createEvalContext(GraphRewrite event)
+    {
+        final Variables varStack = Variables.instance(event);
+        final DefaultEvaluationContext evaluationContext = new DefaultEvaluationContext();
+        final DefaultParameterValueStore values = new DefaultParameterValueStore();
+        evaluationContext.put(ParameterValueStore.class, values);
+        event.getRewriteContext().put(Variables.class, varStack);
+        return evaluationContext;
+    }
+}
+```
