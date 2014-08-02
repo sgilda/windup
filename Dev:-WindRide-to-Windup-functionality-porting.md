@@ -13,3 +13,4 @@ DeploymentInfo = ApplicationModel
   * ComparisonResult
   * FileHashComparer
 * IMigrationAction
+* ServerMigrationReportJaxb
