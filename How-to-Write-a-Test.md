@@ -108,3 +108,15 @@ public class FreeMarkerIterationOperationTest extends AbstractTestCase
     }
 }
 ```
+
+
+TBD:
+
+```java
+            Query.find(FileModel.class).piped( new QueryGremlinCriterion() {
+                @Override
+                public void query( GraphRewrite event, GremlinPipeline<Vertex, Vertex> pipeline ) {
+                    pipeline...
+                }
+            })
+```
