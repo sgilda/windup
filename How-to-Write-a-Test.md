@@ -120,3 +120,8 @@ TBD:
                 }
             })
 ```
+
+Testing a subset of rules:
+
+See https://github.com/lincolnthree/windup/tree/WINDUP-133/rules/app/java/src/test/java/org/jboss/windup/rules/java
+(TBD)
