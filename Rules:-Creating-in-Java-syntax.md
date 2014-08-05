@@ -37,6 +37,7 @@ public class ExampleRuleProvider extends WindupRuleProvider
         return ConfigurationBuilder.begin()
         .addRule()
         .when(
+            // Some implementation of GraphCondition.
             Query.find(...)....
         )
        .perform(
