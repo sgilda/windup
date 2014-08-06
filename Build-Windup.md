@@ -21,7 +21,7 @@ To build the project, you need a patch that is not yet available upstream. Follo
             git clone https://github.com/YOUR_USERNAME/windup.git
    * Fetch and add the upstream repository
 
-            git remote add -f upstream https://github.com/windup/windup.git
+            git remote add -f upstream git@github.com:windup/windup.git
    * Checkout a local copy of the branch.
 
             git checkout -b BRANCH_NAME upstream/master
