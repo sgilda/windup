@@ -1,6 +1,6 @@
 ## Building Windup
 
-To build the project, you need a patch that is not yet available upstream. Use the following steps to build the project.
+To build the project, you need a patch that is not yet available upstream. Follow these steps to build the project.
 
 1. Configure Maven to use the <http://repository.jboss.org/nexus/content/groups/public/> repository.
 2. Create a local copy of the **frames** project
