@@ -3,6 +3,41 @@
 To build the project, you need a patch that is not yet available upstream. Follow these steps to build the project.
 
 1. Configure Maven to use the <http://repository.jboss.org/nexus/content/groups/public/> repository.
+   * Open your `${user.home}/.m2/settings.xml` file for editing.
+   * To add the `jboss-nexus-repository` profile, copy the following XML prior to the ending `</profiles>` element.
+
+            <profile>
+              <id>jboss-nexus-repository</id>
+              <repositories>
+                <repository>
+                  <id>jboss-nexus-repository</id>
+                  <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+                  <releases>
+                    <enabled>true</enabled>
+                  </releases>
+                  <snapshots>
+                    <enabled>false</enabled>
+                  </snapshots>
+                </repository>
+              </repositories>
+              <pluginRepositories>
+                <pluginRepository>
+                  <id>jboss-nexus-plugin-repository</id>
+                  <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+                  <releases>
+                    <enabled>true</enabled>
+                  </releases>
+                  <snapshots>
+                    <enabled>false</enabled>
+                  </snapshots>
+                </pluginRepository>
+              </pluginRepositories>
+            </profile>
+
+   * To make the profile active, copy the following XML prior to the ending `</activeprofiles>` element.
+
+            <activeProfile>jboss-nexus-repository</activeProfile> 
+
 2. Create a local copy of the **frames** project.
    * Clone the project to your local drive.
  
