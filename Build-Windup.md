@@ -7,7 +7,10 @@ To build the project, you need a patch that is not yet available upstream. Follo
    * Clone the project to your local drive.
  
             git clone https://github.com/jsight/frames
-   * Check out the **classloaderresolver** branch.
+   * Navigate to the newly created `frames/` directory.
+
+            cd frames/
+   *Check out the **classloaderresolver** branch.
 
             git checkout -b classloaderresolver origin/classloaderresolver
    * Build the project.
@@ -19,6 +22,9 @@ To build the project, you need a patch that is not yet available upstream. Follo
    * Clone your fork to your local drive.
 
             git clone https://github.com/YOUR_USERNAME/windup.git
+   * Navigate to the newly created `windup/` directory.
+
+            cd windup/
    * Fetch and add the upstream repository
 
             git remote add -f upstream git@github.com:windup/windup.git
