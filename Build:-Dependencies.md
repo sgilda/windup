@@ -1,4 +1,4 @@
-_Based on [this|https://github.com/OndraZizka/windup/commit/3574e81900cbad2b3a83d0bd6c263eb22c48e55e] discussion._
+_Based on [this](https://github.com/OndraZizka/windup/commit/3574e81900cbad2b3a83d0bd6c263eb22c48e55e) discussion._
 
 Typical structure of an addon maven modules:
 ```
