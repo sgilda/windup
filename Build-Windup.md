@@ -1,4 +1,4 @@
-## Building Windup
+## Build Windup
 
 To build the project, you need a patch that is not yet available upstream. Follow these steps to build the project.
 
