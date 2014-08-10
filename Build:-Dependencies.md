@@ -1,5 +1,6 @@
 _Based on [this](https://github.com/OndraZizka/windup/commit/3574e81900cbad2b3a83d0bd6c263eb22c48e55e) discussion._
 
+## Addon structure
 Typical structure of an addon maven modules:
 ```
 myaddon-parent
@@ -20,7 +21,7 @@ These must have `<scope>provided</scope>`.
 </dependency>
 ```
 
-The `addon` poms may also declare dependency on normal maven artifacts.
+The `addon` POMs may also declare dependency on normal maven artifacts.
 ```xml
 <dependency>
     <groupId>com.thinkaurelius.titan</groupId>
@@ -28,9 +29,12 @@ The `addon` poms may also declare dependency on normal maven artifacts.
     <version>${version.titangraph.lucene}</version>
 </dependency>
 ```
-_One more question regrading dependencies. Is it advisable to depend on the `forge-addon` pom from addon's subparts?_
+_One more question regrading dependencies. Is it advisable to depend on the `forge-addon` artifact from addon's subparts?_
 
-Addon sub-parts declare dependency preferably on forge addons, but may depend on it's particular part, e.g. `api`. The latter makes keeping the code decoupled easier.
+
+## Addon sub-parts
+
+Addon sub-parts declare dependency preferably on forge addons, 
 ```xml
 <dependency>
     <groupId>org.jboss.forge.furnace.container</groupId>
@@ -39,7 +43,7 @@ Addon sub-parts declare dependency preferably on forge addons, but may depend on
     <scope>provided</scope>
 </dependency>
 ```
-or
+but may instead depend on it's particular part, e.g. `api`. The latter makes keeping the code decoupled easier. However, the addon dependency still needs to be declared in the depending addon's POM.
 ```xml
 <dependency>
     <groupId>org.jboss.forge.furnace.container</groupId>
