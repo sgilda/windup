@@ -54,6 +54,11 @@ Declaring a `forge-addon` depencendy anywhere else than the `forge-addon` pom do
 
 Addon's sub-parts may also declare dependencies on other normal maven dependencies.
 
+Unaffiliated note:
+> If an addon depends on API , scope `compile`
+> If an addon depends on Impl , scope `compile` with `<optional>true</optional>`
+
+## Test dependencies
 For test dependencies on addons:
 Both addons and their sub-parts should use `<scope>test</scope>`. ???
 ```xml
@@ -66,7 +71,7 @@ Both addons and their sub-parts should use `<scope>test</scope>`. ???
 </dependency>
 ```
 
-### Dependencies between addon sub-parts
+### Dependencies between same addon sub-parts
 Subpart may declare dependency on other subpart. E.g. `impl` typically depends on `api`.
 In that case, the scope should be `compile`. (or `provided`???)
 ```xml
