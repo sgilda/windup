@@ -1,3 +1,5 @@
+> A simple script I use to bring down a bunch of pull requests into a single branch.[1] I then push that branch to upstream master-ignore.
+
 ```bash
 pull() {
   cmd="git fetch upstream master "
@@ -24,7 +26,10 @@ pull() {
 }
 ```
 
-You don't need to add the remote, just copy the text from Github... it tells you how to do it right in the PR (just click "Use thh command line" to see the instructions)
+
+## Alternative
+
+This is the approach GitHub suggests.
 
 ```
 git checkout -b lincolnthree-WINDUP-133 master
