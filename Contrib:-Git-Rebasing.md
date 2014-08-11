@@ -1,3 +1,29 @@
+```bash
+pull() {
+  cmd="git fetch upstream master "
+  for var in "$@"
+  do
+    cmd="$cmd pull/$var/head:pullRequest$var"
+  done
+
+  $cmd
+
+  git branch -D pulls
+  git checkout master
+  git rebase upstream/master
+  git checkout -b pulls
+
+  for var in "$@"
+    do
+    git checkout pullRequest$var
+    git rebase pulls
+    git checkout pulls
+    git merge pullRequest$var
+    git branch -D pullRequest$var
+  done
+}
+```
+
 You don't need to add the remote, just copy the text from Github... it tells you how to do it right in the PR (just click "Use thh command line" to see the instructions)
 
 ```
