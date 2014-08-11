@@ -1,5 +1,7 @@
 ## Build Windup
 
+### Build Windup Using Maven Command Line
+
 To build the project, you need a patch that is not yet available upstream. Follow these steps to build the project.
 
 1. Configure Maven to use the <http://repository.jboss.org/nexus/content/groups/public/> repository.
@@ -72,3 +74,6 @@ To build the project, you need a patch that is not yet available upstream. Follo
         mvn clean install
 
 Enjoy!
+
+### Build Windup Using Eclipse
+
