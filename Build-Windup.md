@@ -6,13 +6,13 @@ This information is provided for developers who plan to contribute code to the W
 
 1. Java 1.7. You can choose from the following:
 
-    OpenJDK
-    Oracle Java SE
-    Oracle JRockit
+        OpenJDK
+        Oracle Java SE
+        Oracle JRockit
 
-2. Maven 3.1.0 or newer
+2. Maven 3.1.1 or newer
 
-    If you have not yet installed Maven, see Install Maven for details.
+    If you have not yet installed Maven, see [Download and Install Maven](https://github.com/windup/windup/wiki/Download-and-Install-Maven) for details.
 
     If you have installed Maven, you can check the version by typing the following in a command prompt:
 
