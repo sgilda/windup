@@ -4,7 +4,9 @@ This information is provided for developers who plan to contribute code to the W
 
 ### System Requirements to Build Windup
 
-1. Java 1.7. You can choose from the following:
+1. Java 1.7. 
+
+    You can choose from the following:
 
         OpenJDK
         Oracle Java SE
@@ -16,11 +18,14 @@ This information is provided for developers who plan to contribute code to the W
     If you have installed Maven, you can check the version by typing the following in a command prompt:
 
         mvn --version 
-3. If you prefer, you can work within an IDE as long as it provides support for Groovy. The following IDEs are recommended.
+3. IDE requirements
+
+    If you prefer, you can work within an IDE as long as it provides support for Groovy. The following IDEs are recommended.
 
     * [Red Hat JBoss Developer Studio 7.1.1](http://www.jboss.org/products/devstudio/download/) or newer
     * [Eclipse 4.3 (Kepler)](https://www.eclipse.org/downloads/) or newer
 
+    You must also make sure the IDE embeds Maven 3.1.1 or later. See [Install and Configure Maven](https://github.com/windup/windup/wiki/Install-and-Configure-Maven) for details.
 
 ### Build Windup Using Maven Command Line
 
