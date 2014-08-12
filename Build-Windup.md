@@ -22,45 +22,6 @@ This information is provided for developers who plan to contribute code to the W
     * [Red Hat JBoss Developer Studio 7.1.1](http://www.jboss.org/products/devstudio/download/) or newer
     * [Eclipse 4.3 (Kepler)](https://www.eclipse.org/downloads/) or newer
 
-### Configure Maven to Build Windup
-
-To build Windup, you must configure Maven to use the <http://repository.jboss.org/nexus/content/groups/public/> repository.
-
-1. Open your `${user.home}/.m2/settings.xml` file for editing.
-2. Copy the following `jboss-nexus-repository` profile XML prior to the ending `</profiles>` element.
-
-        <profile>
-          <id>jboss-nexus-repository</id>
-          <repositories>
-            <repository>
-              <id>jboss-nexus-repository</id>
-              <url>http://repository.jboss.org/nexus/content/groups/public/</url>
-              <releases>
-                <enabled>true</enabled>
-              </releases>
-              <snapshots>
-                <enabled>false</enabled>
-              </snapshots>
-            </repository>
-          </repositories>
-          <pluginRepositories>
-            <pluginRepository>
-              <id>jboss-nexus-plugin-repository</id>
-              <url>http://repository.jboss.org/nexus/content/groups/public/</url>
-              <releases>
-                <enabled>true</enabled>
-              </releases>
-              <snapshots>
-                <enabled>false</enabled>
-              </snapshots>
-            </pluginRepository>
-          </pluginRepositories>
-        </profile>
-
-3. Copy the following XML prior to the ending `</activeprofiles>` element to make the profile active.
-
-            <activeProfile>jboss-nexus-repository</activeProfile> 
-
 
 ### Build Windup Using Maven Command Line
 
