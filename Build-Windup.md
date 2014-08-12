@@ -69,6 +69,6 @@ To build the project, you need a patch that is not yet available upstream. Follo
 4. In the selection list, choose `Maven` → `Existing Maven Projects`, then click Next. 
 5. Click `Browse` and navigate to the root directory of the Windup project, then click `OK`.
 6. After all projects are listed, click `Next`. Ignore any Maven build or dependency errors and click `Finish`. If you get a dialog titled _Incomplete Maven Goal Execution_, ignore it and click `OK` to continue.
-4. In the Project Explorer tab, find the `windup_parent` project in the list, right-mouse, and choose 'Run As' --> `Maven install`.
+4. In the Project Explorer tab, find the `windup_parent` project in the list, right-mouse, and choose `Run As` --> `Maven install`.
 
 
