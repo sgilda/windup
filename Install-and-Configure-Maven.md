@@ -13,7 +13,7 @@ JBoss Developer Studio 7.1.1 is built upon Eclipse Kepler (4.3), which embeds Ma
 
 1. From the menu, choose `Window` --> `Preferences`.
 2. Expand `Maven` and click on `Installations`.
-3. Uncheck `Embedded (3.0.4/1.4.0.20130531-2315) 
+3. Uncheck `Embedded (3.0.4/1.4.0.20130531-2315)`
 4. Click `Add` and navigate to your Maven install directory. Select it and click `OK`.
 5. Make sure the new external Maven installation is checked and click `OK` to return to JBoss Developer Studio. 
 
