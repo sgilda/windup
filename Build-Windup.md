@@ -17,7 +17,7 @@ This information is provided for developers who plan to contribute code to the W
     If you have installed Maven, you can check the version by typing the following in a command prompt:
 
     mvn --version 
-3. If you prefer, you can work within your preferred IDE if it provides support for Groovy. The following IDEs are recommended.
+3. If you prefer, you can work within an IDE as long as it provides support for Groovy. The following IDEs are recommended.
 
     * [Red Hat JBoss Developer Studio 7.1.1](http://www.jboss.org/products/devstudio/download/) or newer
     * [Eclipse 4.3 (Kepler)](https://www.eclipse.org/downloads/) or newer
