@@ -8,7 +8,6 @@ This information is provided for developers who plan to contribute code to the W
 
         OpenJDK
         Oracle Java SE
-        Oracle JRockit
 
 2. Maven 3.1.1 or newer
 
