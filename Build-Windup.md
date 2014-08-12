@@ -56,18 +56,20 @@ To build the project, you need a patch that is not yet available upstream. Follo
 
             git checkout -b BRANCH_NAME upstream/master
     * Modify the root pom.xml file to replace the com.tinkerpop version `2.6.0-jsight-SNAPSHOT` with your locally installed `2.6.0-SNAPSHOT` frames JAR .
-3. Build the project.
+3. Make sure you have configured Maven as described here: [Install and Configure Maven](https://github.com/windup/windup/wiki/Install-and-Configure-Maven). 
+4. Build the project.
 
         mvn clean install
 
 
-### Build Windup Using Red Hat JBoss Developer Studio 
+### Build Windup Using Red Hat JBoss Developer Studio or Eclipse
 
-1. Start JBoss Developer Studio
-2. From the menu, select `File` → `Import`.
-3. In the selection list, choose `Maven` → `Existing Maven Projects`, then click Next. 
-4. Click `Browse` and navigate to the root directory of the Windup project, then click `OK`.
-5. After all projects are listed, click `Next`. You may see a Maven build dependency warning. Ignore any Maven Build errors and click `Finish`. If you get a dialog titled _Incomplete Maven Goal Execution_, click `OK` to continue.
+1. Make sure you have configured the Maven installation in your IDE as described here: [Install and Configure Maven](https://github.com/windup/windup/wiki/Install-and-Configure-Maven). 
+2. Start JBoss Developer Studio
+3. From the menu, select `File` → `Import`.
+4. In the selection list, choose `Maven` → `Existing Maven Projects`, then click Next. 
+5. Click `Browse` and navigate to the root directory of the Windup project, then click `OK`.
+6. After all projects are listed, click `Next`. Ignore any Maven build or dependency errors and click `Finish`. If you get a dialog titled _Incomplete Maven Goal Execution_, ignore it and click `OK` to continue.
 4. In the Project Explorer tab, find the `windup_parent` project in the list, right-mouse, and choose 'Run As' --> `Maven install`.
 
 
