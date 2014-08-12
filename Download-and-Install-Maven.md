@@ -1,6 +1,6 @@
 ### Download and Install Maven
 
-If you plan to use Eclipse Luna (4.4) to build Windup, you can skip this step. This version of Eclipse embeds Maven 3.2.1 so you do not need to install it separately. 
+If you plan to use Eclipse Luna (4.4) to build Windup, you can skip this step. This version of Eclipse embeds Maven 3.2.1 so you do not need to install it separately. Skip to the section entitled [Configure Maven to Build Windup](https://github.com/windup/windup/wiki/Download-and-Install-Maven#configure-maven-to-build-windup).
 
 If you plan to run Maven using the command line or plan to use Red Hat JBoss Developer Studio 7.1.1 or an older version of Eclipse, you must install Maven 3.1.1. or later. 
 
