@@ -69,7 +69,7 @@ To build the project, you need a patch that is not yet available upstream. Follo
 ### Build Windup Using Red Hat JBoss Developer Studio or Eclipse
 
 1. Make sure you have configured the Maven installation in your IDE as described here: [Install and Configure Maven](https://github.com/windup/windup/wiki/Install-and-Configure-Maven). 
-2. Start JBoss Developer Studio
+2. Start JBoss Developer Studio or Eclipse.
 3. From the menu, select `File` → `Import`.
 4. In the selection list, choose `Maven` → `Existing Maven Projects`, then click Next. 
 5. Click `Browse` and navigate to the root directory of the Windup project, then click `OK`.
