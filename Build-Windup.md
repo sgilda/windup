@@ -100,6 +100,13 @@ To build the project, you need a patch that is not yet available upstream. Follo
         mvn clean install
 
 
-### Build Windup Using Eclipse
+### Build Windup Using Red Hat JBoss Developer Studio 
+
+1. Start JBoss Developer Studio
+2. From the menu, select `File` → `Import`.
+3. In the selection list, choose `Maven` → `Existing Maven Projects`, then click Next. 
+4. Click `Browse` and navigate to the root directory of the Windup project, then click `OK`.
+5. After all projects are listed, click `Next`. You may see a Maven build dependency warning. Ignore any Maven Build errors and click `Finish`. If you get a dialog titled _Incomplete Maven Goal Execution_, click `OK` to continue.
+4. In the Project Explorer tab, find the `windup_parent` project in the list, right-mouse, and choose 'Run As' --> `Maven install`.
 
 
