@@ -17,7 +17,10 @@ This information is provided for developers who plan to contribute code to the W
     If you have installed Maven, you can check the version by typing the following in a command prompt:
 
     mvn --version 
+3. If you prefer to work within an IDE, the following are recommended.
 
+    * Red Hat JBoss Developer Studio 7.1 or newer
+    * Eclipse 4.3 (Kepler) or newer
 
 ### Configure Maven to Build Windup
 
