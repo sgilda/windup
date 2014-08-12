@@ -12,7 +12,7 @@ This information is provided for developers who plan to contribute code to the W
 
 2. Maven 3.1.1 or newer
 
-    If you have not yet installed Maven, see [Download and Install Maven](https://github.com/windup/windup/wiki/Download-and-Install-Maven) for details.
+    If you have not yet installed or configured Maven, see [Install and Configure Maven](https://github.com/windup/windup/wiki/Install-and-Configure-Maven) for details.
 
     If you have installed Maven, you can check the version by typing the following in a command prompt:
 
