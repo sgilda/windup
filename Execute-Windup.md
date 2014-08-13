@@ -43,7 +43,7 @@ Currently, Windup 2.0 is only invoked from tests. Check back later for normal CL
 `JBoss Forge, version [ 2.7.2.Final ] - JBoss, by Red Hat, Inc. [ http://forge.jboss.org ]`
 
 `[wildfly]$ windup-migrate-app`
-`Input (Input File or Directory (a Directory is required for source mode)):  /path/to/inputarchive.war
+`Input (Input File or Directory (a Directory is required for source mode)):  /path/to/inputarchive.war`
 `Output (Output Directory (WARNING: any existing files will be removed)):  /tmp/WindupReport`
 `Scan Java Packages (A list of java package name prefixes to scan (eg, com.myapp)):  com`
 `Scan Java Packages (A list of java package name prefixes to scan (eg, com.myapp)):  `
