@@ -40,15 +40,6 @@ Currently, Windup 2.0 is only invoked from tests. Check back later for normal CL
 
 6. Run Windup:
 
-`Using Forge at /home/jsightler/javadevtools/forge/2.7.2.Final/forge-distribution-2.7.2.Final`
-
-    `_____                    `
-   `|  ___|__  _ __ __ _  ___ `
-   `| |_ / _ \| `__/ _` |/ _ \  \\`
-   `|  _| (_) | | | (_| |  __/  //`
-   `|_|  \___/|_|  \__, |\___| `
-                   `|___/      `
-
 `JBoss Forge, version [ 2.7.2.Final ] - JBoss, by Red Hat, Inc. [ http://forge.jboss.org ]`
 
 `[wildfly]$ windup-migrate-app`
