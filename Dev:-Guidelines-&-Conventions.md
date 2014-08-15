@@ -4,3 +4,8 @@ This project has a source format style documented via an [Eclipse code formatter
 
 * Netbeans: http://plugins.netbeans.org/plugin/50877/eclipse-code-formatter-for-java
 * IntelliJ: http://plugins.jetbrains.com/plugin/?id=6546
+
+### Suffixes and prefixes
+*RuleProvider
+*Model
+Test*
