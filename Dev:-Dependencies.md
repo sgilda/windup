@@ -11,7 +11,7 @@ myaddon-parent
 ```
 
 The `addon` pom can declare dependencies on other `forge-addon`s
-Use `<optional>true</optional> to prevent exporting the addon to dependents.
+Use `&lt;optional>true&lt;/optional> to prevent exporting the addon to dependents.
 ```xml
 <dependency>
     <groupId>org.jboss.forge.furnace.container</groupId>
@@ -22,7 +22,7 @@ Use `<optional>true</optional> to prevent exporting the addon to dependents.
 ```
 
 The `addon` POMs may also declare dependency on normal maven artifacts.
-Use `<optional>true</optional> to prevent exporting the addon to dependents.
+Use `&lt;optional>true&lt;/optional> to prevent exporting the addon to dependents.
 ```xml
 <dependency>
     <groupId>com.thinkaurelius.titan</groupId>
