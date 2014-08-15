@@ -4,7 +4,7 @@ _Based on [this](https://github.com/OndraZizka/windup/commit/3574e81900cbad2b3a8
 Typical structure of an addon maven modules:
 ```
 myaddon-parent
-+--- myaddon, classifier: forge-addon - jar
++--- myaddon - jar, classifier: forge-addon
 +--- myaddon-api - jar
 +--- myaddon-impl - jar
 +--- myaddon-tests - jar
