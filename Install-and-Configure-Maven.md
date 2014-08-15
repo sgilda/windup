@@ -36,7 +36,7 @@ Windup uses artifacts located in the [JBoss Nexus](http://repository.jboss.org/n
                 <enabled>true</enabled>
               </releases>
               <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
               </snapshots>
             </repository>
           </repositories>
@@ -48,7 +48,7 @@ Windup uses artifacts located in the [JBoss Nexus](http://repository.jboss.org/n
                 <enabled>true</enabled>
               </releases>
               <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
               </snapshots>
             </pluginRepository>
           </pluginRepositories>
