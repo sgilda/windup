@@ -16,8 +16,8 @@ TBD.
         <version>${version.windup}</version>
     </parent>
 ```
-** Add Windup dependencies.
-``xml
+** Add Windup dependencies. Should you need any additional ones, refer to [Dev: Dependencies].(Dev:-Dependencies)
+```xml
     <dependencies>
 
         <!-- Windup deps -->
@@ -132,7 +132,9 @@ public class MyJavaHintsRuleProvider extends WindupRuleProvider
 {
 }
 ```
-
+Specify the phase it should run in.
+Windup runs in phases, which essentially ensures that certain groups of rules are executed before this one.
+See [Rules: Phases](Rules:-Phases) for explanation.
 ```java
     @Override
     public RulePhase getPhase() {
@@ -140,13 +142,17 @@ public class MyJavaHintsRuleProvider extends WindupRuleProvider
     }
 ```
 
+For fine-grained control the order in which the rule is executed, specify it's dependencies.
+Again, see [Rules: Phases](Rules:-Phases) for explanation.
 ```java
     @Override
-    public List<Class<? extends WindupRuleProvider>> getClassDependencies()
-    {
+    public List<Class<? extends WindupRuleProvider>> getClassDependencies() {
         return generateDependencies(AnalyzeJavaFilesRuleProvider.class);
     }
 ```
+
+And finally, create the rule itself.
+This is a specific high-level rule which uses hihg-level conditions (`JavaClass`) and operations (`Classification`). See their documentation for the details.
 
 ```java
     // @formatter:off
@@ -177,15 +183,6 @@ public class MyJavaHintsRuleProvider extends WindupRuleProvider
     }
     // @formatter:on
 ```
-
-```java
-    public Set<TypeReferenceModel> getTypeReferences()
-    {
-        return typeReferences;
-    }
-```
-
-
 
 
 ## High-level
