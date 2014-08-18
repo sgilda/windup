@@ -169,20 +169,23 @@ Excuse the formatting, caused by Eclipse formatter, but it's project's requireme
         };
 
         return ConfigurationBuilder.begin()
-            .addRule()
-                    .when(JavaClass.references("org.jboss.forge.furnace.*").at(TypeReferenceLocation.IMPORT).as("refs"))
-                    .perform(Iteration.over("refs").as("ref")
-                                .perform(Classification.of("#{ref.file}").as("Furnace Service")
-                                            .with(Link.to("JBoss Forge", "http://forge.jboss.org")).withEffort(0)
-                                        .and(Hint.in("#{ref.file}").at("ref")
-                                                 .withText("Furnace type references imply that the client code must be run within a Furnace container.")
-                                                 .withEffort(8)
-                                        .and(addTypeRefToList))
-                                ).endIteration()
-                    );
+                    .addRule()
+                     .when(
+                        JavaClass.references("commonj.work.Work").at(TypeReferenceLocation.EXTENDS_TYPE)
+                     )
+                     .perform(
+                        Iteration.over().perform(   
+                           Classification.as("Commonj Work")
+                              .with(Link.to("JBoss JCA WorkManager", "https://access.redhat.com/documentation/en-US/Red_Hat_JBoss_Operations_Network/3.1/html/Dev_Complete_Resource_Reference/JBossAS7-JBossAS7_Standalone_Server-JCA-Workmanager.html"))
+                              .withEffort(0)
+                           .and(Hint.withText("Migrate to JBoss JCA WorkManager").withEffort(8))
+                        )
+                        .endIteration()
+                     )
     }
 ```
 
+For more examples, see the [BaseConfig.java](https://github.com/windup/windup/blob/master/rules/app/java-ee/src/main/java/org/jboss/windup/rules/apps/legacy/java/BaseConfig.java#L53) rule.
 
 ## High-level
 Hints/classifications/iterations stuff
