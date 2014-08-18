@@ -9,7 +9,10 @@ Example page for design decisions. Could be generated automatically in the futur
 
 Besides that, you may use any custom tag.
 
-## Rulesets
+# Rulesets
+
+## Core rulesets
+Rulesets distributed with Windup and maintained by the Windup team.
 
 * [Java Basic](Ruleset:-Java-Basic)
   * Tags: java, app
@@ -17,3 +20,6 @@ Besides that, you may use any custom tag.
   * java-ee, app
 * Java EE Servers
   * java-ee, server
+
+## Community rulesets
+Rulesets contributed by Windup users.
