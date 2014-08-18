@@ -16,7 +16,8 @@ TBD.
         <version>${version.windup}</version>
     </parent>
 ```
-** Add Windup dependencies. Should you need any additional ones, refer to [Dev: Dependencies].(Dev:-Dependencies)
+
+* Add Windup dependencies. Should you need any additional ones, refer to [Dev: Dependencies].(Dev:-Dependencies)
 ```xml
     <dependencies>
 
@@ -93,7 +94,8 @@ TBD.
 
     </dependencies>
 ```
-** Make it a Forge addon.
+
+* Make it a Forge addon.
 ```xml
         <plugins>
             <!-- These two make this artifact a Forge addon. -->
@@ -125,14 +127,17 @@ TBD.
 ```
 
 ## Creating the Rules
+
 * Read about [OCPrewrite](http://ocpsoft.org/rewrite/).
 * Create a Java class, ending with `RuleProvider`.
+
 ```java
 public class MyJavaHintsRuleProvider extends WindupRuleProvider
 {
 }
 ```
-Specify the phase it should run in.
+
+* Specify the phase it should run in.
 Windup runs in phases, which essentially ensures that certain groups of rules are executed before this one.
 See [Rules: Phases](Rules:-Phases) for explanation.
 ```java
@@ -151,7 +156,7 @@ Again, see [Rules: Phases](Rules:-Phases) for explanation.
     }
 ```
 
-And finally, create the rule itself.
+* And finally, create the rule itself.
 This is a specific high-level rule which uses hihg-level conditions (`JavaClass`) and operations (`Classification`). See their documentation for the details.
 Excuse the formatting, caused by Eclipse formatter, but it's project's requirement.
 
