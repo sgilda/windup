@@ -173,19 +173,19 @@ Excuse the formatting of some rules, caused by Eclipse formatter, but it's a pro
         };
 
         return ConfigurationBuilder.begin()
-                    .addRule()
-                     .when(
-                        JavaClass.references("commonj.work.Work").at(TypeReferenceLocation.EXTENDS_TYPE)
-                     )
-                     .perform(
-                        Iteration.over().perform(   
-                           Classification.as("Commonj Work")
-                              .with(Link.to("JBoss JCA WorkManager", "https://access.redhat.com/documentation/en-US/Red_Hat_JBoss_Operations_Network/3.1/html/Dev_Complete_Resource_Reference/JBossAS7-JBossAS7_Standalone_Server-JCA-Workmanager.html"))
-                              .withEffort(0)
-                           .and(Hint.withText("Migrate to JBoss JCA WorkManager").withEffort(8))
-                        )
-                        .endIteration()
-                     )
+        .addRule()
+        .when(
+           JavaClass.references("commonj.work.Work").at(TypeReferenceLocation.EXTENDS_TYPE)
+        )
+        .perform(
+           Iteration.over().perform(   
+              Classification.as("Commonj Work")
+                 .with(Link.to("JBoss JCA WorkManager", "https://access.redhat.com/documentation/en-US/Red_Hat_JBoss_Operations_Network/3.1/html/Dev_Complete_Resource_Reference/JBossAS7-JBossAS7_Standalone_Server-JCA-Workmanager.html"))
+                 .withEffort(0)
+              .and(Hint.withText("Migrate to JBoss JCA WorkManager").withEffort(8))
+           )
+           .endIteration()
+        )
     }
 ```
 
