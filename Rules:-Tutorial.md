@@ -212,4 +212,4 @@ TBD.
     * [Inter-rule dependency](Rules:-Lifecycle,-Phases-and-Inter-rule-Dependencies)
         * Short IDs - [WINDUP-216](https://issues.jboss.org/browse/WINDUP-217)
     * [Phases](Rules:-Lifecycle,-Phases-and-Inter-rule-Dependencies)
-* Addons / Rulesets
+* [Existing Addons / Rulesets](Rulesets)
