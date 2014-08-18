@@ -40,13 +40,6 @@ Should you need any additional ones, refer to [Dev: Dependencies](Dev:-Dependenc
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.jboss.windup.ext</groupId>
-            <artifactId>windup-config-groovy</artifactId>
-            <classifier>forge-addon</classifier>
-            <version>${version.windup}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>org.jboss.windup.utils</groupId>
             <artifactId>utils</artifactId>
             <classifier>forge-addon</classifier>
