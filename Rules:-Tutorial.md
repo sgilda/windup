@@ -156,7 +156,7 @@ Again, see [Rules: Phases](Rules:-Phases) for explanation.
 ### High-level conditions and operations
 
 * And finally, create the rule itself.
-This is a specific high-level rule which uses hihg-level conditions (`JavaClass`) and operations (`Classification`). See their documentation for the details.
+This is a specific high-level rule which uses high-level conditions (`JavaClass`) and operations (`Classification`). See their documentation for the details.
 Excuse the formatting, caused by Eclipse formatter, but it's project's requirement.
 
 ```java
