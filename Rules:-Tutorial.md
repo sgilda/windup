@@ -157,7 +157,7 @@ Again, see [Rules: Phases](Rules:-Phases) for explanation.
 
 * And finally, create the rule itself.
 This is a specific high-level rule which uses high-level conditions (`JavaClass`) and operations (`Classification`). See their documentation for the details.
-Excuse the formatting of some rules, caused by Eclipse formatter, but it's project's requirement.
+Excuse the formatting of some rules, caused by Eclipse formatter, but it's a project's requirement.
 
 ```java
     @Override
