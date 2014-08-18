@@ -1,7 +1,4 @@
-TBD.
-
 ## Creating an addon
-* Learn about Forge / Furnace.
 * Create a Maven project.
 * Add `windup-rules-parent`.
 ```xml
@@ -19,8 +16,12 @@ TBD.
 
 * Add Windup dependencies.
 The dependencies you need depend on what Windup API you will use.
+
 _Dependencies are still settling down and the classes location are subject to change._
-Should you need any additional ones, refer to [Dev: Dependencies](Dev:-Dependencies).
+
+Windup is a Forge/Furnace based application. As such, it has a modularized design, which requires a bit of additional knowledge.
+Should you need any additional dependencies, refer to [Dev: Dependencies](Dev:-Dependencies).
+
 ```xml
     <dependencies>
 
