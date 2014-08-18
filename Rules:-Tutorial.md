@@ -185,7 +185,7 @@ Excuse the formatting of some rules, caused by Eclipse formatter, but it's a pro
               .and(Hint.withText("Migrate to JBoss JCA WorkManager").withEffort(8))
            )
            .endIteration()
-        )
+        );
     }
 ```
 
