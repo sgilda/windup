@@ -140,7 +140,7 @@ See [Rules: Phases](Rules:-Phases) for explanation.
 ```java
     @Override
     public RulePhase getPhase() {
-        return RulePhase.INITIAL_ANALYSIS;
+        return RulePhase.MIGRATION_RULES;
     }
 ```
 
