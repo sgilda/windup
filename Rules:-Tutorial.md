@@ -204,11 +204,11 @@ These high-level elements provided by rulesets may cover majority of cases, but 
 TBD.
 
 * Models
-** [Frames](https://github.com/tinkerpop/frames/wiki)
-** Existing Models
+    ** [Frames](https://github.com/tinkerpop/frames/wiki)
+    ** Existing Models
 * Rules
-** [OCPrewrite](http://ocpsoft.org/rewrite/)
-** Conditions, Operations
+  ** [OCPrewrite](http://ocpsoft.org/rewrite/)
+  ** Conditions, Operations
 *** Variables
 ** Inter-rule action
 ** Inter-rule dependency
