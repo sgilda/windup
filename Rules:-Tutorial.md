@@ -17,7 +17,10 @@ TBD.
     </parent>
 ```
 
-* Add Windup dependencies. Should you need any additional ones, refer to [Dev: Dependencies](Dev:-Dependencies).
+* Add Windup dependencies.
+The dependencies you need depend on what Windup API you will use.
+_Dependencies are still settling down and the classes location are subject to change._
+Should you need any additional ones, refer to [Dev: Dependencies](Dev:-Dependencies).
 ```xml
     <dependencies>
 
