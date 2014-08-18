@@ -156,6 +156,8 @@ Again, see [Rules: Phases](Rules:-Phases) for explanation.
     }
 ```
 
+### High-level conditions and operations
+
 * And finally, create the rule itself.
 This is a specific high-level rule which uses hihg-level conditions (`JavaClass`) and operations (`Classification`). See their documentation for the details.
 Excuse the formatting, caused by Eclipse formatter, but it's project's requirement.
@@ -192,10 +194,14 @@ Excuse the formatting, caused by Eclipse formatter, but it's project's requireme
 
 For more examples, see the [BaseConfig.java](https://github.com/windup/windup/blob/master/rules/app/java-ee/src/main/java/org/jboss/windup/rules/apps/legacy/java/BaseConfig.java#L53) rule.
 
-## High-level
-Hints/classifications/iterations stuff
 
-## Low-level
+## Low-level Conditions and Operations
+
+As you can see, the conditions and operations above are Java-specific. They come with the `Java Basic` ruleset. The list of existing rulesets will be part of the project documentation.
+
+These high-level elements provided by rulesets may cover majority of cases, but not all. Then, you will need to dive into the mid-level Windup building elements.
+
+TBD.
 
 * Models
 ** [Frames](https://github.com/tinkerpop/frames/wiki)
