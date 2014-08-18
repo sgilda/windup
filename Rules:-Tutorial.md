@@ -197,21 +197,23 @@ For more examples, see the [BaseConfig.java](https://github.com/windup/windup/bl
 
 ## Low-level Conditions and Operations
 
-As you can see, the conditions and operations above are Java-specific. They come with the `Java Basic` ruleset. The list of existing rulesets will be part of the project documentation.
+As you can see, the conditions and operations above are Java-specific. They come with the `Java Basic` ruleset. The list of existing rulesets will be part of the project documentation. Each ruleset will be accompanied with a documentation for its `Condition`s and `Operation`s (and also `Model`s).
 
 These high-level elements provided by rulesets may cover majority of cases, but not all. Then, you will need to dive into the mid-level Windup building elements.
+
+## Mid-level
 
 TBD.
 
 * Models
     * [Frames](https://github.com/tinkerpop/frames/wiki)
-    * Existing Models
+    * [Existing Models](Rules:-Existing-Models)
 * Rules
     * [OCPrewrite](http://ocpsoft.org/rewrite/)
     * Conditions, Operations
         * Variables
     * Inter-rule action
-    * Inter-rule dependency
-    * Short IDs
-    * Phases
+    * [Inter-rule dependency](Rules:-Lifecycle,-Phases-and-Inter-rule-Dependencies)
+        * Short IDs - [WINDUP-216](https://issues.jboss.org/browse/WINDUP-217)
+    * [Phases](Rules:-Lifecycle,-Phases-and-Inter-rule-Dependencies)
 * Addons / Rulesets
