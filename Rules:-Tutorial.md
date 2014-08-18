@@ -17,7 +17,7 @@ TBD.
     </parent>
 ```
 
-* Add Windup dependencies. Should you need any additional ones, refer to [Dev: Dependencies].(Dev:-Dependencies)
+* Add Windup dependencies. Should you need any additional ones, refer to [Dev: Dependencies](Dev:-Dependencies).
 ```xml
     <dependencies>
 
