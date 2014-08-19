@@ -1,3 +1,5 @@
+The code from this example is in this [Git repo](https://github.com/OndraZizka/windup-quickstarts).
+
 ## Creating an addon
 * Create a Maven project.
 * Add `windup-rules-parent`.
