@@ -160,7 +160,6 @@ Again, see [Rules: Phases](Rules:-Phases) for explanation.
 * And finally, create the rule itself.
 
 The following is a specific high-level rule which uses high-level conditions (`JavaClass`) and operations (`Classification`). See the documentation of those conditions and operations for the details.
-Excuse the formatting of some rules, caused by Eclipse formatter, but it's a project's requirement.
 
 ```java
     @Override
