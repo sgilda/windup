@@ -138,7 +138,7 @@ public class MyJavaHintsRuleProvider extends WindupRuleProvider
 
 * Specify the phase it should run in.
 Windup runs in phases, which essentially ensures that certain groups of rules are executed before this one.
-See [Rules: Phases](Rules:-Phases) for explanation.
+See [Rules: Phases](./Rules:-Phases) for explanation.
 ```java
     @Override
     public RulePhase getPhase() {
@@ -147,7 +147,7 @@ See [Rules: Phases](Rules:-Phases) for explanation.
 ```
 
 For fine-grained control the order in which the rule is executed, specify it's dependencies.
-Again, see [Rules: Phases](Rules:-Phases) for explanation.
+Again, see [Rules: Phases](./Rules:-Phases) for explanation.
 ```java
     @Override
     public List<Class<? extends WindupRuleProvider>> getClassDependencies() {
@@ -197,13 +197,13 @@ TBD.
 
 * Models
     * [Frames](https://github.com/tinkerpop/frames/wiki)
-    * [Existing Models](Rules:-Existing-Models)
+    * [Existing Models](./Rules:-Existing-Models)
 * Rules
     * [OCPrewrite](http://ocpsoft.org/rewrite/)
     * Conditions, Operations
         * Variables
     * Inter-rule action
-    * [Inter-rule dependency](Rules:-Lifecycle,-Phases-and-Inter-rule-Dependencies)
+    * [Inter-rule dependency](./Rules:-Lifecycle,-Phases-and-Inter-rule-Dependencies)
         * Short IDs - [WINDUP-216](https://issues.jboss.org/browse/WINDUP-217)
-    * [Phases](Rules:-Lifecycle,-Phases-and-Inter-rule-Dependencies)
-* [Existing Addons / Rulesets](Rulesets)
+    * [Phases](./Rules:-Lifecycle,-Phases-and-Inter-rule-Dependencies)
+* [Existing Addons / Rulesets](./Rulesets)
