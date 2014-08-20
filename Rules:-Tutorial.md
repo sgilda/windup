@@ -22,7 +22,7 @@ The dependencies you need depend on what Windup API you will use.
 _Dependencies are still settling down and the classes location are subject to change._
 
 Windup is a Forge/Furnace based application. As such, it has a modularized design, which requires a bit of additional knowledge.
-Should you need any additional dependencies, refer to [Dev: Dependencies](Dev:-Dependencies).
+Should you need any additional dependencies, refer to [Dev: Dependencies](./Dev:-Dependencies).
 
 ```xml
     <dependencies>
