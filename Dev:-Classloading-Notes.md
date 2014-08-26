@@ -1,5 +1,14 @@
 _Temporary page with notes, to be edited._
 
+Which classloader is used? Always the one of the current code?
+
+Depends, if you are in a Furnace Service, then yes, it will use the current code's addon's classloader.
+
+How do I know if I am in a Furnace service?
+Every furnace service is wrapped in a proxy.
+If it came from another addon (not your current addon) and was not instantiated with new Blah(), you are in a furnace service. So if it was @Injected or retrieved via addonRegistry.getServices(...)
+
+
 ```
 (16:32:40) jsightler: ozizka: I do like a Resource.open(...) type API -- that sounds like a good idea.
 (16:32:57) LincolnBaxter: ozizka: unless you use the TCCL (which you shouldn't in a modular environment), then using the class's own classloader is the best solution for that situation
