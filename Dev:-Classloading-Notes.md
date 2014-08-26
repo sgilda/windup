@@ -1,10 +1,9 @@
 _Temporary page with notes, to be edited._
 
-Which classloader is used? Always the one of the current code?
-
+### Which classloader is used? Always the one of the current code?
 Depends, if you are in a Furnace Service, then yes, it will use the current code's addon's classloader.
 
-How do I know if I am in a Furnace service?
+### How do I know if I am in a Furnace service?
 Every furnace service is wrapped in a proxy.
 If it came from another addon (not your current addon) and was not instantiated with new Blah(), you are in a furnace service. So if it was @Injected or retrieved via addonRegistry.getServices(...)
 
