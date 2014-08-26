@@ -1,5 +1,6 @@
 _Temporary page with notes, to be edited._
 
+```
 (16:32:40) jsightler: ozizka: I do like a Resource.open(...) type API -- that sounds like a good idea.
 (16:32:57) LincolnBaxter: ozizka: unless you use the TCCL (which you shouldn't in a modular environment), then using the class's own classloader is the best solution for that situation
 (16:33:41) LincolnBaxter: ozizka: using a shared Resource.open() APi will actually be sort of a no-op, and just introduce another layer, since you generally need to be able to specify a classloader anyway
@@ -37,3 +38,4 @@ LincolnBaxter lincolnthree
 LincolnBaxter lincolnthree 
 (16:39:21) ozizka-FN: lincolnthree, right, but well, putting classloading code into rules...
 (16:39:25) ozizka-FN: Not user friendly
+```
