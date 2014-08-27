@@ -125,3 +125,6 @@ Testing a subset of rules:
 
 See https://github.com/lincolnthree/windup/tree/WINDUP-133/rules/app/java/src/test/java/org/jboss/windup/rules/java
 (TBD)
+
+### What is the Module _DEFAULT_? What does it's classloader see?
+That is the module of the current Test Case.
