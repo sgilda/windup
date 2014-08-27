@@ -73,3 +73,6 @@ LincolnBaxter lincolnthree
 (16:56:57) ozizka-FN: Hm, ok so I guess if we dug deeper, it would eventually come to Thread.currentThread().setContextClassLoader(classLoader); ?
 (16:57:15) LincolnBaxter: ozizka1: yep: https://github.com/forge/furnace/blob/master/container-api/src/main/java/org/jboss/forge/furnace/util/SecurityActions.java#L71
 ```
+
+### Furnace Proxies:
+https://github.com/forge/furnace/blob/master/proxy/src/main/java/org/jboss/forge/furnace/proxy/Proxies.java#L15
