@@ -47,3 +47,13 @@ LincolnBaxter lincolnthree
 (16:39:21) ozizka-FN: lincolnthree, right, but well, putting classloading code into rules...
 (16:39:25) ozizka-FN: Not user friendly
 ```
+
+### Resources loading
+```
+(16:48:30) ozizka-FN: lincolnthree:  Just a note - the potential collisions caused  by addon's CL span is not considered as a risk?
+(16:49:25) ozizka-FN: I mean, it could load the file from it's deps.
+(16:49:36) ozizka-FN: * file = resource
+(16:49:50) LincolnBaxter: ozizka1: so the way it works is actually very controlled
+(16:50:06) LincolnBaxter: ozizka1: classloader will always attempt to load its own resources before loading from another addon
+(16:50:23) LincolnBaxter: ozizka1: at which point the order is determined by the order of the addon dependency in the POM
+```
