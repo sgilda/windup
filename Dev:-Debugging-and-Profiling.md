@@ -8,4 +8,7 @@
 * Click `Menu > Profile > Profile Test File`.
 * In the dialog which appeared, edit `exec.args=-Djboss.modules.system.pkgs=org.netbeans`.
 
+## Profiling forge run using YourKit
 
+* Download YourKit and get the trial license.
+* Set 
