@@ -1,4 +1,4 @@
-_Temporary page with notes, to be edited._
+_Page contains temporary notes, to be edited._
 
 ### Which classloader is used? Always the one of the current code?
 Depends, if you are in a Furnace Service, then yes, it will use the current code's addon's classloader.
@@ -56,4 +56,20 @@ LincolnBaxter lincolnthree
 (16:49:50) LincolnBaxter: ozizka1: so the way it works is actually very controlled
 (16:50:06) LincolnBaxter: ozizka1: classloader will always attempt to load its own resources before loading from another addon
 (16:50:23) LincolnBaxter: ozizka1: at which point the order is determined by the order of the addon dependency in the POM
+
+(16:53:26) ozizka-FN: Q: Unwrapping proxies caused the code in invoke() not actually being called?
+(16:53:32) ozizka-FN: Since the method calls were not intercepted?
+(16:54:09) LincolnBaxter: ozizka1: exactly :)
+
+(16:54:10) ozizka-FN: lincolnthree, Is that impl a real TCCL or just TCCL-like concept?
+(16:54:29) LincolnBaxter: ozizka1: what do you mean "real" ?
+(16:54:51) ozizka-FN: Not sure about how TCCL is implemented, I thought you'd need to call something like 
+(16:54:52) ozizka-FN: Thread.currentThread().setContextClassLoader(classLoader);
+(16:54:56) LincolnBaxter: ozizka1: also if you are interested in where the resource loading / ordering is controlled —> https://github.com/forge/furnace/blob/master/container/src/main/java/org/jboss/forge/furnace/impl/modules/AddonModuleLoader.java#L194
+(16:55:01) jsightler: lincolnthree: I wondered that too :)
+(16:55:30) LincolnBaxter: ozizka1: jsightler, actually it does: https://github.com/forge/furnace/blob/master/proxy/src/main/java/org/jboss/forge/furnace/proxy/ClassLoaderInterceptor.java#L103
+(16:55:55) LincolnBaxter: ozizka1: jsightler: https://github.com/forge/furnace/blob/master/container-api/src/main/java/org/jboss/forge/furnace/util/ClassLoaders.java#L27
+
+(16:56:57) ozizka-FN: Hm, ok so I guess if we dug deeper, it would eventually come to Thread.currentThread().setContextClassLoader(classLoader); ?
+(16:57:15) LincolnBaxter: ozizka1: yep: https://github.com/forge/furnace/blob/master/container-api/src/main/java/org/jboss/forge/furnace/util/SecurityActions.java#L71
 ```
