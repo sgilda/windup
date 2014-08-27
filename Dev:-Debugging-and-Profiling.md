@@ -10,5 +10,6 @@
 
 ## Profiling forge run using YourKit
 
-* Download YourKit and get the trial license.
-* Set 
+* Download and unzip YourKit and get the trial license.
+* Run `forge`, refer to [Profiling Forge](http://forge.jboss.org/1.x/docs/using/profiling-forge.html) but skip the first 2 points (installing the .jar's) - Forge 2 already contains those.
+* Run `windup-analyze-app`.
