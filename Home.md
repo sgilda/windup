@@ -1,7 +1,8 @@
-Windup 2.0 is a sequel to the original Windup 0.7.x, **currently under development** (alpha stage).
-Legacy Windup 0.7.x has moved to the [windup-legacy GitHub repository](https://github.com/windup/windup-legacy).
-
 # Welcome to Windup 2.0
+
+_NOTE: The Windup 2.0 project is currently under development. If you want to contribute or participate in developer discussions, join us on the irc.freenode.net #windup channel or subscribe to the windup-dev mailing list at https://lists.jboss.org/mailman/listinfo/windup-dev._
+
+Windup 2.0 is a sequel to the original Windup 0.7.x. Legacy Windup 0.7.x has moved to the [windup-legacy GitHub repository](https://github.com/windup/windup-legacy).
 
 * [What is Windup](What-is-Windup)?
 * [Project Info](Project-Info) - Git repo, IRC, Mailing lists, ...
