@@ -1,4 +1,4 @@
-*Windup 2.0 is a sequel to the original Windup 0.7.x, currently under development (alpha stage).
+*Windup 2.0 is a sequel to the original Windup 0.7.x, *currently under development* (alpha stage).
 Legacy Windup 0.7.x has moved to the [windup-legacy GitHub repository](https://github.com/windup/windup-legacy).*
 
 # Welcome to Windup 2.0
