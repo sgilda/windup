@@ -11,5 +11,13 @@
 ## Profiling forge run using YourKit
 
 * Download and unzip YourKit and get the trial license.
+* Set `FORGE_OPTS`:
+```
+export YOURKIT_HOME=/home/ondra/sw/prog/YourKit-b14092
+export FORGE_OPTS="-Djboss.modules.system.pkgs=com.yourkit -agentpath:$YOURKIT_HOME/bin/linux-x86-64/libyjpagent.so=sampling,onexit=snapshot,delay=0"
+```
 * Run `forge`, refer to [Profiling Forge](http://forge.jboss.org/1.x/docs/using/profiling-forge.html) but skip the first 2 points (installing the .jar's) - Forge 2 already contains those.
 * Run `windup-analyze-app`.
+```
+forge -e windup-migrate-app
+```
