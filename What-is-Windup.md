@@ -1,7 +1,7 @@
 ![Windup Logo](images/windup-logo-wiki-header.jpg)
 ***
 
-JBoss Windup is a tool to simplify application migrations.  Running from the command line, the tool reads EAR, WAR, and JAR files and produces an HTML report detailing the inner workings of the Java application to simplify migration efforts.  It seeks to make migrating from other containers to JBoss a piece of cake.
+JBoss Windup is a tool to simplify application migrations.  Running from a [Forge](http:forge.jboss.org) environment, the tool reads EAR, WAR, and JAR files and produces an HTML report detailing the inner workings of the Java application to simplify migration efforts.  It seeks to make migrating from other containers to JBoss a piece of cake.
 
 ### Windup 2.0 vs. Windup 0.7.x
 Windup 2.0 aims to deliver the same functionality as legacy Windup.
