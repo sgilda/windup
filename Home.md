@@ -33,7 +33,7 @@ Windup 2.0 is a sequel to the original Windup 0.7.x. Legacy Windup 0.7.x has mov
 Windup documentation is organized into guides that target specific audiences.
  
 * [Developer Guide](https://github.com/windup/windup/wiki/Dev:-Developer-Guide): This guide provides information for developers who plan to contribute source code updates to the Windup 2.0 project.
-* [Rules Guide](https://github.com/windup/windup/wiki/Rules:--Rules-Development-Guida): This guide provides details for developers, consultants, and others who plan to contribute rules to the Windup 2.0 project.
+* [Rules Guide](https://github.com/windup/windup/wiki/Rules:--Rules-Development-Guide): This guide provides details for developers, consultants, and others who plan to contribute rules to the Windup 2.0 project.
 * [User Guide](https://github.com/windup/windup/wiki/User:-User-Guide): This guide is for engineers, consultants, or others who plan to use Windup to migrate applications or other components.
 * [Migration Planning Guide](https://github.com/windup/windup/wiki/Plan:-Migration-Planning-Guide): This guide is for developers, Project Managers, or IT managers who must interpret the Windup reports and develop a project plan.
 
