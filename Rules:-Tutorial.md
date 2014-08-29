@@ -203,7 +203,7 @@ TBD.
     * Conditions, Operations
         * Variables
     * Inter-rule action
-    * [Inter-rule dependency](./Rules:-Lifecycle,-Phases-and-Inter-rule-Dependencies)
+    * [Inter-rule dependency](./Rules:-Rules-Execution-Lifecycle)
         * Short IDs - [WINDUP-216](https://issues.jboss.org/browse/WINDUP-217)
-    * [Phases](./Rules:-Lifecycle,-Phases-and-Inter-rule-Dependencies)
+    * [Phases](./Rules:-Rules-Execution-Lifecycle)
 * [Existing Addons / Rulesets](./Rulesets)
