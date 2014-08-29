@@ -19,7 +19,7 @@ Rule phases provide an way for rule authors to specify and control in which phas
     }
 ```
 
-The following is the list of rule phases as defined in the `RulePhase` enum class.
+The following is the list of rule phases as defined in the `RulePhase` enum class. Note that there are also `PRE_` processing and `POST_` processing phases for each of the following rule phases.
 
 <dl>
 <dt>DISCOVERY</dt>
@@ -51,7 +51,6 @@ The following is the list of rule phases as defined in the `RulePhase` enum clas
 
 </dl>
 
-Additionally, there are `PRE_` and `POST_` phases for each of the above phases.
 
 ### Execute Before and Run After
 
