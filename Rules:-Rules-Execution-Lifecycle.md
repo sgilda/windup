@@ -23,7 +23,7 @@ The following is the list of rule phases as defined in the `RulePhase` enum clas
 
 <dl>
 <dt>DISCOVERY</dt>
-<dd>This phase is called during resource discovery. Static files are scanned by their basic properties - name, extension, location, evt. Java class name (from a file name). Archives are unzipped in this phase. Typically, any rule that only puts data into the graph is executed during this phase.</dd>
+<dd>This phase is called during resource discovery. Static files are scanned by their basic properties, for example, the name, extension, location, and fully qualified Java class name. Archives are unzipped in this phase. Typically, any rule that only puts data into the graph is executed during this phase.</dd>
 
 <dt>INITIAL_ANALYSIS</dt>
 <dd>This phase is called to perform a basic analysis of the files content. It extracts all method names from class files, extracts metadata, such as the XML namespace and root element, from XML files.</dd>
