@@ -138,7 +138,7 @@ public class MyJavaHintsRuleProvider extends WindupRuleProvider
 
 * Specify the phase it should run in.
 Windup runs in phases, which essentially ensures that certain groups of rules are executed before this one.
-See [Rules: Phases](./Rules:-Phases) for explanation.
+See [Rules: Phases](./Rules:-Rules-Execution-Lifecycle#rule-phases) for explanation.
 ```java
     @Override
     public RulePhase getPhase() {
@@ -147,7 +147,7 @@ See [Rules: Phases](./Rules:-Phases) for explanation.
 ```
 
 For fine-grained control the order in which the rule is executed, specify it's dependencies.
-Again, see [Rules: Phases](./Rules:-Phases) for explanation.
+Again, see [Rules: Phases](./Rules:-Rules-Execution-Lifecycle#rule-phases) for explanation.
 ```java
     @Override
     public List<Class<? extends WindupRuleProvider>> getClassDependencies() {
