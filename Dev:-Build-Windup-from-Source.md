@@ -73,6 +73,9 @@ To build the project, you need a patch that is not yet available upstream. Follo
 
         mvn clean install
 
+   You can also build the project without the tests.
+
+        mvn clean install -DskipTests
 
 ### Build Windup Using Red Hat JBoss Developer Studio or Eclipse
 
