@@ -44,7 +44,8 @@ This subproject contains the integration test suite.
 
 ### tinkerpop/
 
-This subproject contains a code fix for Titan NPE issues. <!-- Jesse’s fix for Titan issues (NPE) -->
+This subproject contains a code fix for Titan NPE issues. 
+<!-- Jesse’s fix for Titan issues (NPE) -->
 
 ### ui/
 
