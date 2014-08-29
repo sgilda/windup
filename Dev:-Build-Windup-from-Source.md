@@ -59,7 +59,15 @@ To build the project, you need a patch that is not yet available upstream. Follo
    * Checkout a local copy of the branch.
 
             git checkout -b BRANCH_NAME upstream/master
-    * Modify the root pom.xml file to replace the com.tinkerpop version `2.6.0-jsight-SNAPSHOT` with your locally installed `2.6.0-SNAPSHOT` frames JAR .
+    * Modify the root `pom.xml` file to replace the `2.6.0-jsight-SNAPSHOT` version of the `<groupId>com.tinkerpop</groupId>` with your locally installed `2.6.0-SNAPSHOT` frames JAR .
+
+            <!-- Jess Slighter's Frames classloading patch. https://github.com/jsight/frames/tree/classloaderresolver -->
+            <dependency>
+                <groupId>com.tinkerpop</groupId>
+                <artifactId>frames</artifactId>
+                <!-- <version>2.6.0-jsight-SNAPSHOT</version> -->
+                <version>2.6.0-SNAPSHOT</version>
+            </dependency>
 3. Make sure you have configured Maven as described here: [Install and Configure Maven](https://github.com/windup/windup/wiki/Install-and-Configure-Maven). 
 4. Build the project.
 
