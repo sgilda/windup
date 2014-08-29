@@ -1,1 +1,1 @@
-See [Rules: Lifecycle, Phases and Inter rule Dependencies](Rules:-Lifecycle,-Phases-and-Inter-rule-Dependencies).
+See [Rules: Rules Execution Lifecycle](https://github.com/windup/windup/wiki/Rules:-Rules-Execution-Lifecycle).
