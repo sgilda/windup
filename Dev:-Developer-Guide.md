@@ -10,5 +10,6 @@ This guide is for developers who plan to contribute source code updates to the W
 ### Understand the Windup Architecture and Structure
 
 * [Windup Software Components](https://github.com/windup/windup/wiki/Dev:-Windup-Software-Components)
+* [Windup Project Structure](https://github.com/windup/windup/wiki/Dev:-Windup-Project-Structure)
 
 
