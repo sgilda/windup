@@ -6,6 +6,7 @@ This guide is for developers who plan to contribute source code updates to the W
 
 * [Get the Windup Source Code](https://github.com/windup/windup/wiki/Dev:-Get-the-Windup-Source-Code)
 * [Build Windup from Source](https://github.com/windup/windup/wiki/dev:-Build-Windup-from-Source)
+* [Create JavaDoc for Windup](https://github.com/windup/windup/wiki/Dev:-Create-JavaDoc-for-Windup)
 
 ### Understand the Windup Architecture and Structure
 
