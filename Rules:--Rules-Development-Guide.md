@@ -17,4 +17,7 @@ This guide is for developers who plan to contribute source code updates to the W
 <!-- * [Windup Software Components](https://github.com/windup/windup/wiki/Dev:-Windup-Software-Components) -->
 * [Windup Project Structure](https://github.com/windup/windup/wiki/Dev:-Windup-Project-Structure)
 
+### Understand the Rule Processing
+
+* [Rules Execution Lifecycle](https://github.com/windup/windup/wiki/Rules:-Rules-Execution-Lifecycle)
 
