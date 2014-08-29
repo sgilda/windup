@@ -4,4 +4,4 @@ This guide is for developers who plan to contribute source code updates to the W
 
 * [Get the Windup Source Code](https://github.com/windup/windup/wiki/Dev:-Get-the-Windup-Source-Code)
 * [Build Windup from Source](https://github.com/windup/windup/wiki/dev:-Build-Windup-from-Source)
-
+* [Windup Software Components](https://github.com/windup/windup/wiki/Dev:-Windup-Software-Components)
