@@ -1,5 +1,15 @@
 _How Windup starts up, finds the resources, loads the rules and starts executing them_
 
+## Boot
+
+`WindupProcessor`, `WindupProcessorImpl.execute( WindupProcessorConfig )`
+
+Instantiates `@Inject GraphContext graphContext`, which holds graph-related objects.
+
+
+
+
+
 ## Frames creation
 
 In the `GraphContextImpl` constructor.
