@@ -1,0 +1,7 @@
+- Jira triage
+- Big picture overview - and where do we stand with it
+- How / where to put the rules - into users' github repo, then a pull request? Or...?
+- Negative queries - WINDUP-164
+- Other ways to estimate effort (other than story points)
+  - Perhaps create some guide on quantifiyng the effort with story points?
+    - E.g. copy&paste versus a debugging session, Spring beans porting, ...
