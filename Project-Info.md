@@ -1,3 +1,7 @@
+## Git repository
+Our authoritative repo is [here on GitHub](https://github.com/windup/windup/wiki).
+Follow [the Build page](Dev:-Build) on how to build.
+
 ## Website
 Currently we have no website.
 There's one for Windup 1.x (legacy) - windup.jboss.org - but most information there is unrelated to current 2.x version.
