@@ -79,6 +79,11 @@ Again, there are several convenient implementations for constructs like iteratio
     .endIteration()
 ```
 
+#### Nested iterations
+```
+TBD
+```
+
 
 ### `.otherwise()` et al.
 Windup rules inherit the rule constructs from OCP Rewrite.
