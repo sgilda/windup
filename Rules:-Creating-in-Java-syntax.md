@@ -5,6 +5,8 @@ TODO:
 
 Howto for compound rules, nested rules, rules over multiple sources, negative queries (not matched by anything).
 
+[How to estimate the migration effort with Story Points](Rules:-Story-Points)
+
 ## Concepts & philosophy
 
 Windup is Rule-based. Users are able to write own rules according to their needs, constructs in their applications, custom APIs used, etc.
