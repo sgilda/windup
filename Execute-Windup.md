@@ -42,8 +42,6 @@ Currently, Windup 2.0 is only invoked from tests. Check back later for normal CL
 
 6. Run Windup:
 
-`JBoss Forge, version [ 2.7.2.Final ] - JBoss, by Red Hat, Inc. [ http://forge.jboss.org ]`
-
 `[Desktop]$ windup-migrate-app --input /path/to/jee-example-app-1.0.0.ear --output /path/to/jee-example-app-1.0.0.ear.report --packages com org freemarker net`
 
 > ***SUCCESS*** Windup execution successful!
