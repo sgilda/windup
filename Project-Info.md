@@ -8,5 +8,5 @@ Channel: #windup
 
 ## Mailing lists
 Subscribe at [JBoss mailing lists](https://lists.jboss.org/mailman/listinfo/windup-dev).
-Core development discusion: windup-dev@redhat.com 
-Rules development discussion, usage: windup-users@redhat.com
+* Core development discusion: windup-dev@redhat.com 
+* Rules development discussion, usage: windup-users@redhat.com
