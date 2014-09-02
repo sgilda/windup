@@ -14,3 +14,7 @@ Channel: #windup
 Subscribe at [JBoss mailing lists](https://lists.jboss.org/mailman/listinfo/windup-dev).
 * Core development discusion: windup-dev@redhat.com 
 * Rules development discussion, usage: windup-users@redhat.com
+
+## Core development team (and IRC nicks)
+Members: Jess Sightler (jsightler), Matej Briskar (mbriskar), Ondrej Zizka (ozizka)
+Lead: Lincoln Baxter (lincolnthree)
