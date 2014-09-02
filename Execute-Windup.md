@@ -7,9 +7,13 @@ Currently, Windup 2.0 is only invoked from tests. Check back later for normal CL
 2. Build Windup
 
 3. Install the Windup UI Addon and Rules addons:
+
 `forge -b --install org.jboss.windup:ui,2.0.0-SNAPSHOT`
+
 `forge -b --install org.jboss.windup.rules.apps:rules-java,2.0.0-SNAPSHOT`
+
 `forge -b --install org.jboss.windup.rules.apps:rules-java-ee,2.0.0-SNAPSHOT`
+
 > Installation completed successfully.
 
 4. Start Forge 2:
