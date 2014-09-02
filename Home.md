@@ -12,15 +12,18 @@ Windup 2.0 is a sequel to the original Windup 0.7.x. Legacy Windup 0.7.x has mov
 * [How to Execute](Execute-Windup)
 * [Reviewing the Report](Reviewing-the-Report)
 * [How to Create New Rules](Rules:-Creating)
-   * [Coding in Java fluent API](Rules:-Coding-Java)
-   * [Coding in Groovy](Rules:-Coding-Groovy)
-   * [About Framed Vertex Models](FramedModels)
-   * Graph Queries
-   * Adding Graph Vertices
-   * [Operations](Rules:-Operations)
-   * Iteration
-   * Nested Iteration
-   * [Bundling it all to a Windup Ruleset Addon](Rules:-Bundling)
+   * Basic rules authoring:
+       * [Coding in Java fluent API](Rules:-Coding-Java)
+       * Graph Queries
+       * Iteration
+       * Nested Iteration
+       * [Coding in Groovy](Rules:-Coding-Groovy)
+   * Advanced rules authoring:
+       * [Concepts & Philosophy](Rules:-Concepts-&-Philosophy)
+       * [About Framed Vertex Models](FramedModels)
+       * Adding Graph Vertices
+       * [Operations](Rules:-Operations)
+       * [Bundling it all to a Windup Ruleset Addon](Rules:-Bundling)
 * [How to Extend the Rules](https://github.com/windup/windup/wiki/Extend-Windup-Rules)
  
 * [Rulesets](https://github.com/windup/windup/wiki/Rulesets)
