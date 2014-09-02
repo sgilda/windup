@@ -24,5 +24,5 @@ This guide is for developers who plan to contribute source code updates to the W
 
 ### Create Rules Using Java
 
-* [Rule Structure] https://github.com/windup/windup/wiki/Rules:-Rule-Structure
+* [Rule Structure](https://github.com/windup/windup/wiki/Rules:-Rule-Structure)
 
