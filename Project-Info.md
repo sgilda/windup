@@ -1,5 +1,5 @@
 ## Website
-Currently no website.
+Currently we have no website.
 There's one for Windup 1.x (legacy) - windup.jboss.org - but most information there is unrelated to current 2.x version.
 
 ## IRC chat
