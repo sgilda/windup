@@ -6,7 +6,7 @@ TODO:
 Howto for compound rules, nested rules, rules over multiple sources, negative queries (not matched by anything).
 
 [How to estimate the migration effort with Story Points](Rules:-Story-Points)
- [WINDUP-255](https://issues.jboss.org/browse/WINDUP-255)
+  [WINDUP-255](https://issues.jboss.org/browse/WINDUP-255)
 
 
 ## Rule code structure
