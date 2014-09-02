@@ -13,11 +13,11 @@ Windup 2.0 is a sequel to the original Windup 0.7.x. Legacy Windup 0.7.x has mov
 * [Reviewing the Report](Reviewing-the-Report)
 * [How to Create New Rules](Rules:-Creating)
    * Basic rules authoring:
+       * [Rule Structure](Rules:-Rule-Structure)
+           * Iteration, Nested Iteration
        * [Coding in Java fluent API](Rules:-Coding-Java)
        * [Lifecycle](Rules:-Rules-Execution-Lifecycle) and [Phases](Rules:-Phases)
        * Graph Queries
-       * Iteration
-       * Nested Iteration
        * [Operations](Rules:-Operations)
        * [Coding in Groovy](Rules:-Coding-Groovy) - coming soon
    * Advanced rules authoring:
