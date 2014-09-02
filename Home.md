@@ -8,7 +8,7 @@ Windup 2.0 is a sequel to the original Windup 0.7.x. Legacy Windup 0.7.x has mov
 * [Project Info](Project-Info) - Git repo, IRC, Mailing lists, ...
 * [Get Involved](Get-Involved) - We need your feedback!
 * [Get the Windup Source Code](https://github.com/windup/windup/wiki/Dev:-Get-the-Windup-Source-Code)
-* [Build Windup from Source](https://github.com/windup/windup/wiki/Dev:-Build-Windup-from-Source)
+* [Build Windup from Source](https://github.com/windup/windup/wiki/Dev:-Build)
 * [How to Execute](Execute-Windup)
 * [Reviewing the Report](Reviewing-the-Report)
 * [How to Create New Rules](Rules:-Creating)
