@@ -14,3 +14,10 @@ Like there's ORM (like JPA) for JDBC, TinkerPop's BluePrints has [Frames](https:
 We use this concept heavily. Each ruleset will likely have it's own models. (But you can opt to use Blueprints API if you like).
 
 See also the list of [existing models](Existing-Models).
+
+
+### Examples of breaking non-trivial workflows into rules
+
+#### 1. Finding all `@Entity`s which use `org.hibernate` extensions.
+
+#### 2. Finding _MyBatis_ DAOs and classes using them.
