@@ -1,6 +1,10 @@
 Windup rules are, at the base, built on top of a Java API (which is based on the OCP Rewrite API).
 They resemble natural english sentences.
 
+TODO:
+
+Howto for compound rules, nested rules, negative queries (not matched by anything).
+
 ## Concepts & philosophy
 
 Windup is Rule-based. Users are able to write own rules according to their needs, constructs in their applications, custom APIs used, etc.
