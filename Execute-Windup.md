@@ -10,18 +10,17 @@ Currently, Windup 2.0 is only invoked from tests. Check back later for normal CL
 
 ` forge --install org.jboss.windup:ui,2.0.0-SNAPSHOT `
 
-```  Using Forge at /home/jsightler/javadevtools/forge/2.7.2.Final/forge-distribution-2.7.2.Final
+> Using Forge at ./forge-distribution-2.7.2.Final
 
-Installation request for [org.jboss.windup:ui,2.0.0-SNAPSHOT] will: 
-Deploy: [org.jboss.windup.exec:windup-exec,2.0.0-SNAPSHOT]
-Deploy: [org.jboss.windup.utils:utils,2.0.0-SNAPSHOT]
-Deploy: [org.jboss.windup.graph:windup-graph,2.0.0-SNAPSHOT]
-Deploy: [org.jboss.windup.config:windup-config,2.0.0-SNAPSHOT]
-Deploy: [org.jboss.windup:ui,2.0.0-SNAPSHOT] 
+> Installation request for [org.jboss.windup:ui,2.0.0-SNAPSHOT] will: 
+> Deploy: [org.jboss.windup.exec:windup-exec,2.0.0-SNAPSHOT]
+> Deploy: [org.jboss.windup.utils:utils,2.0.0-SNAPSHOT]
+> Deploy: [org.jboss.windup.graph:windup-graph,2.0.0-SNAPSHOT]
+> Deploy: [org.jboss.windup.config:windup-config,2.0.0-SNAPSHOT]
+> Deploy: [org.jboss.windup:ui,2.0.0-SNAPSHOT] 
 
-Confirm installation [Y/n]? y
-
-Installation completed successfully.```
+> Confirm installation [Y/n]? y
+> Installation completed successfully.
 
 4. Install the Decompiler Addon (this will install the rules and reporting dependencies):
 
