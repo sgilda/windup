@@ -14,6 +14,7 @@ Windup 2.0 is a sequel to the original Windup 0.7.x. Legacy Windup 0.7.x has mov
 * [How to Create New Rules](Rules:-Creating)
    * Basic rules authoring:
        * [Coding in Java fluent API](Rules:-Coding-Java)
+       * [Lifecycle](Rules:-Rules-Execution-Lifecycle) and [Phases](Rules:-Phases)
        * Graph Queries
        * Iteration
        * Nested Iteration
