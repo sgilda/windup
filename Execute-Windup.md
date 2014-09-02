@@ -11,7 +11,6 @@ Currently, Windup 2.0 is only invoked from tests. Check back later for normal CL
 ` forge --install org.jboss.windup:ui,2.0.0-SNAPSHOT `
 
 > Using Forge at ./forge-distribution-2.7.2.Final
-
 > Installation request for [org.jboss.windup:ui,2.0.0-SNAPSHOT] will: 
 > Deploy: [org.jboss.windup.exec:windup-exec,2.0.0-SNAPSHOT]
 > Deploy: [org.jboss.windup.utils:utils,2.0.0-SNAPSHOT]
@@ -26,7 +25,7 @@ Currently, Windup 2.0 is only invoked from tests. Check back later for normal CL
 
 `forge --install org.jboss.windup.rules.apps:java-decompiler,2.0.0-SNAPSHOT`
 
-Using Forge at /home/jsightler/javad> evtools/forge/2.7.2.Final/forge-distribution-2.7.2.Final
+> Using Forge at /home/jsightler/javad> evtools/forge/2.7.2.Final/forge-distribution-2.7.2.Final
 > Installation request for [org.jboss.windup.rules.apps:java-decompiler,2.0.0-SNAPSHOT] will: 
 > Deploy: [org.jboss.windup.tools:decompiler-procyon,2.0.0-SNAPSHOT]
 > Deploy: [org.jboss.windup.ext:windup-config-groovy,2.0.0-SNAPSHOT]
@@ -45,16 +44,8 @@ Using Forge at /home/jsightler/javad> evtools/forge/2.7.2.Final/forge-distributi
 
 `JBoss Forge, version [ 2.7.2.Final ] - JBoss, by Red Hat, Inc. [ http://forge.jboss.org ]`
 
-`[wildfly]$ windup-migrate-app`
+`[Desktop]$ windup-migrate-app --input /path/to/jee-example-app-1.0.0.ear --output /path/to/jee-example-app-1.0.0.ear.report --packages com org freemarker net`
 
-`Input (Input File or Directory (a Directory is required for source mode)):  /path/to/inputarchive.war`
+> ***SUCCESS*** Windup execution successful!
 
-`Output (Output Directory (WARNING: any existing files will be removed)):  /tmp/WindupReport`
-
-`Scan Java Packages (A list of java package name prefixes to scan (eg, com.myapp)):  com`
-
-`Scan Java Packages (A list of java package name prefixes to scan (eg, com.myapp)):  `
-
-`***SUCCESS*** Windup execution successful!`
-
-7. View the report in /tmp/WindupReport/index.html
+7. View the report in the directory specified on the command line: */path/to/jee-example-app-1.0.0.ear.report*
