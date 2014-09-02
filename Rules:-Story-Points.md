@@ -1,6 +1,6 @@
-TODO
-- "Target audience"
-Mainly people skilled in migration.
+## What is Story points and who is it for
+Story points is a simple way Windup uses to express the effort needed to migrate particular application constructs, and in a sum, the application as a whole.
+Mainly for people skilled in migration.
 
 ## How to estimate Story Points in your rule
 TBD.
