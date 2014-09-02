@@ -1,4 +1,4 @@
-Moved to [Dev:-Build].
+Moved to [Dev: Build|Dev:-Build].
 
 
 ## Build Windup from Source
