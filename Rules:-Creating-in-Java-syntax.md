@@ -3,7 +3,7 @@ They resemble natural english sentences.
 
 TODO:
 
-Howto for compound rules, nested rules, negative queries (not matched by anything).
+Howto for compound rules, nested rules, rules over multiple sources, negative queries (not matched by anything).
 
 ## Concepts & philosophy
 
