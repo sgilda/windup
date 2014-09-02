@@ -20,8 +20,9 @@ This guide is for developers who plan to contribute source code updates to the W
 ### Understand the Rule Processing
 
 * [Rules Execution Lifecycle](https://github.com/windup/windup/wiki/Rules:-Rules-Execution-Lifecycle)
+* [Concepts & Philosphy](https://github.com/windup/windup/wiki/Rules:-Concepts-&-Philosophy)
 
 ### Create Rules Using Java
 
-* https://github.com/windup/windup/wiki/Rules:-Creating-in-Java-syntax
+* [Rule Structure] https://github.com/windup/windup/wiki/Rules:-Rule-Structure
 
