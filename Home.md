@@ -17,12 +17,13 @@ Windup 2.0 is a sequel to the original Windup 0.7.x. Legacy Windup 0.7.x has mov
        * Graph Queries
        * Iteration
        * Nested Iteration
-       * [Coding in Groovy](Rules:-Coding-Groovy)
+       * [Operations](Rules:-Operations)
+       * [Coding in Groovy](Rules:-Coding-Groovy) - coming soon
    * Advanced rules authoring:
        * [Concepts & Philosophy](Rules:-Concepts-&-Philosophy)
        * [About Framed Vertex Models](FramedModels)
        * Adding Graph Vertices
-       * [Operations](Rules:-Operations)
+       * [Creating Operations](Rules:-Creating-Operations)
        * [Bundling it all to a Windup Ruleset Addon](Rules:-Bundling)
 * [How to Extend the Rules](https://github.com/windup/windup/wiki/Extend-Windup-Rules)
  
