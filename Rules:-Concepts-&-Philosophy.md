@@ -1,8 +1,8 @@
 ## Concepts & philosophy
 
-Windup is Rule-based. Users are able to write own rules according to their needs, constructs in their applications, custom APIs used, etc.
+Windup is a rule-based tool that allows users to write customized rules based on the needs, constructs, and custom APIs used in their applications.
 
-The individual rules should be decoupled, only expressing dependencies on each other, and "communicate" through the graph. Each rule will query the graph database, use the results for locating the candidates of it's interests, process them, and then write the results to the graph database.
+Individual rules should be decoupled, only expressing dependencies on each other, and "communicate" through the graph. Each rule will query the graph database, use the results for locating the candidates of it's interests, process them, and then write the results to the graph database.
 
 ### Graph database and Models (Frames)
 
