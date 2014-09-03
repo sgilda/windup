@@ -1,6 +1,6 @@
 ## Install Windup into Forge
 
-1. Install [Forge 2](http://forge.jboss.org/)
+1. Download and install the latest version of [Forge 2](http://forge.jboss.org/) for your OS. This is currently Forge 2.8.1.Final.
 
 2. [Build Windup](./Dev: Build Windup from Source)
 
