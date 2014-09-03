@@ -1,5 +1,3 @@
-Currently, Windup 2.0 is only invoked from tests. Check back later for normal CLI!
-
 ## Install Windup into Forge
 
 1. Install [Forge 2](http://forge.jboss.org/)
