@@ -1,0 +1,159 @@
+[[accessing-the-graph-reference]]
+Accessing the Graph reference
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Depending on where you "are", either
+
+[source,java]
+----
+@Inject GraphContext graph;
+----
+
+or call
+
+[source,java]
+----
+GraphRewrite.getGraphContext()
+GraphService.getConfigurationModel( event.getGraphContext() );
+----
+To get Frames:
+
+[source,java]
+----
+graph.getFramed();
+----
+
+[[other-frequent-injectables]]
+Other frequent injectables
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+[source,java]
+----
+@Inject private GraphTypeManager graphTypeManager;    
+@Inject private GraphContext graph;
+@Inject private Furnace furnace;
+----
+
+[[adding-a-type-to-a-vertex-specializing-the-vertex]]
+Adding a type to a Vertex (specializing the vertex)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+[source,java]
+----
+JavaClassModel classModel = GraphUtil.addTypeToModel(event.getGraphContext(), frame, avaClassModel.class);
+----
+
+[[adding-a-frame]]
+Adding a Frame
+^^^^^^^^^^^^^^
+
+To add a frame, a more preferred way is to use the GraphService.
+
+[source,java]
+----
+new GraphService<FooModel>(graph,FooModel.class).create();
+----
+
+However, if for some reason the GraphService is not convenient, you can
+create a vertex directly using graph context.
+
+[source,java]
+----
+graph.getFramed().addVertex(null, FooModel.class);
+----
+
+[[querying-the-graph]]
+Querying the graph
+~~~~~~~~~~~~~~~~~~
+
+There are several ways - including Query API, Gremlin support, or
+GraphService methods.
+
+[[querying-inside-the-when-method-of-the-rule]]
+Querying inside the when() method of the rule
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Building a rule contains the method when(), which is used to create a
+*condition*. Vertices that fulfill the condition, are passed to the
+perform() method.
+
+For the queries in the when() method, class Query is used. There are
+several methods which you can use to specify the condition. For example:
+* *find()* specifies the Model type of the vertex * *as()* method
+specifies the name of the final list, that is passed to the perform()
+method * *from(String name)* starts the query not on the all vertices,
+but only on the vertices already stored in the the given *name* (used to
+begin query on the result of the other one) * *withProperty()* specify
+the property value of the given vertex
+
+The simple query can look like this:
+
+[source,java]
+----
+Query.find(ApplicationReportModel.class).as(VAR_APPLICATION_REPORTS)
+----
+
+[[querying-to-get-the-model-values]]
+Querying to get the model values
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To query the graph to get the models of requested type, a GraphService<>
+class can be used. The examples of using the GraphService are listed
+below.
+
+[source,java]
+----
+FooModel foo = new GraphService<>(graphContext, FooModel.class).getUnique();
+----
+
+[source,java]
+----
+FooModel foo = new GraphService<>(graphContext, FooModel.class).getUniqueByProperty("size", 1);
+----
+
+[[iteration]]
+Iteration
+^^^^^^^^^
+
+[source,java]
+----
+ConfigurationBuilder.begin().addRule()
+    .when(
+        GraphSearchConditionBuilderGremlin.create("javaFiles", new ArrayList())
+        .V().framedType( JavaFileModel.class ).has("analyze")
+    )
+    .perform(
+        // For all java files...
+        Iteration.over("javaFiles").var("javaFile").perform(
+----
+
+[[nested-iteration]]
+Nested Iteration
+^^^^^^^^^^^^^^^^
+
+[source,java]
+----
+code,java
+// For all java files...
+Iteration.over("javaFiles").var("javaFile").perform(
+    // A nested rule.
+    GraphSubset.evaluate(
+        ConfigurationBuilder.begin().addRule()
+        .when(...)
+        .perform(
+            Iteration.over("regexes").var(RegexModel.class, "regex").perform(
+                new AbstractIterationOperator<RegexModel>( RegexModel.class, "regex" ) {
+                    public void perform( GraphRewrite event, EvaluationContext context, RegexModel regex ) {
+
+                        VarStack sf = VarStack.instance(event);
+                        JavaFileModel javaFile = sf.getCurrentPayload( JavaFileModel.class, "javaFile");
+
+                        getRegexMatches( javaFile.getFilePath(), regex.getRegex() );
+                    }
+                }
+            )
+            .endIteration()
+        )// perform()
+    )
+)
+----
