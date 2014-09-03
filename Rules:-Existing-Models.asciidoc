@@ -1,0 +1,26 @@
+Windup models are the classes extending WindupVertexFrame.
+
+image:../img/WindupModels-NbScreenshot.png[Models]
+
+[[meta-models]]
+Meta models
+~~~~~~~~~~~
+
+* User input
+* Rules and Rule Providers metadata
+
+[[core-models]]
+Core models
+~~~~~~~~~~~
+
+FileModel ArchiveModel
+
+[[reporting-models]]
+Reporting models
+~~~~~~~~~~~~~~~~
+
+[[custom-models-coming-from-addons]]
+Custom models (coming from Addons)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+See respective ruleset's documentation.
