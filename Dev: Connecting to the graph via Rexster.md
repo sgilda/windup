@@ -25,6 +25,8 @@
 	</graph>
 ---------------------------------------------------------------------------
 
-7. Start rexster with REXSTER_HOME/bin/rexster.sh --start
-8. Browse to http://localhost:8182/
+7. rm REXSTER_HOME/lib/lucene-core-3.6.2.jar
+8. rm REXSTER_HOME/ext/lib/slf4j-*
+9. Start rexster with REXSTER_HOME/bin/rexster.sh --start
+10. Browse to http://localhost:8182/
 
