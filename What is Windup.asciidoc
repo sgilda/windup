@@ -1,0 +1,48 @@
+image:../images/windup-logo-wiki-header.jpg[Windup Logo] 
+|
+
+JBoss Windup is a tool to simplify application migrations. Running from
+a http:forge.jboss.org[Forge] environment, the tool reads EAR, WAR, and
+JAR files and produces an HTML report detailing the inner workings of
+the Java application to simplify migration efforts. It seeks to make
+migrating from other containers to JBoss a piece of cake.
+
+[[windup-2.0-vs.-windup-0.7.x]]
+Windup 2.0 vs. Windup 0.7.x
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Windup 2.0 aims to deliver the same functionality as legacy Windup. The
+internal architecture, however, link:Architecture[is very different],
+and so are link:Rules%20Authoring[the rules].
+
+[[how-does-windup-simplify-migrations]]
+How does Windup simplify migrations?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Windup is comprised of resource interrogators. These interrogators look
+for common resources and highlight technologies and known “trouble
+spots” in migrating applications. The goal of Windup is to provide a
+high level view into relevant technologies in use within the
+application, and provide a consumable report for organizations to
+estimate, document, and migrate JEE applications to JBoss.
+
+Below is a list of the interrogators included with JBoss Windup:
+
+Interrogators
+Description
+Java Interrogator
+Reads compiled Java files; determined if blacklisted classes are
+imported, and if so it will continue to profile the resource.
+JSP Interrogator
+Reads JSP files; extracts JSP import and taglibs in use and continues to
+profile the resource.
+XML Interrogator
+Reads XML files; reads the XML into a DOM object and continues to
+profile the resource.
+[[follow-windup-on-twitter]]
+Follow Windup on Twitter!
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Follow Windup on https://twitter.com/jbosswindup[Twitter@JBossWindup] for updates and more!
+
+link:Build-Windup[Next Page: How to Build]
