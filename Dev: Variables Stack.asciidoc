@@ -1,0 +1,30 @@
+The `Variables` class keeps the variables which are available in rules,
+EL expressions and FreeMarker and XSLT templates.
+
+[[accessing-variables]]
+Accessing variables
+~~~~~~~~~~~~~~~~~~~
+
+[[from-a-java-based-rule]]
+From a Java-based rule
+^^^^^^^^^^^^^^^^^^^^^^
+
+[[from-a-groovy-based-rule]]
+From a Groovy-based rule
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+[[from-an-el-expression]]
+From an EL expression
+^^^^^^^^^^^^^^^^^^^^^
+
+[[from-a-freemarker]]
+From a FreeMarker
+^^^^^^^^^^^^^^^^^
+
+[[from-xslt-template]]
+From XSLT template
+^^^^^^^^^^^^^^^^^^
+
+[[accessing-variables-as-a-flat-map]]
+Accessing variables as a flat `Map`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
