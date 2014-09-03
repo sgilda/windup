@@ -7,31 +7,30 @@ Windup 2.0 is a sequel to the original Windup 0.7.x. Legacy Windup 0.7.x has mov
 * [What is Windup](What-is-Windup)?
 * [Project Info](Project-Info) - Git repo, IRC, Mailing lists, ...
 * [Get Involved](Get-Involved) - We need your feedback!
-* [Get the Windup Source Code](https://github.com/windup/windup/wiki/Dev:-Get-the-Windup-Source-Code)
-* [Build Windup from Source](https://github.com/windup/windup/wiki/Dev:-Build)
+* [Get the Windup Source Code](./Dev:-Get-the-Windup-Source-Code)
+* [Build Windup from Source](./Dev:-Build)
 * [How to Execute](Execute-Windup)
 * [Reviewing the Report](Reviewing-the-Report)
-* [How to Create New Rules](Rules:-Creating)
+* [How to Create New Rules](./Rules:-Creating)
    * Basic rules authoring:
-       * [Rule Structure](Rules:-Rule-Structure)
+       * [Rule Structure](./Rules:-Rule-Structure)
            * Iteration, Nested Iteration
-       * [Coding in Java fluent API](Rules:-Coding-Java)
-       * [Lifecycle](Rules:-Rules-Execution-Lifecycle) and [Phases](./Rules: Phases)
+       * [Coding in Java fluent API](./Rules:-Coding-Java)
+       * [Lifecycle](./Rules:-Rules-Execution-Lifecycle) and [Phases](./Rules: Phases)
        * Graph Queries
-       * [Operations](Rules:-Operations)
-       * [Coding in Groovy](Rules:-Coding-Groovy) - coming soon
+       * [Operations](./Rules:-Operations)
+       * [Coding in Groovy](./Rules:-Coding-Groovy) - coming soon
    * Advanced rules authoring:
-       * [Concepts & Philosophy](Rules:-Concepts-&-Philosophy)
-       * [About Framed Vertex Models](FramedModels)
+       * [Concepts & Philosophy](./Rules:-Concepts-&-Philosophy)
+       * [About Framed Vertex Models](./Dev: FramedModels)
        * Adding Graph Vertices
-       * [Creating Operations](Rules:-Creating-Operations)
-       * [Bundling it all to a Windup Ruleset Addon](Rules:-Bundling)
-* [How to Extend the Rules](https://github.com/windup/windup/wiki/Extend-Windup-Rules)
+       * [Creating Operations](./Rules:-Creating-Operations)
+       * [Bundling it all to a Windup Ruleset Addon](./Rules:-Bundling)
  
-* [Rulesets](https://github.com/windup/windup/wiki/Rulesets)
-   * [Basic Java](https://github.com/windup/windup/wiki/Ruleset:-Java-Basic)
-   * [Java EE](https://github.com/windup/windup/wiki/Ruleset:-Java-EE)
-   * [Java Decompilation](https://github.com/windup/windup/wiki/Ruleset:-Java-Decompilation)
+* [Rulesets](./Rulesets)
+   * [Basic Java](./Ruleset:-Java-Basic)
+   * [Java EE](./Ruleset:-Java-EE)
+   * [Java Decompilation](./Ruleset:-Java-Decompilation)
 
 ## Windup Guides
 
