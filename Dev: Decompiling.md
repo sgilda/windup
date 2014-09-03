@@ -4,4 +4,5 @@ ITypeLoader
   ClasspathTypeLoader
   InputTypeLoader
   CompoundTypeLoader
+  JarTypeLoader
 ```
