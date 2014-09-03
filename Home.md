@@ -16,7 +16,7 @@ Windup 2.0 is a sequel to the original Windup 0.7.x. Legacy Windup 0.7.x has mov
        * [Rule Structure](Rules:-Rule-Structure)
            * Iteration, Nested Iteration
        * [Coding in Java fluent API](Rules:-Coding-Java)
-       * [Lifecycle](Rules:-Rules-Execution-Lifecycle) and [Phases](Rules:-Phases)
+       * [Lifecycle](Rules:-Rules-Execution-Lifecycle) and [Phases](Rules%3A-Phases)
        * Graph Queries
        * [Operations](Rules:-Operations)
        * [Coding in Groovy](Rules:-Coding-Groovy) - coming soon
