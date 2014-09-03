@@ -151,7 +151,7 @@ essentially ensures that certain groups of rules are executed before
 this one. See ./Rules:-Rules-Execution-Lifecycle#rule-phases[Rules:
 Phases] for explanation.
 +
-[source,xml]
+[source,java]
 ----
     @Override
     public RulePhase getPhase() {
@@ -164,7 +164,7 @@ specify it's dependencies. Again, see
 ./Rules:-Rules-Execution-Lifecycle#rule-phases[Rules: Phases] for
 explanation.
 
-[source,xml]
+[source,java]
 ----
     @Override
     public List<Class<? extends WindupRuleProvider>> getClassDependencies() {
