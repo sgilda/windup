@@ -16,6 +16,8 @@
 
 ## Run Windup
 
+### Interactive run
+
 1. Start Forge 2:
 
 `forge`
@@ -27,3 +29,8 @@
 > ***SUCCESS*** Windup execution successful!
 
 3. View the report in the directory specified on the command line: */path/to/jee-example-app-1.0.0.ear.report*
+
+### Batch run (for a shell script)
+
+1. Run `forge --evaluate "windup-migrate-app --input ... --output ... --packages com.foo org.foo"`
+    Run `forge` and then `man windup-migrate-app` to see the possible parameters.
