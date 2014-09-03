@@ -2,7 +2,7 @@
 
 1. Install [Forge 2](http://forge.jboss.org/)
 
-2. Build Windup
+2. [Build Windup](./Dev: Build Windup from Source)
 
 3. Install the Windup UI Addon and Rules addons:
 ```
