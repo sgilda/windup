@@ -1,0 +1,47 @@
+We have several Frames extensions to satisfy our needs.
+
+[[multiple-types-in-a-vertex]]
+Multiple types in a vertex
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In the _type_ property, Frames only store 1 type. We have multiple types
+separated by '|'. All subparts are indexed.
+
+[[map-handler.-tbd.]]
+Map handler. TBD.
+~~~~~~~~~~~~~~~~~
+
+To store a map in a single vertex'es properties.
+
+[[map]]
+Map
+~~~
+
+To store a map in as adjacent vertices.
+
+
+[source,java]
+----
+@TypeValue("MapModelMain")
+public interface MapMainModel extends WindupVertexFrame
+{
+    @AdjacentMap(label = "map") void setMap(Map<String, MapValueModel> map);
+    @AdjacentMap(label = "map") Map<String, MapValueModel> getMap();
+}
+----
+
+See the `FrameMapHandlerTest`.
+
+[[list-handler.-tbd.]]
+List handler. TBD.
+~~~~~~~~~~~~~~~~~~
+
+To store a list of strings in a single vertex'es properties. The keys
+will be 0, 1, 2, 3, ...
+
+[[list]]
+List
+~~~~
+
+`WindupVertexListModel` offers a generic model for lists of other
+models, which are stored as adjacent vertices.
