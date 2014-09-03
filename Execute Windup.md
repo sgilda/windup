@@ -14,6 +14,8 @@
 
 > Installation completed successfully.
 
+## Run Windup
+
 4. Start Forge 2:
 
 `forge`
