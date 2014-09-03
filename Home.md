@@ -26,7 +26,7 @@ Windup 2.0 is a sequel to the original Windup 0.7.x. Legacy Windup 0.7.x has mov
        * Adding Graph Vertices
        * [Creating Operations](./Rules:-Creating-Operations)
        * [Bundling it all to a Windup Ruleset Addon](./Rules:-Bundling)
-* Existing [Rulesets](./Rulesets)
+* Existing [Rulesets](./Rulesets):
    * [Basic Java](./Ruleset:-Java-Basic)
    * [Java EE](./Ruleset:-Java-EE)
    * [XML](./Ruleset: XML)
