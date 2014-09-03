@@ -16,14 +16,14 @@
 
 ## Run Windup
 
-4. Start Forge 2:
+1. Start Forge 2:
 
 `forge`
 
-5. Run Windup:
+2. Run Windup:
 
 `[Desktop]$ windup-migrate-app --input /path/to/jee-example-app-1.0.0.ear --output /path/to/jee-example-app-1.0.0.ear.report --packages org.example.* com.example.*`
 
 > ***SUCCESS*** Windup execution successful!
 
-6. View the report in the directory specified on the command line: */path/to/jee-example-app-1.0.0.ear.report*
+3. View the report in the directory specified on the command line: */path/to/jee-example-app-1.0.0.ear.report*
