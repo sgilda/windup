@@ -1,0 +1,62 @@
+[[windup-project-information]]
+Windup Project Information
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[[github-repository]]
+Github Repository
+^^^^^^^^^^^^^^^^^
+
+The Windup project github repository is located at
+https://github.com/windup/windup/.
+
+See the
+https://github.com/windup/windup/wiki/Dev:-Developer-Guide[Developer
+Guide] for details on how to
+https://github.com/windup/windup/wiki/Dev:-Get-the-Windup-Source-Code[Get
+the Windup Source Code], how to
+https://github.com/windup/windup/wiki/dev:-Build-Windup-from-Source[Build
+Windup from Source], and how to
+https://github.com/windup/windup/wiki/Dev:-Create-JavaDoc-for-Windup[Create
+JavaDoc for Windup].
+
+[[documentation]]
+Documentation
+^^^^^^^^^^^^^
+
+The Windup documentation is currently located on link:./[this wiki].
+
+For additional information, refer to the Javadoc.
+
+[[website]]
+Website
+^^^^^^^
+
+There is currently no website for Windup 2.0.
+
+The windup.jboss.org website currently provides information primarily
+for legacy Windup 1.x (legacy).
+
+[[irc-chat]]
+IRC chat
+^^^^^^^^
+
+Server: irc.freenode.net +
+Channel: #windup
+
+[[mailing-lists]]
+Mailing lists
+^^^^^^^^^^^^^
+
+Subscribe to the JBoss mailing lists at
+https://lists.jboss.org/mailman/listinfo/windup-dev.
+
+* Core development discussion: windup-dev@redhat.com
+* Rules development discussion, usage: windup-users@redhat.com
+
+[[core-development-team-and-irc-nicks]]
+Core development team (and IRC nicks)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Lead: Lincoln Baxter (lincolnthree) +
+Members: Jess Sightler (jsightler), Matej Briskar (mbriskar), Ondrej
+Zizka (ozizka)
