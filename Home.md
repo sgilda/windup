@@ -5,7 +5,7 @@ _NOTE: The Windup 2.0 project is currently under development. If you want to con
 Windup 2.0 is a sequel to the original Windup 0.7.x. Legacy Windup 0.7.x has moved to the [windup-legacy GitHub repository](https://github.com/windup/windup-legacy).
 
 * [What is Windup](What-is-Windup)?
-* [Project Info](Project-Info) - Git repo, IRC, Mailing lists, ...
+* [Windup Project Information](Windup-Project-Informations) - Github repository, IRC, Mailing lists, ...
 * [Get Involved](Get-Involved) - We need your feedback!
 * [Get the Windup Source Code](./Dev:-Get-the-Windup-Source-Code)
 * [Build Windup from Source](./Dev:-Build)
