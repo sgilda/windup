@@ -1,0 +1,17 @@
+This is an example page. Content serves for design decision.
+
+[[rules]]
+Rules
+~~~~~
+
+[[maven-project-analysis]]
+Maven Project analysis
+^^^^^^^^^^^^^^^^^^^^^^
+
+Tags: maven, project
+
+[[seam-2.0-to-cdi]]
+Seam 2.0 to CDI
+^^^^^^^^^^^^^^^
+
+Tags: seam, cdi, app
