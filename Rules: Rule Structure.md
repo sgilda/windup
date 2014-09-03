@@ -11,7 +11,7 @@ Howto for compound rules, nested rules, rules over multiple sources, negative qu
 
 ## Rule code structure
 
-Rules are based on OCP Rewrite. That is a framework for events processing, like HTTP requests redirects.
+Rules are based on OCPsoft Rewrite. That is a framework for events processing, like HTTP requests redirects.
 Although, Windup has only one event, which spans across the whole lifecycle.
 
 ```java
