@@ -79,7 +79,7 @@ man windup-migrate-app
 Run Windup in Batch Mode (for a shell script)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To run Forge in batch mode, use the following syntax:
+To run the Forge `windup-migrate-app` command in batch mode, use the following syntax:
 ----
 forge --evaluate "windup-migrate-app --input INPUT_ARCHIVE --output OUTPUT_REPORT --packages PACKAGE_1 PACKAGE_2 PACKAGE_N"
 ----
