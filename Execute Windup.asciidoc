@@ -1,0 +1,83 @@
+[[install-windup-into-forge]]
+Install Windup into Forge
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1.  Download and install the latest version of
+http://forge.jboss.org/[Forge 2] for your OS. This is currently Forge
+2.8.1.Final. The steps to download, install, and configure the Forge distribution can be found here: http://forge.jboss.org/document/installation.
+2.  link:./Dev:-Build-Windup-from-Source[Build Windup from Source]
+3.  Install the Windup UI Addon and Rules addons using the following commands:
++
+---------------------------------------------------------------------------
+forge -b --install org.jboss.windup:ui,2.0.0-SNAPSHOT
+forge -b --install org.jboss.windup.rules.apps:rules-java,2.0.0-SNAPSHOT
+forge -b --install org.jboss.windup.rules.apps:rules-java-ee,2.0.0-SNAPSHOT
+---------------------------------------------------------------------------
++
+You should see the following message upon the completion of each of the above commands.
++
+____________________________________
+Installation completed successfully.
+____________________________________
+
+[[run-windup]]
+Run Windup
+~~~~~~~~~~
+
+[[interactive-run]]
+Run Windup Interactively
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+1.  Start Forge 2:
++
+-----
+forge
+-----
+2.  Run Windup using the following syntax:
++
+------------
+windup-migrate-app --input INPUT_ARCHIVE --output OUTPUT_REPORT --packages PACKAGE_1 PACKAGE_2 PACKAGE_N
+------------
++
+Where:
+
+* INPUT_ARCHIVE is the fully qualified application archive or path
+* OUTPUT_REPORT is the fully qualified path for the report produced by Windup
+* PACKAGE_1, PACKAGE_2, PACKAGE_N are the packages to be evaluated by Windup 
+
++
+For example:
+
++
+----
+$ windup-migrate-app --input /path/to/jee-example-app-1.0.0.ear --output /path/to/jee-example-app-1.0.0.ear.report --packages org.example.* com.example.*
+----
+3. You should see the following result upon completion of the command:
++
+____________________________________________
+***SUCCESS*** Windup execution successful!
+____________________________________________
+4.  View the report in the OUTPUT_REPORT directory specified on the command line, for example:
+_/path/to/jee-example-app-1.0.0.ear.report_
+
+[[batch-run-for-a-shell-script]]
+Run Windup in Batch Mode (for a shell script)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. To run Forge in batch mode, use the following syntax:
++
+----
+forge --evaluate "windup-migrate-app --input INPUT_ARCHIVE --output OUTPUT_REPORT --packages PACKAGE_1 PACKAGE_2 PACKAGE_N"
+----
+2. To see the list parameters available:
+
+* Start Forge
++
+----
+forge
+----
+* Type the following command in the Forge prompt:
++
+----
+man windup-migrate-app
+----
