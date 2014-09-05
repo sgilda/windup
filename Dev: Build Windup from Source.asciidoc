@@ -20,8 +20,7 @@ Oracle Java SE
 2.  Maven 3.1.1 or newer
 +
 If you have not yet installed or configured Maven, see
-https://github.com/windup/windup/wiki/Install-and-Configure-Maven[Install
-and Configure Maven] for details.
+link:./Install-and-Configure-Maven[Install and Configure Maven] for details.
 +
 If you have installed Maven, you can check the version by typing the
 following in a command prompt:
@@ -39,8 +38,7 @@ Developer Studio 7.1.1] or newer
 
 +
 You must also make sure the IDE embeds Maven 3.1.1 or later. See
-https://github.com/windup/windup/wiki/Install-and-Configure-Maven[Install
-and Configure Maven] for details.
+link:./Install-and-Configure-Maven[Install and Configure Maven] for details.
 
 [[build-windup-using-maven-command-line]]
 Build Windup Using Maven Command Line
@@ -115,8 +113,7 @@ installed `2.6.0-SNAPSHOT` frames JAR .
 ----
 
 1.  Make sure you have configured Maven as described here:
-https://github.com/windup/windup/wiki/Install-and-Configure-Maven[Install
-and Configure Maven].
+link:./Install-and-Configure-Maven[Install and Configure Maven].
 2.  Build the project.
 +
 -----------------
