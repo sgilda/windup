@@ -40,7 +40,7 @@ a collection of annotated Java Interfaces. For more information, see:
 https://github.com/tinkerpop/frames/wiki.
 
 Windup includes several Frames extensions, which are documented here:
-https://github.com/windup/windup/wiki/Dev:-Frames-extensions.
+link:./Dev:-Frames-extensions[Frames Extensions].
 
 [[gremlin]]
 Gremlin
