@@ -10,14 +10,10 @@ The Windup project github repository is located at
 https://github.com/windup/windup/.
 
 See the
-https://github.com/windup/windup/wiki/Dev:-Developer-Guide[Developer
-Guide] for details on how to
-https://github.com/windup/windup/wiki/Dev:-Get-the-Windup-Source-Code[Get
-the Windup Source Code], how to
-https://github.com/windup/windup/wiki/dev:-Build-Windup-from-Source[Build
-Windup from Source], and how to
-https://github.com/windup/windup/wiki/Dev:-Create-JavaDoc-for-Windup[Create
-JavaDoc for Windup].
+link:./Dev:-Developer-Guide[Developer Guide] for details on how to 
+link:./Dev:-Get-the-Windup-Source-Code[Get the Windup Source Code], how to
+link:./Dev:-Build-Windup-from-Source[Build Windup from Source], and how to
+link:./Dev:-Create-JavaDoc-for-Windup[Create JavaDoc for Windup].
 
 [[documentation]]
 Documentation
