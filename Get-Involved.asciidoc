@@ -16,7 +16,7 @@ link:./Dev:-Build-Windup-from-Source[Build Windup from Source]
 
 For more information about how to develop code for the the Windup
 project, see the
-link:.//Dev:-Developer-Guide[Developer Guide].
+link:./Dev:-Developer-Guide[Developer Guide].
 
 [[contribute-windup-rules]]
 Contribute Windup Rules
