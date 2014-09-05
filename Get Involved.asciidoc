@@ -10,16 +10,13 @@ The Windup project source code is located in this GitHub repository:
 https://github.com/windup/windup.
 
 * For instructions on how to fork and clone the Windup source code, see
-https://github.com/windup/windup/wiki/Dev:-Get-the-Windup-Source-Code[Get
-the Windup Source Code].
+link:./Dev:-Get-the-Windup-Source-Code[Get the Windup Source Code].
 * For instructions on how to build Windup, see
-https://github.com/windup/windup/wiki/dev:-Build-Windup-from-Source[Build
-Windup from Source]
+link:./Dev:-Build-Windup-from-Source[Build Windup from Source]
 
 For more information about how to develop code for the the Windup
 project, see the
-https://github.com/windup/windup/wiki/Dev:-Developer-Guide[Developer
-Guide].
+link:.//Dev:-Developer-Guide[Developer Guide].
 
 [[contribute-windup-rules]]
 Contribute Windup Rules
