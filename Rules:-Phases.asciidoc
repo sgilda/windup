@@ -1,3 +1,0 @@
-See
-https://github.com/windup/windup/wiki/Rules:-Rules-Execution-Lifecycle[Rules:
-Rules Execution Lifecycle].
