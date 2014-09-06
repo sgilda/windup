@@ -38,9 +38,9 @@ link:./Rules:%20Phases[Phases]
 * Existing link:./Rulesets[Rulesets]:
 * link:./Ruleset:-Java-Basic[Basic Java]
 * link:./Ruleset:-Java-EE[Java EE]
-* link:./Ruleset:%20XML[XML]
-* link:./Ruleset:%20EAP%205%20in[JBoss EAP 5 - in] (TBD)
-* link:./Ruleset:%20EAP%206%20out[JBoss EAP 6 - out] (TBD)
+* link:./Ruleset:-XML[XML]
+* link:./Ruleset:-EAP-5-in[JBoss EAP 5 - in] (TBD)
+* link:./Ruleset:-EAP-6-out[JBoss EAP 6 - out] (TBD)
 
 [[windup-guides]]
 Windup Guides
