@@ -161,7 +161,7 @@ Phases] for explanation.
 
 For fine-grained control the order in which the rule is executed,
 specify it's dependencies. Again, see link:
-./Rules:-Rules-Execution-Lifecycle#rule-phases[Rules: Phases] for
+Rules:-Rules-Execution-Lifecycle#rule-phases[Rules: Phases] for
 explanation.
 
 [source,java]
