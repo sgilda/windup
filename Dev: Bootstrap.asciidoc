@@ -9,11 +9,16 @@ executing them_
 Boot
 ^^^^
 
+
 `WindupProcessor`,
 `WindupProcessorImpl.execute( WindupProcessorConfig )`
 
 Instantiates `@Inject GraphContext graphContext`, which holds
 graph-related objects.
+
+`GraphContextFactoryImpl`: `create()`, `produceGraphContext()`
+
+
 
 [[frames-creation]]
 Frames creation
