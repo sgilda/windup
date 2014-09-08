@@ -31,8 +31,9 @@ How can you help?
 
 To help us make Windup cover most application constructs and server configurations, including yours, you may try the following, from 5-minute thinking to few days of coding:
 
-* link:http://issues.jboss.com/browse/WINDUP[Tell us] what should Windup migration rules cover.
-* Provide example applications to test migration rules. link:mailto:windup-users@redhat.com[windup-users@redhat.com]
+* link:mailto:windup-users@redhat.com[Tell us] what should Windup migration rules cover.
+* link:Execute-Windup[Try Windup] and link:http://issues.jboss.com/browse/WINDUP[report bugs] (if any ;-)
+* Provide example applications to test migration rules.
 * Identify components and problem areas that may be difficult to
 migrate.
 * Write a short description of these problem migration areas.
