@@ -41,7 +41,7 @@ public class ExampleRuleProvider extends WindupRuleProvider
        );
     }
     // @formatter:on
-    // (@formatter:off/on prevents Eclipse to format the rules as the results are not nice.)
+    // (@formatter:off/on prevents Eclipse from formatting the rules.)
 }
 ----
 
