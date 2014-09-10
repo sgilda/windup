@@ -41,6 +41,7 @@ link:./Rules:%20Phases[Phases]
 * link:./Ruleset:-XML[XML]
 * link:./Ruleset:-EAP-5-in[JBoss EAP 5 - in] (TBD)
 * link:./Ruleset:-EAP-6-out[JBoss EAP 6 - out] (TBD)
+* link:./Glossary[Glossary of Terms]
 
 [[windup-guides]]
 Windup Guides
