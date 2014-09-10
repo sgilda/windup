@@ -2,7 +2,8 @@
 
 `Rule` implements `Context` which can keep metadata.
 ```java
-WindupRuleProvider ruleProvider = (WindupRuleProvider) context.get(RuleMetadata.RULE_PROVIDER);
+WindupRuleProvider ruleProvider = 
+     (WindupRuleProvider) context.get(RuleMetadata.RULE_PROVIDER);
 ```
 
 ### In-memory Frames
