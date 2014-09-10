@@ -44,6 +44,10 @@ Rulesets distributed with Windup and maintained by the Windup team.
 * java-ee, app
 * Java EE Servers
 * java-ee, server
+* Reporting
+  * CreateApplicationReportIndexRuleProvider
+  * CreateJavaApplicationOverviewReportRuleProvider
+  * RenderSourceReportRuleProvider
 
 [[community-rulesets]]
 Community rulesets
