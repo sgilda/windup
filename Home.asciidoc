@@ -17,30 +17,30 @@ repository, IRC, Mailing lists, ...
 * link:Get-Involved[Get Involved] - We need your feedback!
 * link:./Dev:-Get-the-Windup-Source-Code[Get the Windup Source Code]
 * link:./Dev:-Build[Build Windup from Source]
-* link:Execute-Windup[How to Execute]
-* link:Reviewing-the-Report[Reviewing the Report]
-* link:./Rules:-Creating[How to Create New Rules]
+* link:Execute-Windup[Execute Windup]
+* link:Review-the-Report[Review the Report]
+* How to Create New Rules
 * Basic rules authoring:
 ** link:./Rules:-Rule-Structure[Rule Structure]
 *** Iteration, Nested Iteration
-** link:./Rules:-Coding-Java[Coding in Java fluent API]
+** Coding in Java fluent API
 ** link:./Rules:-Rules-Execution-Lifecycle[Lifecycle] and
 link:./Rules:%20Phases[Phases]
 ** Graph Queries
 ** link:./Rules:-Operations[Operations]
-** link:./Rules:-Coding-Groovy[Coding in Groovy] - coming soon
+** Coding in Groovy - coming soon
 * Advanced rules authoring:
 ** link:./Rules:-Concepts-&-Philosophy[Concepts & Philosophy]
-** link:./Dev:%20FramedModels[About Framed Vertex Models]
+** About Framed Vertex Models
 ** Adding Graph Vertices
 ** link:./Rules:-Creating-Operations[Creating Operations]
-** link:./Rules:-Bundling[Bundling it all to a Windup Ruleset Addon]
+** Bundling it all to a Windup Ruleset Addon
 * Existing link:./Rulesets[Rulesets]:
 * link:./Ruleset:-Java-Basic[Basic Java]
-* link:./Ruleset:-Java-EE[Java EE]
+* Java EE
 * link:./Ruleset:-XML[XML]
-* link:./Ruleset:-EAP-5-in[JBoss EAP 5 - in] (TBD)
-* link:./Ruleset:-EAP-6-out[JBoss EAP 6 - out] (TBD)
+* JBoss EAP 5 - in (TBD)
+* JBoss EAP 6 - out (TBD)
 * link:./Glossary[Glossary of Terms]
 
 [[windup-guides]]
