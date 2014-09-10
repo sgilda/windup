@@ -19,5 +19,7 @@ com.thinkaurelius.titan.level = SEVERE
 ### Slf4j (Weld, ...):
 ```
 -Dorg.slf4j.simpleLogger.defaultLogLevel=ERROR
+-Dorg.slf4j.simpleLogger.log.org.jboss.weld.event.ExtensionObserverMethodImpl=ERROR
 ```
-(add this sys prop to Surefire config)
+See http://www.slf4j.org/apidocs/org/slf4j/impl/SimpleLogger.html
+Add this sys prop to Surefire config:
