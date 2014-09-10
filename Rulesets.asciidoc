@@ -4,12 +4,14 @@ the future.
 What is a ruleset?
 ------------------
 
-A ruleset is a Windup "plug-in" targetting a specific area of migration, knowledge,
- a group of rules, link: Operations and link: Conditions, along with link: Report templates (if needed), and  static files (e.g. images, XML or CSV files, etc.).
+A ruleset is a Windup "plug-in" targetting a specific area of migration (e.g. Spring to Java EE 6 migration). Underhood, it is a set of rules, and everything they might need: link: Operations and link: Conditions, link: Report templates (if needed), and  static files (e.g. images, XML or CSV files, etc.).
+A ruleset may also declare metadata, like ruleset ID, link: dependencies on other rulesets, etc.
 
-link: Java-based ruleset is a link: Forge addon (i.e. a `.jar` file). link: Groovy-based ruleset is a directory with `.windup.groovy` script(s) and its static files, possibly in a `.zip` file.
+link: Java-based ruleset is a link: Forge addon (i.e. a `.jar` file). link:
 
-A ruleset may declare metadata, like ruleset ID, link: dependencies on other rulesets, etc.
+Groovy-based ruleset is a directory with `.windup.groovy` script(s) and its static files, possibly in a `.zip` file.
+
+
 
 See link: ... to read about how to create your own Ruleset.
 
