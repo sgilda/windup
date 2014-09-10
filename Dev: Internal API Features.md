@@ -2,7 +2,7 @@
 
 ```java
 WindupRuleProvider ruleProvider = (WindupRuleProvider) context.get(RuleMetadata.RULE_PROVIDER);
-----
+```
 
 ### In-memory Frames
 
