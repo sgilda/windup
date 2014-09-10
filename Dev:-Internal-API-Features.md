@@ -1,5 +1,6 @@
-### How to get
+### How to know what `RuleProvider` provided a `Rule`
 
+`Rule` implements `Context` which can keep metadata.
 ```java
 WindupRuleProvider ruleProvider = (WindupRuleProvider) context.get(RuleMetadata.RULE_PROVIDER);
 ```
