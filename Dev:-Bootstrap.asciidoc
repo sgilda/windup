@@ -1,22 +1,27 @@
-[[Bootstrap]]
-Bootstrap
-~~~~~~~~~
+== Bootstrap
 
 _How Windup starts up, finds the resources, loads the rules and starts
 executing them_
 
-[[boot]]
-Boot
-^^^^
+### Boot
 
 
-`WindupProcessor`,
-`WindupProcessorImpl.execute( WindupProcessorConfig )`
+`@Inject WindupProcessor` <- CDI instantiates `WindupProcessorImpl`
+
+Create `WindupProcessorConfig`
+
+WindupProcessorImpl.execute( WindupProcessorConfig )
+
+== `WindupProcessorImpl`
 
 Instantiates `@Inject GraphContext graphContext`, which holds
 graph-related objects.
 
-`GraphContextFactoryImpl`: `create()`, `produceGraphContext()`
+`GraphContextFactoryImpl`: `create()`, `@Produces GraphContext produceGraphContext()`
+
+== GraphContext
+
+== RuleSubset
 
 
 
