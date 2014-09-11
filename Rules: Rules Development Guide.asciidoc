@@ -9,26 +9,26 @@ rules for Windup 2.0.
 Get Started
 ^^^^^^^^^^^
 
-* link:Dev:-Get-the-Windup-Source-Code[Get the Windup Source Code]
-* link:Dev:-Build-Windup-from-Source[Build Windup from Source]
-* link:Dev:-Create-JavaDoc-for-Windup[Create JavaDoc for Windup]
+* link:./Dev:-Get-the-Windup-Source-Code[Get the Windup Source Code]
+* link:./Dev:-Build-Windup-from-Source[Build Windup from Source]
+* link:./Dev:-Create-JavaDoc-for-Windup[Create JavaDoc for Windup]
 
 [[understand-the-windup-project-structure]]
 Understand the Windup Project Structure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* link:Dev:-Windup-Project-Structure[Windup Project Structure]
+* link:./Dev:-Windup-Project-Structure[Windup Project Structure]
 
 [[understand-the-rule-processing]]
 Understand the Rule Processing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* link:Rules:-Rules-Execution-Lifecycle[Rules Execution Lifecycle]
-* link:Rules:-Concepts-&-Philosophy[Concepts & Philosphy]
+* link:./Rules:-Rules-Execution-Lifecycle[Rules Execution Lifecycle]
+* link:./Rules:-Concepts-&-Philosophy[Concepts & Philosphy]
 
 [[create-rules-using-java]]
 Create Rules Using Java
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-* link:Rules:-Rule-Structure[Rule Structure]
+* link:./Rules:-Rule-Structure[Rule Structure]
 
