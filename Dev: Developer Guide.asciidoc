@@ -3,7 +3,7 @@ Developer Guide
 ~~~~~~~~~~~~~~~
 
 This guide is for developers who plan to contribute source code updates
-to the Windup 2.0 project.
+or core rule add-ons to the Windup 2.0 project.
 
 [[get-started]]
 Get Started
