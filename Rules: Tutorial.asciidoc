@@ -30,7 +30,7 @@ subject to change._
 
 Windup is a Forge/Furnace based application. As such, it has a
 modularized design, which requires a bit of additional knowledge. Should
-you need any additional dependencies, refer to ./Dev:-Dependencies[Dev:
+you need any additional dependencies, refer to link:Dev:-Dependencies[Dev:
 Dependencies].
 
 [source,xml]
