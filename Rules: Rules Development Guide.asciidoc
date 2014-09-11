@@ -9,7 +9,7 @@ rules for Windup 2.0.
 Get Started
 ^^^^^^^^^^^
 
-Currently, there is no distribution available, so you need to build windup  from source.
+Currently, there is no distribution available, so you need to build Windup  from the source.
 
 * link:./Dev:-Get-the-Windup-Source-Code[Get the Windup Source Code]
 * link:./Dev:-Build-Windup-from-Source[Build Windup from Source]
