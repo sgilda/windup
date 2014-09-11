@@ -8,7 +8,7 @@ Groovy-based Rules
 
 [[contributing code]]
 Contributing Code - Git Workflow
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To contribute to Windup, link:https://github.com/windup/windup/fork[fork the "windup/windup" repository] to your own Git, clone your fork, commit your work on topic branches, and make pull requests.
 
