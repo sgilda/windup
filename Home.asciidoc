@@ -37,7 +37,7 @@ This guide provides information for developers who plan to contribute
 source code updates or core rule add-ons to the Windup 2.0 project.
 * link:./Rules:-Rules-Development-Guide[Rules Development Guide]: 
 This guide provides details for developers, consultants, and others 
-who plan to create custom rules for the Windup 2.0 project.
+who plan to create custom rule add-ons for the Windup 2.0 project.
 * link:./User:-User-Guide[User Guide]:
 This guide is for engineers, consultants, or others who plan to use
 Windup to migrate applications or other components.
