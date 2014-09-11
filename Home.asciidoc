@@ -20,7 +20,7 @@ https://github.com/windup/windup-legacy[windup-legacy] GitHub repository.
 repository, IRC, Mailing lists, ...
 * link:Get-Involved[Get Involved] - We need your feedback!
 * link:./Dev:-Get-the-Windup-Source-Code[Get the Windup Source Code]
-* link:./Dev:-Build[Build Windup from Source]
+* link:./Dev:-Build-Windup-from-Source[Build Windup from Source]
 * link:./Execute-Windup[Execute Windup]
 * link:Review-the-Report[Review the Report]
 * link:./Glossary[Glossary of Terms]
