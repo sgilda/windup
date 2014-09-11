@@ -1,0 +1,71 @@
+= Developer Guide
+
+This guide is for developers who plan to contribute source code updates
+or core rule add-ons to the Windup 2.0 project.
+
+== Get Started
+
+* link:./Dev:-Get-the-Windup-Source-Code[Get the Windup Source Code]
+* link:./Dev:-Build-Windup-from-Source[Build Windup from Source]
+* link:./Dev:-Create-JavaDoc-for-Windup[Create JavaDoc for Windup]
+
+== Developer Guidelines
+
+* link:./Dev:-Guidelines-&-Conventions[Guidelines & Conventions]
+* link:./Dev:-Git-Rebasing[Git Rebasing]
+
+== Understand the Windup Architecture and Structure
+
+* link:./Dev:-Windup-Software-Components[Windup Software Components]
+* link:./Dev:-Windup-Project-Structure[Windup Project Structure]
+
+== Rules and Rulesets
+
+
+
+== Debugging and Troubleshooting
+
+* link:./Dev:-Debugging-and-Profiling[Debugging and Profiling]
+* link:./Dev:-Troubleshooting[Troubleshooting]
+
+== Miscellaneous Pages
+
+=== Developer topics
+
+* link:./Dev:-Bootstrap[Bootstrap]
+* link:./Dev:-Classloading-Notes[Classloading Notes]
+* link:./Dev:-Connecting-to-the-graph-via-Rexster[Connecting to the graph via Rexster]
+* link:./Dev:-Decompiling[Decompiling]
+* link:./Dev:-Dependencies[Dependencies]
+* link:./Dev:-Frames-extensions[Frames extensions]
+* link:./Dev:-Internal-API-Features[Internal API Features]
+* link:./Dev:-Logging[Logging]
+* link:./Dev:-Variables-Stack[Variables Stack]
+* link:./Dev:-WindRide-to-Windup-functionality-porting[WindRide to Windup functionality porting]
+
+=== Rules topics
+
+* link:./Rules:-Available-Utilities[Available Utilities]
+* link:./Rules:-Concepts-&-Philosophy[Concepts & Philosophy]
+* link:./Rules:-Creating-Operations[Creating Operations]
+* link:./Ruleset:-Java-Basic[Java Basic]
+* link:./Ruleset:-Java:-Classifications-and-Inline-hints[Classifications and Inline Hints]
+* link:./Ruleset:-Java-EE-Apps[Java EE Apps]
+* link:./Ruleset:-Java-EE-Servers[Java EE Servers]
+* link:./Ruleset:-Reporting[Reporting]
+* link:./Rulesets[Rulesets]
+* link:./Ruleset:-XML[XML]
+* link:./Rules:-Existing-Models[Existing Models]
+* link:./Rules:-How-to-Contribute[How to Contribute]
+* link:./Rules:-Java:-Creating-Queries[Java: Creating Queries]
+* link:./Rules:-Metadata[Metadata]
+* link:./Rules:-Operations[Operations]
+* link:./Rules:-Ops:-Reporting:-Classification[Ops: Reporting: Classification]
+* link:./Rules:-Ops:-Reporting:-Hint[Ops: Reporting: Hint]
+* link:./Rules:-Ops:-Reporting:-TypeReference[Ops: Reporting: TypeReference]
+* link:./Rules:-Ops:-Xml:-XsltTrasformation[Ops: XML: XSLT Transformation]
+* link:./Rules:-Phases[Phases]
+* link:./Rules:-Rules-Execution-Lifecycle[Rules Execution Lifecyle]
+* link:./Rules:-Rule-Structure[Rule Structure]
+* link:./Rules:-Story-Points[Story Points]
+* link:./Rules:-Tutorial[Tutorial]
