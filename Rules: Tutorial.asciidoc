@@ -136,7 +136,7 @@ Dependencies].
 Creating the Rules
 ~~~~~~~~~~~~~~~~~~
 
-* Read about http://ocpsoft.org/rewrite/[OCPrewrite].
+* Read about http://ocpsoft.org/rewrite/[OCPSoft Rewrite].
 * Create a Java class, ending with `RuleProvider`.
 
 [source,xml]
@@ -233,7 +233,7 @@ TBD.
 ** https://github.com/tinkerpop/frames/wiki[Frames]
 ** link:./Rules:-Existing-Models[Existing Models]
 * Rules
-** http://ocpsoft.org/rewrite/[OCPrewrite]
+** http://ocpsoft.org/rewrite/[OCPSoft Rewrite]
 ** Conditions, Operations
 *** Variables
 ** Inter-rule action
