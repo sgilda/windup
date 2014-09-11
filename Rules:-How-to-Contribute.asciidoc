@@ -1,10 +1,12 @@
 [[java-based-rules]]
 Java-based Rules
 ~~~~~~~~~~~~~~~~
+TBD
 
 [[groovy-based-rules]]
 Groovy-based Rules
 ~~~~~~~~~~~~~~~~~~
+TBD
 
 [[contributing code]]
 Contributing Code - Git Workflow
