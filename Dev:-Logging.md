@@ -22,7 +22,7 @@ com.thinkaurelius.titan.level = SEVERE
 -Dorg.slf4j.simpleLogger.log.org.jboss.weld.event.ExtensionObserverMethodImpl=ERROR
 ```
 See http://www.slf4j.org/apidocs/org/slf4j/impl/SimpleLogger.html    
-Add this sys prop to Surefire config:
+Add these sys props to Surefire config:
 
 ```xml
             <!-- Surefire -->
