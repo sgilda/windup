@@ -5,14 +5,14 @@ or core rule add-ons to the Windup 2.0 project.
 
 == Get Started
 
+* link:Windup-Project-Information[Windup Project Information] - Github
+repository, IRC, Mailing lists, ...
 * link:./Dev:-Get-the-Windup-Source-Code[Get the Windup Source Code]
 * link:./Dev:-Build-Windup-from-Source[Build Windup from Source]
 * link:./Dev:-Create-JavaDoc-for-Windup[Create JavaDoc for Windup]
 
 == Developer Contributing Information
 
-* link:Windup-Project-Information[Windup Project Information] - Github
-repository, IRC, Mailing lists, ...
 * link:./Dev:-Development-Guidelines[Developer Guidelines]
 * link:./Dev:-Git-Rebasing[Git Rebasing]
 
