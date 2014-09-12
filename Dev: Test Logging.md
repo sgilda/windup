@@ -1,8 +1,6 @@
-Draft
-
 To control Windup logging during unit/integration test execution, limit or increase the logging levels using the following steps:
 
-### JUL
+### JUL (java.util.logging)
 1. First, find your JRE. On Linux, you may run ``readlink -f `which java` ``.
    Example location is `/usr/lib/jvm/java-7-openjdk-amd64/jre`. On windows, find your %JAVA_HOME%.
 2. Add this to `(JRE)/lib/logging.properties`:
