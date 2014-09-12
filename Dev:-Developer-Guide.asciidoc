@@ -9,9 +9,9 @@ or core rule add-ons to the Windup 2.0 project.
 * link:./Dev:-Build-Windup-from-Source[Build Windup from Source]
 * link:./Dev:-Create-JavaDoc-for-Windup[Create JavaDoc for Windup]
 
-== Developer Guidelines
+== Developer Contributing Information
 
-* link:./Dev:-Guidelines-&-Conventions[Guidelines & Conventions]
+* link:./Dev:-Development-Guidelines[Developer Guidelines]
 * link:./Dev:-Git-Rebasing[Git Rebasing]
 
 == Understand the Windup Architecture and Structure
