@@ -1,22 +1,25 @@
 = Development Guidelines
 
-[[project-source-code-format]]
-Project Source Code Format
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+== Project Source Code Format
 
-This project has a source format style documented via an
-https://github.com/windup/windup/blob/master/Eclipse_Code_Format_Profile.xml[Eclipse
-code formatter profile]. If using an alternate IDE, plugins are
-available to allow use of this profile (see below). All contributions
-should be formatted using this profile before submission.
+All project source code contributed to Windup should be formatted using the settings defined in the `Eclipse_Code_Format_Profile.xml` file located in the root directory of the Windup project.
 
-* Netbeans:
-http://plugins.netbeans.org/plugin/50877/eclipse-code-formatter-for-java
-* IntelliJ: http://plugins.jetbrains.com/plugin/?id=6546
+=== Eclipse IDE
 
-[[naming-conventions]]
-Naming conventions
-~~~~~~~~~~~~~~~~~~
+1. In Eclipse, choose Windows -> Preferences.
+2. Expand Java -> Code Style -> Formatter (Ctrl+Shift+F by default)
+3. Click Import
+4. Browse to the `Eclipse_Code_Format_Profile.xml` located in the root of the Windup project directory, then click 'OK'.
+
+=== Netbeans IDE
+
+Use this file to format Windup source code: http://plugins.netbeans.org/plugin/50877/eclipse-code-formatter-for-java 
+
+=== IntelliJ IDEA
+
+Use this file to format Windup source code: http://plugins.jetbrains.com/plugin/?id=6546
+
+== Naming conventions
 
 [[suffixes-and-prefixes]]
 Suffixes and prefixes
