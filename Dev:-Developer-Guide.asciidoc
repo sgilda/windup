@@ -14,7 +14,6 @@ repository, IRC, Mailing lists, ...
 == Developer Contributing Information
 
 * link:./Dev:-Development-Guidelines[Developer Guidelines]
-* link:./Dev:-Git-Rebasing[Git Rebasing]
 
 == Understand the Windup Architecture and Structure
 
@@ -44,6 +43,7 @@ repository, IRC, Mailing lists, ...
 * link:./Dev:-Logging[Logging]
 * link:./Dev:-Variables-Stack[Variables Stack]
 * link:./Dev:-WindRide-to-Windup-functionality-porting[WindRide to Windup functionality porting]
+* link:./Dev:-Git-Rebasing[Git Rebasing]
 
 === Rules topics
 
