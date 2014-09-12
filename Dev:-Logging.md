@@ -1,13 +1,18 @@
 Draft
 
-To make Windup logging a bit readable, limit the logging levels:
+To control Windup logging during unit/integration test execution, limit or increase the logging levels using the following steps:
 
 ### JUL
 1. First, find your JRE. On Linux, you may run ``readlink -f `which java` ``.
-   Example location is `/usr/lib/jvm/java-7-openjdk-amd64/jre`.
+   Example location is `/usr/lib/jvm/java-7-openjdk-amd64/jre`. On windows, find your %JAVA_HOME%.
 2. Add this to `(JRE)/lib/logging.properties`:
 
 ```
+# Valid levels are SEVERE, WARNING, INFO, FINE, FINER, FINEST, CONFIG
+
+# To enable windup debug logging
+org.jboss.windup.level = FINEST
+
 org.jboss.forge.level = WARNING
 # To prevent AddonLoader's "missing dependencies: ..."
 org.jboss.forge.furnace.impl.addons.level = OFF
