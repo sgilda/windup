@@ -1,5 +1,3 @@
-= What is Windup?
-
 image:../images/windup-logo-wiki-header.jpg[Windup Logo] 
 
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
