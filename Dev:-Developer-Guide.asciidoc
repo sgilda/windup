@@ -11,6 +11,8 @@ or core rule add-ons to the Windup 2.0 project.
 
 == Developer Contributing Information
 
+* link:Windup-Project-Information[Windup Project Information] - Github
+repository, IRC, Mailing lists, ...
 * link:./Dev:-Development-Guidelines[Developer Guidelines]
 * link:./Dev:-Git-Rebasing[Git Rebasing]
 
