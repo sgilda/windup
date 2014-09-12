@@ -3,7 +3,7 @@ Draft
 To make Windup logging a bit readable, limit the logging levels:
 
 ### JUL
-1. First, find your JRE. On Linux, you may run `readlink -f \`which java\``.
+1. First, find your JRE. On Linux, you may run `readlink -f ``which java```.
 2. Add this to `(JRE)/lib/logging.properties`:
 
 ```
