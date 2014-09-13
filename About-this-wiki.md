@@ -3,6 +3,6 @@ It is intended to reflects the state of the master branch, however pages may get
 
 The wiki is divided into these main areas (which may sometimes overlap) and with these prefixes:
 
-`Dev: ...` = for developers.
-`Rules: ...` = for rules authors.
-No prefix = for users of Windup.
+* `Dev: ...` = for developers.
+* `Rules: ...` = for rules authors.
+* No prefix = for users of Windup.
