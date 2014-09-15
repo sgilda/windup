@@ -1,12 +1,12 @@
+= Windup Dependencies
+
 _Based on
 https://github.com/OndraZizka/windup/commit/3574e81900cbad2b3a83d0bd6c263eb22c48e55e[this]
 discussion._
 
-[[addon-structure]]
-Addon structure
-~~~~~~~~~~~~~~~
+== Maven Add-on Structure
 
-This is the typical structure of `addon` Maven modules:
+This is the typical structure of Maven `add-on` modules:
 
 -------------------------------------------
 myaddon-parent
@@ -16,8 +16,8 @@ myaddon-parent
 +--- myaddon-tests - jar
 -------------------------------------------
 
-The `addon` POM file can declare dependencies on other forge-addons. 
-To prevent exporting the addon to dependent modules, use `<optional>true</optional>`.
+The `add-on` POM file can declare dependencies on other forge-addons. 
+To prevent exporting the add-on to dependent modules, use `<optional>true</optional>`.
 
 [source,xml]
 ----
@@ -29,8 +29,8 @@ To prevent exporting the addon to dependent modules, use `<optional>true</option
 </dependency>
 ----
 
-The `addon` POMs may also declare a dependency on normal Maven artifacts.
-To prevent exporting the addon to dependent modules, use `<optional>true</optional>`.
+The `add-on` POM files may also declare a dependency on typical Maven artifacts.
+To prevent exporting the add-on to dependent modules, use `<optional>true</optional>`.
 
 [source,xml]
 ----
@@ -41,18 +41,17 @@ To prevent exporting the addon to dependent modules, use `<optional>true</option
 </dependency>
 ----
 
-_One more question regrading dependencies. Is it advisable to depend on the`forge-addon`
-artifact from addon's subparts?_
+_One more question regarding dependencies. Is it advisable to depend on the`forge-addon`
+artifact from add-on's subparts?_
 
-Addons should reference the `<classifier>forge-addon</classifier>`
-artifact from other addons.
+Add-ons should reference the `<classifier>forge-addon</classifier>`
+artifact from other add-ons.
 
-[[addon-sub-parts]]
-Addon sub-parts
-~~~~~~~~~~~~~~~
 
-Addon sub-parts declare dependency preferably on forge addon APIs, not
-on the addons themselves, wherever possible (wherever an addon has an
+== Add-on sub-parts
+
+Add-on sub-parts declare dependency preferably on forge add-on APIs, not
+on the add-ons themselves, wherever possible (wherever an add-on has an
 explicit API). These dependencies must be marked as `provided` scope.
 
 [source,xml]
@@ -65,10 +64,10 @@ explicit API). These dependencies must be marked as `provided` scope.
 </dependency>
 ----
 
-but may instead depend on the primary addon dependency, e.g.
-`forge-addon`. The latter makes the poms simpler, but can be confusing,
-because the addon dependency still needs to be declared in the depending
-addon's POM.
+They may instead depend on the primary add-on dependency, e.g.
+`forge-addon`. The latter makes the POM files simpler, but can be confusing,
+because the add-on dependency still needs to be declared in the depending
+add-on's POM.
 
 [source,xml]
 ----
@@ -79,25 +78,24 @@ addon's POM.
 ----
 
 Declaring a `forge-addon` depencendy anywhere else than the
-`forge-addon` pom doesn't actually cause Furnace to establish an addon
+`forge-addon` pom doesn't actually cause Furnace to establish an add-on
 dependency. I.e. classes from the dep won't be available unless you
 declare it in the `forge-addon`'s pom.
 
-Addon's sub-parts may also declare dependencies on other normal maven
+Add-on's sub-parts may also declare dependencies on other normal maven
 dependencies, and these are treated as normal.
 
 [NOTE]
 ==========================
-Addon depends on API , scope `compile` > Addon
+Add-on depends on API , scope `compile` > Addon
 depends on Impl , scope `compile` with `<optional>true</optional>` -
-prevents exporting this dependency to consumers of the addon.
+prevents exporting this dependency to consumers of the add-on.
 ==========================
 
-[[test-dependencies]]
-Test dependencies
-~~~~~~~~~~~~~~~~~
+== Test dependencies
 
-For test dependencies on addons: Any addon/sub-part requiring an addon
+
+For test dependencies on add-ons: Any addon/sub-part requiring an addon
 for testing purposes should use `<scope>test</scope>`.
 
 [source,xml]
@@ -110,10 +108,10 @@ for testing purposes should use `<scope>test</scope>`.
     <scope>test</scope>
 </dependency>
 ----
+= Windup Dependencies
 
-[[dependencies-between-sub-parts-within-the-same-addon]]
-Dependencies between sub-parts within the same addon
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+== Dependencies between sub-parts within the same add-on
+
 
 Subpart may declare dependency on other subpart. E.g. `impl` typically
 depends on `api`. In that case, the scope should be set appropriately
