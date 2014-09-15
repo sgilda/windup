@@ -1,21 +1,16 @@
-[[get-the-windup-source-code]]
-Get the Windup Source Code
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+= Get the Windup Source Code
 
 To contribute to the Windup 2.0 project source code, you must fork the
 Windup repository to your own Git, clone your fork, commit your work on
 topic branches, and make pull requests back to the Windup repository.
 
-[[install-the-git-client]]
-Install the Git Client
-^^^^^^^^^^^^^^^^^^^^^^
+== Install the Git Client
 
 If you don't have the Git client (`git`), get it from:
 http://git-scm.com/
 
-[[fork-and-clone-the-windup-repository]]
-Fork and Clone the Windup Repository
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+== Fork and Clone the Windup Repository
 
 1.  https://github.com/windup/windup/fork[Fork] the Windup project. This
 creates the `windup` project in your own Git with the default remote
@@ -39,64 +34,35 @@ git remote add upstream git@github.com:windup/windup.git
 git fetch upstream
 ------------------
 
-[[submit-code-updates-to-the-windup-project]]
-Submit Code Updates to the Windup Project
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.  Create a new topic branch to contain your features, changes, or
-fixes using the command:
-+
------------------------------------------------------
- git checkout -b  <topic-branch-name> upstream/master
------------------------------------------------------
+== Install the Temporary Frames Patch
 
-+
-If you are fixing a JIRA, it is a good practice to use the number in the
-branch name. For example:
+To build the project, you need a patch for the `frames` project that is not yet available
+upstream. Follow these steps to build the project and install the patch. 
+
+NOTE: You must install this patch after you have completed the steps to link:./Install-and-Configure-Maven[Install and Configure Maven]
+
+1.  Create a local copy of the *frames* project.
 +
 ----------------------------------------------
-    git checkout -b WINDUP-225 upstream/master
+    git clone https://github.com/jsight/frames
 ----------------------------------------------
-2.  Make changes or updates to the source files.
-3.  Use the `git add` command to add new or changed file contents to the
-staging area.
+2.  Navigate to the newly created `frames/` directory.
 +
-----------------------
-git add <folder-name>/
-git add <file-name>
-----------------------
-4.  Use the git status command to view the status of the files in the
-directory and in the staging area and ensure that all modified files are
-properly staged:
+--------------
+    cd frames/
+--------------
 +
-------------------
-git status        
-------------------
-5.  Commit your changes to your local topic branch. For example:
+3.  Check out the *classloaderresolver* branch.
 +
----------------------------------------------------------
-git commit -m 'WINDUP-225: Description of change...'     
----------------------------------------------------------
-6.  Push your local topic branch to your github forked repository. This
-will create a branch on your Git fork repository with the same name as
-your local topic branch name.
+------------------------------------------------------------------
+    git checkout -b classloaderresolver origin/classloaderresolver
+------------------------------------------------------------------
+4.  Build the project.
 +
---------------------------------
-git push origin HEAD            
---------------------------------
-+
-_Note: The above command assumes your remote repository is named
-'origin'. You can verify your forked remote repository name using the
-command `git remote -v`_.
-7.  Browse to the branch on your forked Git repository.
-+
---------------------------------------------------------------------
- https://github.com/<your-username>/windup/tree/<topic-branch-name> 
---------------------------------------------------------------------
-8.  Open a Pull Request. For details, see
-https://help.github.com/articles/using-pull-requests[Using Pull
-Requests].
+---------------------
+    mvn clean install
+---------------------
+5.  The previous step creates and installs the `frames-2.6.0-SNAPSHOT.jar` in your
+local Maven respository.
 
-* Give the pull request a clear title and description.
-* View the modifications that are to be submitted to be sure it contains
-only the changes you expect.
