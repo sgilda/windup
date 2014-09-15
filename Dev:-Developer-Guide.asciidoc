@@ -7,6 +7,7 @@ or core rule add-ons to the Windup 2.0 project.
 
 * link:Windup-Project-Information[Windup Project Information] - Github
 repository, IRC, Mailing lists, ...
+* link:./Install-and-Configure-Maven[Install and Configure Maven]
 * link:./Dev:-Get-the-Windup-Source-Code[Get the Windup Source Code]
 * link:./Dev:-Build-Windup-from-Source[Build Windup from Source]
 * link:./Dev:-Create-JavaDoc-for-Windup[Create JavaDoc for Windup]
