@@ -1,23 +1,22 @@
-[[logging]]
-Logging
-^^^^^^^
+= Troubleshooting Windup
 
-Logging is currently broken and will not be fixed any soon. If you don't
-see any log messages, resort to `System.out.println()`. If you see too
-much logging (especially from Forge), get used to it. See also
-WINDUP-73.
+== Logging
 
-[[weird-exceptions]]
-Weird exceptions
-^^^^^^^^^^^^^^^^
+Logging is currently broken and will not be fixed any time soon. If you do not
+see any log messages, resort to `System.out.println()` for logging. You may also see too
+much logging, especially from Forge. This is to be expected. 
 
-Exceptions in Surefire reports are broken due to Forge's way of wrapping
-exceptions combined with Surefire's way of handling them. You need to
-debug or rewrap using `TestUtil.rewrap(ex)`. See also WINDUP-197.
+For more information about logging, see https://issues.jboss.org/browse/WINDUP-73[WINDUP-73].
 
-[[classloading-problems]]
-Classloading problems
-^^^^^^^^^^^^^^^^^^^^^
+== Debugging Exceptions
 
-It might get tricky to do the dependencies right in Forge-based project.
-Check Build:-Dependencies[this wiki] for some hints.
+Exceptions in Surefire reports are broken due to the way Forge wraps
+exceptions and the way Surefire handles them. You need to
+debug or rewrap exceptions using `TestUtil.rewrap(ex)`. 
+
+For more information about exceptions, see https://issues.jboss.org/browse/WINDUP-197[WINDUP-197].
+
+== Classloading Problems
+
+Configuring dependencies in a Forge-based project can be a little tricky.
+See link:./Dev:-Dependencies[Dev: Dependencies] for some hints.
