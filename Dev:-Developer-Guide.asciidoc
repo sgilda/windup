@@ -14,6 +14,7 @@ repository, IRC, Mailing lists, ...
 == Developer Contributing Information
 
 * link:./Dev:-Development-Guidelines[Developer Guidelines]
+* link:./Dev:-Submit-Code-Updates-to-the-Windup-Project[Submit Code Updates to the Windup Project]
 
 == Understand the Windup Architecture and Structure
 
