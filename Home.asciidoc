@@ -19,6 +19,7 @@ https://github.com/windup/windup-legacy[windup-legacy] GitHub repository.
 * link:Windup-Project-Information[Windup Project Information] - Github
 repository, IRC, Mailing lists, ...
 * link:Get-Involved[Get Involved] - We need your feedback!
+* link:./Install-and-Configure-Maven[Install and Configure Maven]
 * link:./Dev:-Get-the-Windup-Source-Code[Get the Windup Source Code]
 * link:./Dev:-Build-Windup-from-Source[Build Windup from Source]
 * link:./Execute-Windup[Execute Windup]
