@@ -19,4 +19,4 @@ For more information about exceptions, see https://issues.jboss.org/browse/WINDU
 == Classloading Problems
 
 Configuring dependencies in a Forge-based project can be a little tricky.
-See link:./Dev:-Dependencies[Dev: Windup Dependencies] for some hints.
+See link:./Dev:-Dependencies[Dev: Dependencies] for some hints.
