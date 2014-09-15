@@ -1,4 +1,4 @@
-= Windup Dependencies
+= Dependencies
 
 _Based on
 https://github.com/OndraZizka/windup/commit/3574e81900cbad2b3a83d0bd6c263eb22c48e55e[this]
@@ -108,7 +108,6 @@ for testing purposes should use `<scope>test</scope>`.
     <scope>test</scope>
 </dependency>
 ----
-= Windup Dependencies
 
 == Dependencies between sub-parts within the same add-on
 
