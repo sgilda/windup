@@ -1,19 +1,3 @@
-[[adding-a-frame]]
-Modifying Graph Data
-^^^^^^^^^^^^^^^^^^^^
-
-To add a vertex to, or find existing vertices in the graph, use the GraphService.
-
-[source,java]
-----
-GraphService<FooModel> fooService = new GraphService<FooModel>(graph,FooModel.class);
-
-List<FooModel> = fooService.findAll();
-FooModel = fooService.create();
-
-// etc ...
-----
-
 [[querying-the-graph]]
 Querying the graph
 ~~~~~~~~~~~~~~~~~~
@@ -104,4 +88,20 @@ Iteration.over("javaFiles").var("javaFile").perform(
         )// perform()
     )
 )
+----
+
+[[modifying-graph-data]]
+Modifying Graph Data
+^^^^^^^^^^^^^^^^^^^^
+
+For more custom operations dealing with Graph data that are not covered by the `Query` mechanism, use the GraphService.
+
+[source,java]
+----
+GraphService<FooModel> fooService = new GraphService<FooModel>(graph,FooModel.class);
+
+List<FooModel> = fooService.findAll();
+FooModel = fooService.create();
+
+// etc ...
 ----
