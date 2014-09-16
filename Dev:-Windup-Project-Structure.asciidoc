@@ -28,7 +28,7 @@ This subproject contains the datastore and Frames extensions.
 
 logging/::
 
-This is the logging subproject. This subproject may be removed, depending on the outcome of this Jira: https://issues.jboss.org/browse/WINDUP-49[WINDUP-49].
+This is the logging subproject. This subproject may be removed, depending on the outcome of this JIRA: https://issues.jboss.org/browse/WINDUP-49[WINDUP-49].
 
 reporting/::
 
