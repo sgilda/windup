@@ -4,6 +4,12 @@ This is an example page. Content serves for design decision.
 Rules
 ~~~~~
 
+JDKConfig
+^^^^^^^^^
+
+Targetted towards the classes distributed with JDK, like `java.lang.*`, `java.security.*`, `org.xml.*`, etc.
+
+
 [[maven-project-analysis]]
 Maven Project analysis
 ^^^^^^^^^^^^^^^^^^^^^^
