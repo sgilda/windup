@@ -1,7 +1,7 @@
 This is an example page. Content serves for design decision.
 
 Rule providers
-~~~~
+~~~~~~~~~~~~~~
 
 JDKConfig
 ^^^^^^^^^
