@@ -1,7 +1,10 @@
+Draft
 This is an example page. Content serves for design decision.
 
 Rule providers
 ~~~~~~~~~~~~~~
+
+These should rather be a definition list (dl/dt/dd).
 
 JDKConfig
 ^^^^^^^^^
