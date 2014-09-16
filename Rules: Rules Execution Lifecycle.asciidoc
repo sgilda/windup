@@ -63,7 +63,7 @@ migration - Automated migration of schemas or source segments -
 Blacklists to indicate vendor specific APIs.
 REPORT_GENERATION::
 During this phase, reporting visitors produce report data in the graph
-that will later be used by thereport rendering phase.
+that will later be used by the report rendering phase.
 REPORT_RENDERING::
 This is the phase that renders the report.
 FINALIZE::
