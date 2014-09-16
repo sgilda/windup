@@ -29,23 +29,6 @@ The simple query can look like this:
 Query.find(ApplicationReportModel.class).as(VAR_APPLICATION_REPORTS)
 ----
 
-[[querying-to-get-the-model-values]]
-Querying to get the model values
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To query the graph to get the models of requested type, a GraphService<>
-class can be used. The examples of using the GraphService are listed
-below.
-
-[source,java]
-----
-FooModel foo = new GraphService<>(graphContext, FooModel.class).getUnique();
-----
-
-[source,java]
-----
-FooModel foo = new GraphService<>(graphContext, FooModel.class).getUniqueByProperty("size", 1);
-----
 
 [[iteration]]
 Iteration
@@ -104,4 +87,16 @@ List<FooModel> = fooService.findAll();
 FooModel = fooService.create();
 
 // etc ...
+----
+
+GraphService<> can also be used to query the graph for models of the specified type:
+
+[source,java]
+----
+FooModel foo = new GraphService<>(graphContext, FooModel.class).getUnique();
+----
+
+[source,java]
+----
+FooModel foo = new GraphService<>(graphContext, FooModel.class).getUniqueByProperty("size", 1);
 ----
