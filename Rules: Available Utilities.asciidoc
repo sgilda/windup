@@ -1,6 +1,6 @@
 [[adding-a-frame]]
 Modifying Graph Data
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
 
 To add a vertex to, or find existing vertices in the graph, use the GraphService.
 
