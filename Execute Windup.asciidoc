@@ -1,6 +1,6 @@
-[[install-windup-into-forge]]
-Install Windup into Forge
-~~~~~~~~~~~~~~~~~~~~~~~~~
+= Execute Windup
+
+== Install Windup into Forge
 
 1.  Download and install the latest version of
 http://forge.jboss.org/[Forge 2] for your OS. This is currently Forge
@@ -20,15 +20,11 @@ ____________________________________
 Installation completed successfully.
 ____________________________________
 
-[[run-windup]]
-Run Windup
-~~~~~~~~~~
+== Run Windup
 
 You can run Windup interactively or in batch mode using the Forge `windup-migrate-app` command. 
 
-[[interactive-run]]
-Run Windup Interactively
-^^^^^^^^^^^^^^^^^^^^^^^^
+=== Run Windup Interactively
 
 1.  Start Forge 2:
 +
@@ -75,9 +71,7 @@ For details on how to evaluate the report data, see link:Review-the-Report[Revie
 man windup-migrate-app
 ----
 
-[[batch-run-for-a-shell-script]]
-Run Windup in Batch Mode (for a shell script)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== Run Windup in Batch Mode (for a shell script)
 
 To run the Forge `windup-migrate-app` command in batch mode, use the following syntax:
 ----
