@@ -1,0 +1,21 @@
+= Rules Overview
+
+Under construction
+
+RuleSet:: A ruleset is a Forge add-on that contains one or more RuleProviders, for example: rules-java-ee
+
+RuleProvider:: A class that implements one or more Rules using the .addRule() method, for example: JDKConfig
+
+Rule:: The rule added to the rule provider, for example:
+
+[source,java]
+----
+.addRule()
+    .when(JavaClass.references("java.lang.ClassLoader$").at(TypeReferenceLocation.TYPE))
+    .perform(Classification.as("Java Classloader, must be migrated.")
+    .with(Link.to("Red Hat Customer Portal: How to get resources via the ClassLoader in a JavaEE application in JBoss EAP",  "https://access.redhat.com/knowledge/solutions/239033"))
+     .withEffort(1))
+----
+
+
+
