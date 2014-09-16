@@ -19,7 +19,7 @@ repository, IRC, Mailing lists, ...
 
 == Understand the Windup Architecture and Structure
 
-* link:./Dev:-Windup-Software-Components[Windup Software Components]
+* link:./Dev:-Windup-Architectural-Components[Windup Architectural Components]
 * link:./Dev:-Windup-Project-Structure[Windup Project Structure]
 
 == Rules and Rulesets
