@@ -1,48 +1,17 @@
-[[accessing-the-graph-reference]]
-Accessing the Graph reference
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Depending on where you "are" call:
-
-[source,java]
-----
-GraphRewrite.getGraphContext()
-----
-To get Frames:
-
-[source,java]
-----
-graph.getFramed();
-----
-
-[[other-frequent-injectables]]
-Other frequent injectables
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-[source,java]
-----
-@Inject private GraphTypeManager graphTypeManager;    
-@Inject private Furnace furnace;
-----
-
-[[adding-a-type-to-a-vertex-specializing-the-vertex]]
-Adding a type to a Vertex (specializing the vertex)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-[source,java]
-----
-JavaClassModel classModel = GraphUtil.addTypeToModel(event.getGraphContext(), frame, avaClassModel.class);
-----
-
 [[adding-a-frame]]
-Adding a Frame
+Modifying Graph Data
 ^^^^^^^^^^^^^^
 
-To add a frame, a more preferred way is to use the GraphService.
+To add a vertex to, or find existing vertices in the graph, use the GraphService.
 
 [source,java]
 ----
-new GraphService<FooModel>(graph,FooModel.class).create();
+GraphService<FooModel> fooService = new GraphService<FooModel>(graph,FooModel.class);
+
+List<FooModel> = fooService.findAll();
+FooModel = fooService.create();
+
+// etc ...
 ----
 
 [[querying-the-graph]]
@@ -53,8 +22,8 @@ There are several ways - including Query API, Gremlin support, or
 GraphService methods.
 
 [[querying-inside-the-when-method-of-the-rule]]
-Querying inside the when() method of the rule
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Querying inside the .when() method of the rule
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Building a rule contains the method when(), which is used to create a
 *condition*. Vertices that fulfill the condition, are passed to the
@@ -126,12 +95,8 @@ Iteration.over("javaFiles").var("javaFile").perform(
         .perform(
             Iteration.over("regexes").var(RegexModel.class, "regex").perform(
                 new AbstractIterationOperator<RegexModel>( RegexModel.class, "regex" ) {
-                    public void perform( GraphRewrite event, EvaluationContext context, RegexModel regex ) {
-
-                        VarStack sf = VarStack.instance(event);
-                        JavaFileModel javaFile = sf.getCurrentPayload( JavaFileModel.class, "javaFile");
-
-                        getRegexMatches( javaFile.getFilePath(), regex.getRegex() );
+                    public void perform( GraphRewrite event, EvaluationContext context, RegexModel regex ) { 
+                        //...
                     }
                 }
             )
