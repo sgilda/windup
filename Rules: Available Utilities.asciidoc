@@ -2,10 +2,7 @@
 Accessing the Graph reference
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Depending on where you "are", either
-
-[source,java]
-Call:
+Depending on where you "are" call:
 
 [source,java]
 ----
