@@ -5,16 +5,11 @@ Accessing the Graph reference
 Depending on where you "are", either
 
 [source,java]
-----
-@Inject GraphContext graph;
-----
-
-or call
+Call:
 
 [source,java]
 ----
 GraphRewrite.getGraphContext()
-GraphService.getConfigurationModel( event.getGraphContext() );
 ----
 To get Frames:
 
@@ -30,7 +25,6 @@ Other frequent injectables
 [source,java]
 ----
 @Inject private GraphTypeManager graphTypeManager;    
-@Inject private GraphContext graph;
 @Inject private Furnace furnace;
 ----
 
@@ -52,14 +46,6 @@ To add a frame, a more preferred way is to use the GraphService.
 [source,java]
 ----
 new GraphService<FooModel>(graph,FooModel.class).create();
-----
-
-However, if for some reason the GraphService is not convenient, you can
-create a vertex directly using graph context.
-
-[source,java]
-----
-graph.getFramed().addVertex(null, FooModel.class);
 ----
 
 [[querying-the-graph]]
@@ -137,7 +123,7 @@ code,java
 // For all java files...
 Iteration.over("javaFiles").var("javaFile").perform(
     // A nested rule.
-    GraphSubset.evaluate(
+    RuleSubset.evaluate(
         ConfigurationBuilder.begin().addRule()
         .when(...)
         .perform(
