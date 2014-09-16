@@ -1,4 +1,4 @@
-(Lower Level API)
+(Lower Level API, to cover cases not provided by high level API)
 
 [[querying-the-graph]]
 Querying the graph
