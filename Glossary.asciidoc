@@ -8,7 +8,6 @@ Rule Provider:: A Java class extending `WindupRuleProvider` which contains one o
 
 Ruleset:: A Windup plug-in that targets a specific area of migration, for example, Spring -> Java EE 6 or WebLogic -> JBoss EAP. It contains one or more rules and additional information needed for the migration such as operations, conditions, report templates, static files, metadata, relationships to other rulesets.
 
-Rulebase:: (Is this basically a Ruleset?) A composition of multiple rules in order to form a complete migration for a particular source and destination framework. Each rulebase consists of Metadata and a list of Rules
 
 Metadata:: Information about whether a particular Ruleset applies to a given scenario. The metadata can include the source and target platform and frameworks.
 
