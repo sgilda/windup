@@ -13,6 +13,8 @@ Draft
 * `windup.ProcyonConfiguration` contains `procyon.DecompilerSettings`.
 * `procyon.DecompilerSettings` contains `outputDir` (the others are not much important). TODO: Make that a parameter to method call?
 
+### TypeReference
+TODO: Check how we get info about Java files; perhaps cache the `TypeReference` results - if worth it?
 
 
 ### `ITypeLoader`s
