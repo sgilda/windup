@@ -2,11 +2,18 @@
 
 Under construction
 
-RuleSet:: A ruleset is a Forge add-on that contains one or more RuleProviders, for example: rules-java-ee
+Ruleset:: A ruleset is a Forge add-on that contains one or more RuleProviders. The following Windup projects are rulesets.
 
-RuleProvider:: A class that implements one or more Rules using the .addRule() method, for example: JDKConfig
+* rules-java-ee
+* rules-xml
 
-Rule:: The rule added to the rule provider, for example:
+RuleProvider:: A RuleProvider is a class that implements one or more rules using the `.addRule()` method. The following are examples of legacy Java rules that are defined in `rules-java-ee` ruleset.
+
+* EjbConfig
+* JDKConfig
+* SeamToCDI
+
+Rule:: A piece of code that performs a single unit of work during the migration process. While some rules may not include configuration, others may include extensive configuration for whitelists, blacklists, or other requirements.The following is an example of a rule added to the JDKConfig RuleProvider.
 
 [source,java]
 ----
