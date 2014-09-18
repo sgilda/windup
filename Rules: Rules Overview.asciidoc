@@ -24,5 +24,6 @@ Rule:: A piece of code that performs a single unit of work during the migration 
      .withEffort(1))
 ----
 
+Rules Pipeline:: A collection of rules that feed information into the knowledge graph
 
-
+Rules Metadata:: Information about whether a particular Ruleset applies to a given scenario. The metadata can include information about the source and target platform and frameworks.
