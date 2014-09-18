@@ -13,9 +13,9 @@ link:./Dev:-Create-JavaDoc-for-Windup[Create JavaDoc for Windup].
 
 == Documentation
 
-The Windup documentation is currently located on the Windup project ./[this wiki] page.
+The Windup documentation is currently located here in the Windup project link:./[Wiki].
 
-For additional information, refer to the Javadoc.
+For additional information, refer to the Javadoc. 
 
 == Website
 
