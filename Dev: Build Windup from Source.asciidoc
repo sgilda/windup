@@ -3,7 +3,7 @@
 This information is provided for developers who plan to contribute code
 to the Windup open source project. 
 
-It is assumed that you have downloaded the Windup source code and installed the temporary frames patch as described here: link:./Dev:-Get-the-Windup-Source-Code[Get the Windup Source Code]
+It is assumed that you have downloaded the Windup source code as described here: link:./Dev:-Get-the-Windup-Source-Code[Get the Windup Source Code]
 
 
 == System Requirements to Build Windup
