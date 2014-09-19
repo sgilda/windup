@@ -19,7 +19,7 @@ RuleProvider:: A class that implements one or more rules using the `.addRule()` 
 * JDKConfig
 * SeamToCDI
 
-Ruleset:: A Windup plug-in (or Forge add-on?) that targets a specific area of migration, for example, `Spring -> Java EE 6` or `WebLogic -> JBoss EAP`. A ruleset contains one or more RuleProviders along with additional information needed for the migration, such as operations, conditions, report templates, static files, metadata,  and relationships to other rulesets. The following Windup projects are rulesets.
+Ruleset:: A ruleset is a group of one or more RuleProviders that targets a specific area of migration, for example, `Spring -> Java EE 6` or `WebLogic -> JBoss EAP`. A ruleset is packaged as a JAR and contains additional information needed for the migration, such as operations, conditions, report templates, static files, metadata,  and relationships to other rulesets. The following Windup projects are rulesets.
 
 * rules-java-ee
 * rules-xml
