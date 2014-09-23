@@ -2,7 +2,7 @@
 
 == Install Windup into Forge
 
-NOTE: If you installed the Windup add-ons into a previous version of Forge, delete the `${user.home}/.forge` directory. Otherwise you may see the following error when you execute Windup:  
+NOTE: If you installed the Windup add-ons into a previous version of Forge, delete the `${user.home}/.forge/addons/` directory. Otherwise you may see the following error when you execute Windup:  
            _Command: windup-migrate-app was not found_
 
 
