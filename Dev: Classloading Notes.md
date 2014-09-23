@@ -1,22 +1,32 @@
-_Page contains temporary notes, to be edited._
+Draft - _Page contains temporary notes, to be edited._
 
-[[which-classloader-is-used-always-the-one-of-the-current-code]]
-Which classloader is used? Always the one of the current code?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+### Finding classes
+```
+AddonRegistry.getServices(MyServiceInterface.class)
+```
+or
+```
+@Inject Imported<MyServiceInterface.class) imported;
+```
+
+### Instantiating
+If you want something from the current addon, you need to @Inject its ServiceRegistry and get services from that.
+
+### Which classloader is used? Always the one of the current code?
+
 
 Depends, if you are in a Furnace Service, then yes, it will use the
 current code's addon's classloader.
 
-[[how-do-i-know-if-i-am-in-a-furnace-service]]
-How do I know if I am in a Furnace service?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+### How do I know if I am in a Furnace service?
 
 Every furnace service is wrapped in a proxy. If it came from another
 addon (not your current addon) and was not instantiated with new Blah(),
-you are in a furnace service. So if it was @Injected or retrieved via
-addonRegistry.getServices(...)
+you are in a furnace service. So if it was `@Inject`ed or retrieved via
+`addonRegistry.getServices(...)`
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+```
 (16:32:40) jsightler: ozizka: I do like a Resource.open(...) type API -- that sounds like a good idea.
 (16:32:57) LincolnBaxter: ozizka: unless you use the TCCL (which you shouldn't in a modular environment), then using the class's own classloader is the best solution for that situation
 (16:33:41) LincolnBaxter: ozizka: using a shared Resource.open() APi will actually be sort of a no-op, and just introduce another layer, since you generally need to be able to specify a classloader anyway
@@ -54,13 +64,11 @@ LincolnBaxter lincolnthree
 LincolnBaxter lincolnthree 
 (16:39:21) ozizka-FN: lincolnthree, right, but well, putting classloading code into rules...
 (16:39:25) ozizka-FN: Not user friendly
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
 
-[[resources-loading]]
-Resources loading
-^^^^^^^^^^^^^^^^^
+### Resources loading
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
 (16:48:30) ozizka-FN: lincolnthree:  Just a note - the potential collisions caused  by addon's CL span is not considered as a risk?
 (16:49:25) ozizka-FN: I mean, it could load the file from it's deps.
 (16:49:36) ozizka-FN: * file = resource
@@ -83,10 +91,8 @@ Resources loading
 
 (16:56:57) ozizka-FN: Hm, ok so I guess if we dug deeper, it would eventually come to Thread.currentThread().setContextClassLoader(classLoader); ?
 (16:57:15) LincolnBaxter: ozizka1: yep: https://github.com/forge/furnace/blob/master/container-api/src/main/java/org/jboss/forge/furnace/util/SecurityActions.java#L71
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
 
-[[furnace-proxies]]
-Furnace Proxies:
-^^^^^^^^^^^^^^^^
+### Furnace Proxies:
 
 https://github.com/forge/furnace/blob/master/proxy/src/main/java/org/jboss/forge/furnace/proxy/Proxies.java#L15
