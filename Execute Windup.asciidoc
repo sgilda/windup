@@ -2,6 +2,10 @@
 
 == Install Windup into Forge
 
+NOTE: If you installed the Windup add-ons into a previous version of Forge, delete the `${user.home}/.forge` directory. Otherwise you may see the following error when you execute Windup:  
+           _Command: windup-migrate-app was not found_
+
+
 1.  Download and install the latest version of
 http://forge.jboss.org/[Forge 2] for your OS. This is currently Forge
 2.8.1.Final. The steps to download, install, and configure the Forge distribution can be found here: http://forge.jboss.org/document/installation.
