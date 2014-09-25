@@ -43,24 +43,17 @@ windup-migrate-app --input INPUT_ARCHIVE_OR_FOLDER --output OUTPUT_REPORT_DIRECT
 +
 Where:
 
-* INPUT_ARCHIVE_OR_FOLDER is the fully qualified application archive or source path
-* OUTPUT_REPORT_DIRECTORY is the fully qualified path to the folder that will contain the the report information produced by Windup.
-* PACKAGE_1, PACKAGE_2, PACKAGE_N are the packages to be evaluated by Windup.
+* `INPUT_ARCHIVE_OR_FOLDER` is the fully qualified application archive or source path
+* `OUTPUT_REPORT_DIRECTORY` is the fully qualified path to the folder that will contain the the report information produced by Windup.
+* `PACKAGE_1`, `PACKAGE_2`, `PACKAGE_N` are the packages to be evaluated by Windup.
 
-+
-For example:
-
-+
-----
-$ windup-migrate-app --input /path/to/jee-example-app-1.0.0.ear --output /path/to/jee-example-app-1.0.0.ear.report-dir/ --packages org.example net.example com.example
-----
 3. You should see the following result upon completion of the command:
 +
 ____________________________________________
 ***SUCCESS*** Windup execution successful!
 ____________________________________________
-4.  View the report in the OUTPUT_REPORT directory specified on the command line, for example:
-_/path/to/jee-example-app-1.0.0.ear.report-dir_.  This directory will contain the following subdirectories:
+4.  Open the `OUTPUT_REPORT_DIRECTORY/index.html` file in a browser to access the report.
+The following subdirectories in the `OUTPUT_REPORT_DIRECTORY` contain the supporting information for the report:
 ** archives/
 ** graph/
 ** renderedGraph/
@@ -75,9 +68,30 @@ For details on how to evaluate the report data, see link:Review-the-Report[Revie
 man windup-migrate-app
 ----
 
+=== Run Windup Using a Provided Example Application
+
+Windup source code provides a number of example applications `test-files/` directory to demonstrate the tool. To run Windup using the `spring-small-example.war` file, perform the following steps:
+
+1. Navigate to the root directory of the Windup source.
+2. Start Forge 2.
++
+-----
+forge
+-----
+
+3. Execute the following command:
+
++
+----
+$ windup-migrate-app --input test-files/spring-small-example.war --output output-reports/spring-small-example-war-report --packages spring.framework
+----
+4. This command generates the `output-reports/spring-small-example-war-report/` structure in the root directory of the Windup source. You can redirect the report to a different path by specifying a fully qualified path name.
+5. Open the `output-reports/spring-small-example-war-report/index.html` file in a browser to access the report.
+
 === Run Windup in Batch Mode (for a shell script)
 
 To run the Forge `windup-migrate-app` command in batch mode, use the following syntax:
 ----
 forge --evaluate "windup-migrate-app --input INPUT_ARCHIVE --output OUTPUT_REPORT --packages PACKAGE_1 PACKAGE_2 PACKAGE_N"
 ----
+
