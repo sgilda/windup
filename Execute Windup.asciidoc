@@ -1,5 +1,27 @@
 = Execute Windup
 
+*For the impatient:*
+------------------
+wget -O forge.zip https://repository.jboss.org/nexus/service/local/repositories/releases/content/org/jboss/forge/forge-distribution/2.10.1.Final/forge-distribution-2.10.1.Final-offline.zip
+unzip forge.zip
+mv forge-distribution-2.10.1.Final Forge
+
+export FORGE_HOME=./Forge/
+export PATH=$PATH:$FORGE_HOME/bin
+
+forge -b --install org.jboss.windup:ui,2.0.0-SNAPSHOT
+forge -b --install org.jboss.windup.rules.apps:rules-java,2.0.0-SNAPSHOT
+forge -b --install org.jboss.windup.rules.apps:rules-java-ee,2.0.0-SNAPSHOT
+
+forge
+
+# windup-migrate-app --input /home/ondra/work/Migration/TestApps/_apps/BradApp --output Report --packages org com net
+
+# Ctrl + D
+
+firefox Report/index.html
+------------------
+
 == Install Windup into Forge
 
 NOTE: If you installed the Windup add-ons into a previous version of Forge, delete the `${user.home}/.forge/addons/` directory. Otherwise you may see the following error when you execute Windup:  
