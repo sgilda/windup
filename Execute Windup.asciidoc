@@ -1,6 +1,6 @@
 = Execute Windup
 
-These instructions are for users who are new to Windup and unfamiliar with the procedures to execute Windup. If you use Linux and are an experienced Windup user looking for a quick refresher, jump to: <<Quick Refresher for Experienced Windup Users>>
+These instructions are for users who are new to Windup and unfamiliar with the procedures to execute Windup. If you use Linux and are an experienced Windup user looking for a quick refresher, jump to: <<quick-refresher-for-experienced-windup-users>>
 
 == Install Windup into Forge
 
