@@ -45,10 +45,11 @@ link:./Install-and-Configure-Maven[Install and Configure Maven] for details.
 
 1.  Make sure you have configured Maven as described here:
 link:./Install-and-Configure-Maven[Install and Configure Maven].
+2. Check out Windup source code: `git co git@github.com:windup/windup.git Windup`
 2. Open a command terminal and navigate to the root of the Windup project directory.
 +
 --------------
-    cd windup/
+    cd Windup/
 --------------
 3.  To create a branch and build Windup using the latest version of the source code:
 
