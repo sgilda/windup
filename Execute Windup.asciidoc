@@ -8,15 +8,12 @@ mv forge-distribution-2.10.1.Final Forge
 
 export FORGE_HOME=./Forge/
 export PATH=$PATH:$FORGE_HOME/bin
-
 forge -b --install org.jboss.windup:ui,2.0.0-SNAPSHOT
 forge -b --install org.jboss.windup.rules.apps:rules-java,2.0.0-SNAPSHOT
 forge -b --install org.jboss.windup.rules.apps:rules-java-ee,2.0.0-SNAPSHOT
 
 forge
-
 # windup-migrate-app --input /home/ondra/work/Migration/TestApps/_apps/BradApp --output Report --packages org com net
-
 # Ctrl + D
 
 firefox Report/index.html
