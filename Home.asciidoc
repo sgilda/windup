@@ -1,15 +1,12 @@
-[[welcome-to-windup-2.0]]
-Welcome to Windup 2.0
----------------------
+= Welcome to Windup 2.0
+
 
 _NOTE: The Windup 2.0 project is currently under development. If you
 want to contribute or participate in developer discussions, join us on
 the irc.freenode.net #windup channel or subscribe to the windup-dev
 mailing list at https://lists.jboss.org/mailman/listinfo/windup-dev._
 
-[[about-windup]]
-About Windup
-^^^^^^^^^^^
+== About Windup
 
 Windup 2.0 is a tool used to simplify Java application migrations. It is the 
 sequel to the original Windup 0.7.x, which has moved to the 
@@ -26,9 +23,7 @@ repository, IRC, Mailing lists, ...
 * link:Review-the-Report[Review the Report]
 * link:./Glossary[Glossary of Terms]
 
-[[windup-guides]]
-Windup Guides
-~~~~~~~~~~~~~
+== Windup Guides
 
 Windup documentation is organized into guides that target specific
 audiences.
