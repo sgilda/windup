@@ -1,23 +1,6 @@
 = Execute Windup
 
-_For the impatient - Linux version: (detailed steps below)_
-------------------
-wget -O forge.zip https://repository.jboss.org/nexus/service/local/repositories/releases/content/org/jboss/forge/forge-distribution/2.10.1.Final/forge-distribution-2.10.1.Final-offline.zip
-unzip forge.zip
-mv forge-distribution-2.10.1.Final Forge
-
-export FORGE_HOME=./Forge/
-export PATH=$PATH:$FORGE_HOME/bin
-forge -b --install org.jboss.windup:ui,2.0.0-SNAPSHOT
-forge -b --install org.jboss.windup.rules.apps:rules-java,2.0.0-SNAPSHOT
-forge -b --install org.jboss.windup.rules.apps:rules-java-ee,2.0.0-SNAPSHOT
-
-forge
-# windup-migrate-app --input /home/ondra/work/Migration/TestApps/_apps/BradApp --output Report --packages org com net
-# Ctrl + D
-
-firefox Report/index.html
-------------------
+These instructions are for users who are new to Windup and unfamiliar with the procedures to execute Windup. If you use Linux and are an experienced Windup user looking for a quick refresher, jump to: <<Quick Review for Experienced Windup Users>>
 
 == Install Windup into Forge
 
@@ -113,4 +96,33 @@ To run the Forge `windup-migrate-app` command in batch mode, use the following s
 ----
 forge --evaluate "windup-migrate-app --input INPUT_ARCHIVE --output OUTPUT_REPORT --packages PACKAGE_1 PACKAGE_2 PACKAGE_N"
 ----
+
+== Quick Review for Experienced Windup Users
+
+
+------------------
+# Install Forge
+wget -O forge.zip https://repository.jboss.org/nexus/service/local/repositories/releases/content/org/jboss/forge/forge-distribution/2.10.1.Final/forge-distribution-2.10.1.Final-offline.zip
+unzip forge.zip
+mv forge-distribution-2.10.1.Final Forge
+
+# Configure Forge and Install Windup
+export FORGE_HOME=./Forge/
+export PATH=$PATH:$FORGE_HOME/bin
+forge -b --install org.jboss.windup:ui,2.0.0-SNAPSHOT
+forge -b --install org.jboss.windup.rules.apps:rules-java,2.0.0-SNAPSHOT
+forge -b --install org.jboss.windup.rules.apps:rules-java-ee,2.0.0-SNAPSHOT
+
+# Start Forge
+forge
+
+# execute Windup
+# windup-migrate-app --input /home/username/work/Migration/TestApps/_apps/BradApp --output Report --packages org com net
+
+# Exit forge
+# exit
+
+# View the Report
+firefox Report/index.html
+------------------
 
