@@ -1,3 +1,13 @@
 = Review the Report
 
-This page is under construction. Check back later!
+This page is under construction. Check back later for more information!
+
+== Open the Report
+
+When you execute Windup, the report is generated in the `OUTPUT_REPORT_DIRECTORY` you specify in the command. Use your favorite browser to open the `index.html` file located in that output report directory.
+
+You should see something like the following:
+
+        Image goes here.
+
+
